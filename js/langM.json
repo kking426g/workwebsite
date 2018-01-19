@@ -1,0 +1,41 @@
+{
+    "version": "20170207",
+    "CN": {
+        "islogin_jCon": "请先登入会员账号",
+        "go_play": "进入游戏",
+        "unserviced": "尚未开放此类型游戏",
+        "quickly_transfer": "快速转出金额",
+        "transfer_out": "转出",
+        "transferred": "转入",
+        "finish": "完成",
+        "enter an integer": "请输入整数",
+        "Successful": "操作成功",
+        "failed": "操作失败",
+        "Processing": "操作中",
+        "Do not do anything else before you finish": "完成前 请勿执行其它操作",
+        "amounts transferred": "转出金额为 ",
+        "version": " 是否确认转出？",
+        "canceled": "已取消",
+        "Insufficient amount ": "主账户金额不足!!",
+        "Please set bank account first": "请先设定 银行账号"
+    },
+    "TH": {
+        "islogin_jCon": "请先登入会员账号",
+        "go_play": "ในเกม", //"进入游戏"
+        "unserviced": "尚未开放此类型游戏",
+        "quickly_transfer": "快速转出金额",
+        "transfer_out": "โอนออก", //转出",
+        "transferred": "โอนเข้า", //转入",
+        "finish": "完成",
+        "enter an integer": "กรุณากรอกจำนวนเต็ม", //请输入整数",
+        "Successful": "操作成功",
+        "failed": "操作失败",
+        "Processing": "操作中",
+        "Do not do anything else before you finish": "完成前 请勿执行其它操作",
+        "amounts transferred": "จำนวนเงินที่โอนออก", //转出金额为 ",
+        "version": " 是否确认转出？",
+        "canceled": "已取消",
+        "Insufficient amount": "主账户金额不足!!",
+        "Please set bank account first": "请先设定 银行账号"
+    }
+}

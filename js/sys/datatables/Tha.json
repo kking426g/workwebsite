@@ -1,0 +1,26 @@
+
+
+{
+	"sProcessing":   "处理中...",
+	"sLengthMenu":   "ผลแสดงจากที่_MENU_บันทึก รายการ ",
+	"sZeroRecords":  "没有匹配结果",
+	"sInfo":         "ผลแสดงจากที่ _START_ ไปยัง _END_项结果，共 _TOTAL_ 项",
+	"sInfoEmpty":    "ผลแสดงจากที่ 0 ไปยัง 0 บันทึก รายการ，รวม 0 ",
+	"sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+	"sInfoPostFix":  "",
+	"sSearch":       "搜索:",
+	"sUrl":          "",
+	"sEmptyTable":     "ข้อมูลในตารางเป็นที่ว่างเปล่า",
+	"sLoadingRecords": "กำลังโหลด...",
+	"sInfoThousands":  ",",
+	"oPaginate": {
+		"sFirst":    "หน้าหลัก",
+		"sPrevious": "หน้าก่อน",
+		"sNext":     "หน้าถัดไป",
+		"sLast":     "末页"
+	},
+	"oAria": {
+		"sSortAscending":  ": 以升序排列此列",
+		"sSortDescending": ": 以降序排列此列"
+	}
+}

@@ -1,0 +1,243 @@
+/*
+        20170317
+        input, select, textarea, checkbox, label, .error
+        设定
+        跑含 颜色的配置
+        20170319 error錯誤提示修正
+.group
+    label   input
+            .group
+                input    input
+
+
+*/
+
+
+/*標題樣式*/
+
+$label_color: #000;
+$label_bg: #000;
+$label_border: #000;
+
+/*輸入框樣式*/
+
+$input_color: #000;
+$input_bg: #000;
+$input_border: #000;
+$input_date: url(/images/m2/bn_user_calendar.jpg); //日期圖片
+$input_copy: url(/images/m2/bn_user_copy2.jpg); //復制圖片
+//通用的部份
+input,
+select,
+textarea {
+    //不需要選定框
+    outline: 0; //錯誤訊息 20170405修改
+    border-radius: 0; //new input error
+    &.error,
+    &.validate-error,
+    &.jq-validate-custom-class,
+    &.my-error-class,
+    &.sys-error-class,
+    &.form_error_msg {
+        background: #ffcccc !important;
+        border: solid 1px #f00 !important;
+        color: #333 !important;
+        &#squaredFour {
+            border: none 0 !important;
+            &+label {
+                border: solid 2px #f00 !important;
+            }
+        }
+    }
+}
+
+div.group {
+    position: relative;
+    width: 670px;
+    margin: 0 auto 20px;
+    height: 78px;
+    padding: 0;
+    &.min {
+        width: 470px;
+        input {
+            width: 220px;
+        }
+    } //左邊的標題物件
+    label {
+        float: left;
+        width: 230px;
+        margin: 0;
+        padding: 0;
+        border: solid 2px #353f58;
+        border-right-width: 2px;
+        background: #353f58;
+        color: #ffffff;
+        text-align: center;
+        @include fontX(32px, 76px);
+        &.mline {
+            padding: 0 15px;
+            width: 200px;
+            @include fontX(28px, 38px);
+        }
+    }
+    select {
+        /*统一input select 同寬*/
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        float: left;
+        width: 220px;
+        height: 76px;
+        margin: 0;
+        padding: 0 0 0 10px;
+        border: solid 2px #353f58;
+        border-left: none 0;
+        border-left-width: 1px;
+        background: #ffffff;
+        color: #353f58;
+        text-align: center; // 與input 同寬 需用到
+        -ms-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        @include fontX(32px, 76px);
+    } //右邊的物件
+    label+div.input,
+    label+select,
+    select+input,
+    label+input {
+        /*统一input select 同寬*/
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        float: left;
+        width: 420px;
+        height: 76px;
+        margin: 0;
+        padding: 0 0 0 10px;
+        border: none;
+        border: solid 2px #000000;
+        border-left: none 0;
+        background: #000000;
+        color: #f3cb5c;
+        text-align: left;
+        @include fontX(32px, 76px);
+        &[type=date]:after {
+            width: 110px;
+            height: 76px;
+            content: $input_date;
+            margin: 0;
+            z-index: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        &.copy:after {
+            width: 110px;
+            height: 76px;
+            content: $input_copy;
+            margin: 0;
+            z-index: 0;
+            position: absolute;
+            right: 5px;
+            top: 1px;
+        }
+    }
+    input[type=date] {
+        position: relative;
+    } //不可填写 所以底色不同
+    label+div.input {
+        background: #000000;
+    } //20170317補充 select 不等寬的問題
+    label+select {
+        text-align: left;
+    } //子群組物件
+    .group {
+        //第二層
+        width: 435px;
+        border: 0 none;
+        background: transparent;
+        float: left;
+        a:link,
+        input {
+            float: left;
+            width: 160px;
+            height: 76px;
+            margin: 0;
+            padding: 0 0 0 10px;
+            border: solid 2px #c3c3c3;
+            border-left-width: 1px;
+            background: #ffffff;
+            color: #606368;
+            text-align: left;
+            @include fontX(32px, 76px);
+        }
+        a:link+input,
+        input+input {
+            /*统一input select 同寬*/
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            float: left;
+            width: 240px;
+            height: 76px;
+            padding: 0 0 0 10px;
+            border: solid 2px #ffffff;
+            background: #ffffff;
+            color: #606368;
+            text-align: left;
+            @include fontX(32px, 76px);
+        }
+        input+button {
+            display: inline-block;
+            width: 260px;
+            height: 76px;
+            margin: 0;
+            border: none;
+            outline: none; //平台转账
+        }
+    } //档案
+    input#sys_file,
+    input[type=file] {
+        display: none;
+    }
+}
+
+//------- 20170331 zen -------
+//CHECKBOX 選擇框
+//input用 display: none; 可能會無法reg檢查
+//checkbox 圖片寬度
+$cb_img_width: 63px;
+//checkbox 圖片高度
+$cb_img_height: 56px;
+//checkbox 選定前圖片路徑
+$cb_img_check: url(/images/m2/icon_check.png) 0 0 no-repeat;
+//checkbox 選定後圖片路徑
+$cb_img_checked: url(/images/m2/icon_check_on.png) 0 0 no-repeat;
+p.check,
+div.check {
+    input {
+        &[type=checkbox] {
+            width: 0;
+            height: 3px;
+            margin: 0;
+            padding: 0;
+            float: left;
+            border: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -o-appearance: none;
+        }
+        &[type=checkbox]+label.squaredFour,
+        &[type=checkbox]+label+label.squaredFour {
+            width: $cb_img_width;
+            height: $cb_img_height;
+            display: inline-block;
+            background: $cb_img_check; // background-size: 100%;
+        }
+        &[type=checkbox]:checked+label.squaredFour,
+        &[type=checkbox]:checked+label+label.squaredFour {
+            background: $cb_img_checked; // background-size: 100%;
+        }
+    }
+}

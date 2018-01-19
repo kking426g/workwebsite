@@ -1,0 +1,131 @@
+@import "variable";
+
+@mixin jp {
+    display: block;
+    border-radius: 3px;
+    font: 32px/40px $fontA;
+    text-align: center;
+    vertical-align: middle;
+    width: 42px;
+    height: 40px;
+    color: #fff;
+    position: absolute;
+    content: '1';
+    left: -40px;
+    top: -1px;
+}
+
+#event{
+  display: inline-block;
+  float:left;
+  width: 230px;
+  margin: 10px 0 0 0;
+}
+
+#bonus, #board {
+  float: right;
+  width: 232px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+
+
+    //background: url(/images/JP_Frame.png) 0 0/100% no-repeat;
+    h3 {
+        width: 100%;
+        padding:0px 0 5px 0;
+        margin: 0;
+        font: 22px/22px $fontA;
+        letter-spacing: 1px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        color: #fff;
+        min-height: 52px;
+    }
+    .jackpot {
+      background: url('/images/jp_top.png') no-repeat;
+      background-size: 100% 100%;
+        h3 {
+            padding: 8px 0 5px 0;
+            line-height:30px;
+        }
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 133px;
+        display: inline-block;
+        overflow: hidden;
+        .money_box{
+          width: 100%;
+          border-radius: 8px;
+          display: inline-block;
+          .money {
+              display: inline-block;
+              height: 34px;
+              right: 2px;
+              float: right;
+              font: 18px/32px $fontA;
+              margin: 2px auto;
+              padding: 0;
+              border-radius: 8px;
+              vertical-align: middle;
+              position: relative;
+              color: $jp_money;
+              text-align: center;
+              width: calc(100% - 4px);
+          }
+        }
+
+    }
+    .winner {
+      background: url('/images/jp_bottom.png') no-repeat;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 210px;
+      padding: 0;
+      margin-top: 2px;
+      display: inline-block;
+      overflow: hidden;
+
+        div {
+            padding: 0;
+            float: right;
+            height: 20px;
+            width: 90%;
+            margin: 3px 5%;
+            text-align: left;
+            position: relative;
+            color: $jp_winner;
+            h4 {
+                font: 18px/32px $fontB;
+                margin: 0;
+                float: left;
+                position: relative;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .plat {
+                font: 13px/20px $fontA;
+                position: absolute;
+                top: 22px;
+                left: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .money2 {
+                display: inline-block;
+                float: right;
+                text-align: left;
+                vertical-align: middle;
+                font: 18px/32px $fontB;
+                height: 40px;
+                color: $jp_money;
+                &:before {
+                    content: "¥";
+                    font: 18px/32px $fontA;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,829 @@
+@import "variable";
+@import "mixin";
+
+//設定margin-top
+// #Deposit, 
+// #transfer,
+// #Withdrawal, 
+// #BankSettings, 
+// #PersonalProfile, 
+// #GameLogs, 
+// #AccountRecords, 
+// #MyAccount, 
+// #Favrite, 
+// #MobileCasino, 
+// #News,
+// #Paymentdone,
+// #resetPassword,
+// #withdrawPassword{
+//     //margin-top: -30px;
+
+// }
+
+.member_pic{
+    width: 100%; 
+    background: url(/images/top_Member_Center.png) no-repeat;
+    background-size: 100% 100%; 
+
+    @media(min-width: 1200px){
+       height: 186px;
+    }
+
+    @media(max-width: 1199px){
+       height: 166px;
+    }
+
+
+    .pagename{
+        max-width: 800px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 30px;
+        padding: 60px 0px 0 0;
+        text-align: right;
+    }
+
+}
+
+.static_pic{
+    img{
+        width:100%;
+    }
+}
+
+
+
+#Withdrawal, #BankSettings, #PersonalProfile, #GameLogs, #AccountRecords, #MyAccount, #Favrite{
+    .word{
+       background: none;
+    }
+}
+
+
+#BankSettings, #PersonalProfile, #GameLogs, #AccountRecords, #MyAccount, #Deposit, #Withdrawal, #PersonalProfile, #transfer, #online_pay{
+  .wrap{
+    .word{
+      .selectview{
+        //background: #442a69;
+        color: #898989;
+        padding: 10px 0 0 0;
+        //border: 1px solid #707070;
+        border-radius: 10px;    
+        // @media(min-width: 900px){
+        //     max-height: 230px;
+        // }
+      }
+      .container{
+        border-radius: 10px;
+        border: 1px solid #707070;
+        padding: 0;
+        table{
+            color: #898989;
+            border-radius: 10px;
+            border: none;
+            .step_title1{
+                border-radius: 10px 0 0 10px;
+            }
+        }                       
+      }
+      input, input[type=text], input[type=number], input[type=password]{
+          width: 100%;
+          height: 100%;
+          height: 37px;
+      }
+    }
+  }
+}
+
+
+.setting_btn{
+    margin: 50px 0 0 0;
+}
+
+
+.member_title{
+  width: 100%;
+  height: 50px;
+  //background: #442a69;
+  margin: 0px auto;
+  .title{
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    a{
+    color: gray;
+    font-size: 20px;
+    }
+  }
+}
+
+
+//小的框
+.member_contentbox{
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #442a69;
+}
+
+.member_big_bg{
+  max-width: 1000px;
+  margin: 0px auto 20px auto;
+}
+
+
+.cover_page_title_big{
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  @include  bg_7;
+  color: #fff;
+  height: 70px;
+  max-width: 1000px;
+  padding: 20px 0 0 0px;
+  margin: 0 auto;
+}
+
+#Paymentdone{
+  .word{
+    min-height:600px;
+    text-align: center;
+  }
+  .yellow{
+    color: yellow;
+  }
+
+  .container{
+    min-height: 230px;
+    .row{
+      padding: 8% 0 6% 0;
+      border: 1px solid;
+    }
+  }
+
+
+  .check_record_btn{
+    width: 191px;
+    height: 42px;
+    border: 0;
+    background: url("/images/bn_account.png") no-repeat;
+    &:hover{
+      background: url("/images/bn_account_on.png") no-repeat;
+    }
+  }
+
+  .back_btn{
+    width: 191px;
+    height: 42px;
+    border: 0;
+    background: url("/images/bn_back.png") no-repeat;
+    &:hover{
+      background: url("/images/bn_back_on.png") no-repeat;
+    }
+  }
+}
+
+
+//重置登入密碼
+#resetPassword, #withdrawPassword{
+  h5{
+    //color: $title;
+    font-size: 18px;
+  }
+  .citem {
+    display: block;
+    margin: 0 20px;
+    line-height: 40px;
+    padding: 0 10px;
+    color: $white;
+    width: 100%;
+    .s_title {
+      display: inline-block;
+      width: 30%;
+      height: 38px;
+      line-height: 38px;
+      color: #fff;
+      background: #969696;
+      text-align: right;
+      font-size: 16px;
+      padding: 0 8px 0 0;
+      margin: 0px 0 10px 0;
+    }
+    
+    .s_content {
+      display: inline-block;
+      width: 60%;
+      height: 38px;
+      color: #000;
+      line-height: 40px;
+      background: #fff;
+      text-align: center;
+      margin: 10px 0 10px 0;
+
+      input[type=password]{
+        width: 100%;
+        border: 0;
+        height: 38px;
+        text-align: center;
+        //border: solid $info_content 2px;
+      }
+
+    }
+  }
+}
+
+    .bar{
+        width: 100%;
+        height: 30px;
+        background: #961818;
+    }
+
+//平台轉帳
+#transfer {
+      margin-top: 20px;
+    input::-webkit-input-placeholder {
+        color: $placeholder;
+    }
+    input::-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: $placeholder;
+    }
+    input[type=text] {
+        border: 0;
+        height: 27px;
+        width: 80%;
+    }
+    .title{
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding: 6px 0 0 0;
+        background: #707070;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .row {
+        color: #707070;
+        margin: 15px;
+    }
+    .con_padding {
+        padding-bottom: 0px;
+    }
+    .no_padding {
+        padding: 0;
+        max-width: 85px;
+    }
+    color: $title;
+    .con {
+        width: 100%;
+        font-size: 18px;
+        height: 30px;
+        margin: 3px 0 3px 3px;
+        .info_content {
+            width: 34%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            margin: 0 0 0 0;
+            font-size: 12px;
+            background: #969696;
+            color: #fff;
+            padding: 0px 0 0 0px;
+            display: inline-block;
+            position: absolute;
+        }
+        .number {
+            width: 66%;
+            height: 30px;
+            margin: 0px 0 0 0px;
+            background: #fff;
+            //border: 1px solid $info_content;
+            display: inline-block;
+            position: relative;
+            left: 33%;
+            color: #707070;
+            .refresh_icon {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                right: 5px;
+                top: 4px;
+            }
+        }
+    }
+    .t_m {
+        width: 82px;
+        height: 36px;
+        text-align: center;
+        cursor: pointer;
+        background: url("/images/bn_user_out.png") no-repeat;
+        background-size: 100% 100%;
+        border: none;
+        margin: 0 0 0 10px;
+        &:hover {
+            background: url("/images/bn_user_out_on.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .t_in {
+        width: 82px;
+        height: 36px;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        background: url("/images/bn_user_allinto.png") no-repeat;
+        background-size: 100% 100%;
+        &:hover {
+            background: url("/images/bn_user_allinto_on.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .t_b {
+        width: 167px;
+        height: 36px;
+        text-align: center;
+        cursor: pointer;
+        background: url("/images/bn_user_allback.png") no-repeat;
+        background-size: 100% 100%;
+        border: none;
+        &:hover {
+            background: url("/images/bn_user_allback_on.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}
+
+//銀行設定
+#BankSettings {
+    label {
+        width: 30%;
+        float: left;
+        text-align: right;
+    }
+    input,
+    textarea,
+    select {
+        width: 280px;
+        height: 35px;
+    }
+}
+
+//個人資訊
+#PersonalProfile {
+    input::-webkit-input-placeholder {
+        color: $placeholder;
+    }
+    input::-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: $placeholder;
+    }
+    .setting_btn {
+        padding: 35px 0 0 0;
+    }
+    input {
+        max-width: 300px;
+    }
+
+    label {
+        width: auto;
+        float: left;
+        text-align: right;
+        right: 50%;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        height: 37px;
+    }
+}
+
+/*分頁：账戶中心 包含三個訊息分頁*/
+div#Account {
+    table {
+        margin: 0 auto;
+    }
+    .bw {
+        .tt {
+            //border: 1px solid $table_l_border;
+            color: #fff;
+            background: #656565;
+        }
+    }
+    .uncheck {
+        background: #fff;
+        color: black;
+        border: 1px solid #9d9d9d;
+        text-align: center;
+    }
+    .slider_1 {
+        width: 100%;
+        display: block;
+        height: 60px;
+        max-width: 1200px;
+        background: #707070;
+
+        div {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-bottom: 10px;
+            .nav {
+                height: 100%;
+                overflow: hidden;
+                width: 100%;
+                padding-bottom: 0px;
+                text-align: center;
+                .on {
+                    //background: #f1d391;  
+                    a {
+                        //color: #fff;
+                        cursor: pointer;
+                    }
+                }
+                .extra {
+                    width: 10%;
+                    border-bottom: 1px solid $title;
+                }
+                .off {
+                    //background: #f1d391; 
+                     &:hover, &:focus {
+                        //@include bg_5;
+                        //background: #f1d391;
+                    }
+                }
+                li {
+                    width: 15%;
+                    //height: 100%;
+                    float: left;
+                    color: $nav_off;
+                    display: inline-block;
+                    cursor: pointer;
+                    padding: 25px 0px 0 0;
+                    margin: 0 5px;
+                    a {
+                        font: bolder 12px/12px $fontA;
+                        padding: 0px;
+                        color: #000;
+                        line-height: 35px;
+                        background: #efefef;
+                    }
+                    &:hover, &:focus {
+                        //@include bg_5;
+                        //background: #624192;
+                        a {
+                            color: #000;
+                            background: #00ace5;
+                        }
+                    }
+                
+                }
+            }
+        }
+    }
+    .reset_btn,
+    .submit_btn {
+        border: 0px;
+    }
+    .nav-tabs{
+      border: 0;
+      li{
+        width: 33.33%;
+        text-align: center;
+        a{
+          border: 0;
+        //   &:hover{
+        //     background: $nav_on_background;
+        //   }
+        }
+      }
+    }
+    #History,
+    #ReceivedMessage {
+          background: #efefef;
+          color: #000;
+        //   width: 95%;
+        //   margin: 0 auto;
+          .container{
+            margin: 0;
+          }
+        .item {
+            font-family: 16px/16px $fontA;
+            position: relative;
+            border: solid 1px #666;
+            margin: 1rem 2rem;
+            padding: 10px 150px;
+            min-height: 115px;
+            span.date {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+            }
+            .cus {
+                background: url('/images/Message_icon_service.png');
+                background-size: 100%;
+                margin-left: -125px;
+                float: left;
+                width: 100px;
+                height: 100px;
+            }
+            .mes {
+                background: url('/images/Message_icon_Sending.png');
+                background-size: 100%;
+                margin-left: -125px;
+                float: left;
+                width: 100px;
+                height: 100px;
+            }
+            .trash {
+                background: url('/images/Message_icon_trash.png');
+                background-size: 100%;
+                position: absolute;
+                top: 30px;
+                right: 5px;
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+            }
+            .reply {
+                background: url('/images/Message_icon_mailreply.png');
+                background-size: 100%;
+                position: absolute;
+                top: 30px;
+                right: 60px;
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+            }
+            p {
+                margin: 5px;
+                font-size: 14px;
+            }
+            h5 {
+                font: bold 20px/20px $fontA;
+                max-width: 80%;
+                max-height: 20px;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .subs {
+                margin: 15px 0;
+                display: none;
+            }
+        }
+        .item.show {
+            .subs {
+                display: block;
+            }
+        }
+    }
+    #SendingMessage {
+      //background: $static_bg;
+    //   width: 95%;
+    //   margin: 0px auto 0 30px;
+        .tit {
+            font: 26px/90px $fontA;
+            margin: 15px -15px;
+        }
+        input,
+        textarea {
+            width: 100%;
+            //border: 2px solid $info_content;
+        }
+        input {
+            height: 36px;
+            background: #656565;
+            color: #fff;
+            border: none;
+        }
+        textarea {
+            height: 220px;
+            background: #656565;
+            color: #fff;
+        }
+        .col-md-2.col-ms-12.text-right {
+            font: bold 22px/50px $fontA;
+        }
+        @media (max-width: 480px) {
+            .tit {
+                font: bold 14px/16px $fontA;
+            }
+            .col-md-2.col-ms-12.text-right {
+                font: bold 22px/50px $fontA;
+                text-align: left;
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+
+//發送訊息
+#SendingMessage {
+  height: 100%;
+  .container{
+    margin: 0px auto;
+  }
+    textarea::-webkit-input-placeholder {
+        color: #fff;
+    }
+    textarea::-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #fff;
+    }
+    input::-webkit-input-placeholder {
+        color: #fff;
+    }
+    input::-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #fff;
+    }
+}
+
+//收件夾
+#ReceivedMessage {
+  height: 100%;
+    table {
+        font: 14px/14px $fontA;
+        .subs {
+            display: none;
+        }
+        .point {
+            cursor: pointer;
+        }
+        .bw {
+            font-size: 14px;
+        }
+    }
+}
+
+/*分頁：存款*/
+#Deposit {
+    .blue input::-webkit-input-placeholder {
+        color: $placeholder;
+    }
+    .blue input::-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: $placeholder;
+    }
+    .no_border{
+      border: 0;
+    }
+    #bankdeposit {
+        // td {
+        //     font: 16px/16px $fontA;
+        //     min-height: 50px;
+        //     padding: 10px;
+        // }
+    }
+    #sys_preview {
+        max-width: 300px;
+        max-height: 300px;
+        display: none;
+    }
+    // td {
+    //     font: 16px/16px $fontA;
+    //     min-height: 50px;
+    //     padding: 10px;
+    // }
+}
+
+
+
+/*我的账户*/
+#MyAccount {
+
+    .refresh_icon {
+        width: 26px;
+        height: 26px;
+        right: 130px;
+        display: inline-block;
+        position: inherit;
+    }
+    .tt {
+        background: #969696;
+        color: #fff;
+        text-align: center;
+    }
+    .right {
+        //text-align: right;
+    }
+    table {
+      padding: 0;
+      font-weight: normal;
+      font-size: 14px;
+        .bw{
+         padding: 10px; 
+         text-align: center;  
+        }
+        th {
+            text-align: center;
+            font-weight: normal;
+        }
+        td{
+            text-align: center;
+        }
+    }
+    .outer_table {
+        width: 100%;
+        //background-color: $table_bg_r;
+        //border: 1px solid #442a69;
+
+        input,
+        input[type=password]::-webkit-input-placeholder {
+            color: $placeholder;
+        }
+        input,
+        input[type=password]::-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: $placeholder;
+        }
+    }
+}
+
+//deposite
+#wcdeposit, #alipayeposit, #bank_1{
+  table:not(.outer_table) {
+    width: 100%;
+    td{
+      width: 33%;
+    }
+  }
+}
+
+//會員中心的 表格
+.outer_table {
+  color: #fff;
+    width: 100%;
+    //background-color: $table_bg_r;
+     border: 1px solid #707070;
+}
+
+//帳戶紀錄
+#AccountRecords{
+  table{
+    font-size: 14px;
+    font-weight: normal;
+    th{
+      font-weight: normal;
+      border: 1px solid #707070;
+      text-align: center;
+    }
+    td{
+        text-align: center;
+    }
+  }
+}
+
+//帳戶紀錄
+#GameLogs{
+  table{
+    font-size: 14px;
+    font-weight: normal;
+    th{
+      font-weight: normal;
+    }
+  }
+}
+
+#AccountRecords, #GameLogs{
+    .cover_page_title_big{
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+        @include  bg_7;
+        color: #fff;
+        height: 70px;
+        max-width: 1000px;
+        padding: 20px 0 0 0px;
+        margin: 0 auto;
+    }
+    lable{
+        font:14px/30px $fontA;
+    }
+
+}
+
+
+//我的最愛 標頭
+.top_outer{
+  @include bg_7;
+  width: 100%;
+  height: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.top_info{
+  background: $static_bg; 
+  width: 100%;
+  height: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #f1d391;;
+  font-size: 18px;
+  line-height: 62px;
+  padding: 0 0 0 20px;
+}

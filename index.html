@@ -1,0 +1,267 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="description" content="">
+        <link rel="icon" type="image/x-icon"  href="favicon.ico">
+        <title>workwebsite</title>
+        <link rel="stylesheet" href="css/style_sheet.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scriptT.js"></script>
+        <script src="js/favorite.js"></script>
+        <script src="js/gamelog.js"></script>
+        <script src="js/mymessage.js"></script>
+        <script src="js/new_function.js"></script>
+        <script src="js/sys_function.js"></script>
+        <script src="js/lightbox.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/select_date.js"></script>
+        <script language="javascript">
+        var Today=new Date();
+        $('.dateinfo').append('GMT+8 '+ Today.getFullYear() + '/' + (Today.getMonth()+1) + '/' + Today.getDate());
+
+        $(function (){
+            $('.sys_loginform_submit').click(function() {
+                ocmsite.etc.initLoginform($(".sys_loginform"));
+            });
+        });
+        </script>
+
+        <script>
+            $(function () {
+                ocmsite.etc.initSignupform($(".signupform"));
+            });
+        </script>
+    </head>
+
+     <body>
+         <header>
+            <div class="background_img">
+            </div>
+            <div class="main">
+                <div id="topic"> 
+                    <div class="marquee_box">
+                        <div id="marquee">
+                            <div class="stage">
+                                <div class="showbox">
+                                    <a>marquee</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hd-1r"> 
+                        <form class="loginform sys_loginform" action="login" method="post">
+                            <input type="text" class="txt1" required id="Account" name="Account" autocomplete="off" placeholder="accname" aria-required="true">
+                            <input type="password" class="txt3 sys_Password" required id="Password" name="Password" autocomplete="off" placeholder="password" aria-required="true">
+                            <input type="text" class="txt2" required name="Captcha" id="Captcha" placeholder="captcha">
+                            <span>
+                            </span>
+                            <button type="submit" class="bt1 sys_loginform_submit"></button>
+                            <div class="bt2 signup_btn"></div>
+                            <div class="forget_pwd"></div>
+                        </form>
+                    </div>
+                </div>
+            
+                <nav id="menu" class="navbar navbar-inverse bg2">
+                    <div class="container">
+                        <div class="navbar-collapse collapse">
+                            <a href="/"><img class="logo_home" src="images/logo.png"/></a>
+                            <ull class="nav navbar-nav" style="padding-left: 300px;">
+                                <li><a href="/" class="home"></a></li>
+                                <li><a href="#" class="real"></a></li>
+                                <li><a href="#" class="sport"></a></li>
+                                <li><a href="#" class="ticket"></a></li>
+                                <li><a href="#" class="electronic"></a></li>
+                                <li><a class="fishing"></a></li>
+                                <li><a href="#" class="nav_news"></a></li>
+                                <li><a href="#" class="nav_promotion"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="contact">
+                    <div class="contact_div" onclick=""></div>
+                    <div class="contact_div" onclick=""></div>
+                    <div class="contact_div" onclick=""></div>
+                    <div class="contact_div" onclick=""></div>
+                    <div class="cclose">X</div>
+                </div>
+            </div>  
+            <div id="banner" class="w100">
+                <!--大刊版 banner-->
+                <div id="slider" class="flexslider">
+                    <!-- Place somewhere in the <body> of your page -->
+                    <ul class="slides">
+                        <li>
+                        <img src="images/top_.jpg" />
+                        </li>
+                        <li>
+                        <img src="images/top_.jpg" />
+                        </li>
+                        <li>
+                        <img src="images/top_.jpg" />
+                        </li>
+                        <li>
+                        <img src="images/top_.jpg" />
+                        </li>
+                    </ul>
+
+                </div>
+            </div>  
+         </header>
+
+        <div class="wrap home_banner"> 
+            <div class="container" >
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 real_game">
+                        <table class="real_hover">
+                            <tr>
+                                <td class="bg sys_game_item preload_game" data-sys-game-id='844'><div class="name">AG</div></td>
+                                <td class="bg sys_game_item preload_game" data-sys-game-id='636'><div class="name">BBIN</div></td>
+                                <td class="bg game-maintain"><div class="name">SUNBET</div></td>
+                                <td class="bg sys_game_item preload_game" data-sys-game-id='1'><div class="name">ALLBET</div></td>
+                            </tr>
+                            <tr>
+                                <td class="bg game-maintain preload_game" data-sys-game-id='8'><div class="name">MG</div></td>
+                                <td class="bg game-maintain"><div class="name">HY</div></td>
+                                <td class="bg sys_game_item preload_game" data-sys-game-id='1020'><div class="name">eBET</div></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-3 col-sm-3 sport_game">
+                        <table class="sport_hover">
+                            <tr>
+                                <td class="bg sys_game_item preload_game" data-sys-game-id='564'><div class="name">i789体育</div></td>
+                                <td class="bg sys_game_item preload_game" data-sys-game-id='2580'><div class="name">IMOne<br>体育</div></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-3 col-sm-3 lottery_game">
+                        <table class="lottery_hover">
+                            <tr>
+                                <td class="bg"><div class="name">云谷彩票</div><a href="http://www.kl6688.net/Common/Index/toTry.html"></a></td>
+                                <td class="bg sys_game_item preload_game" data-sys-game-id='2387'><div class="name">GB彩票</div></td>
+                            </tr>
+                            <tr>
+                                <td class="bg game-maintain"><div class="name">KG彩票</div></td>
+                                <td class="bg sys_game_item preload_game" data-sys-game-id='603'><div class="name">BBIN彩票</div></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 fishing">
+                        <table class="fishing_hover">
+                            <tr>
+                                <td class="bg sys_game_item preload_game" data-sys-game-id='2483'><div class="name">PG魚王爭霸</div></td>
+                                <td class="bg sys_game_item preload_game" data-sys-game-id='1858'><div class="name">MW千炮捕魚</div></td>
+                                <td class="bg sys_game_item preload_game" data-sys-game-id='863'><div class="name">AG捕魚王</div></td>
+                            </tr>                  
+                        </table>
+                    </div>
+                    <div class="col-md-6 col-sm-6 ele_game">
+                        <table class="ele_hover">
+                            <tr>
+                                <td class="bg"><div class="name">PG电子</div><a href="http://main.jql20.com/fast/4001/index?Params=eyJpdiI6Imk5RUk5RDdTWlwvTlJCcG9JTkR6ajlBPT0iLCJ2YWx1ZSI6Ijl0M3dUTzJMZnRKWW9aZjZSMmw0YjQzSDhJKzB3UnhjRWpLRDBEa3VIOWNTWk1TcjNBSHlrYTgreEI5N0JnRkJLSW9kRU5MTXFSM1JLYzNEdlVsdEpRTTc5MUloTEhDSlFBS2tCMTV4dFwvSUlqSTZNR1wvZzl2TlU5ZlNkd2hkUjhEMGdtMkhnaEdNejBib3RERzdTWjZreFQ0MVZoVUZNaWRXN05QdjRqQU9kTklyRmVoXC85YUN0RUVoWnpvYVBtUWRwSzE0NlVueHp4b1lLS29sUURuY1E9PSIsIm1hYyI6ImNhY2JlOTAyYWQ5NzBhNGMzMTJjOWZhNzcyZjQ1Njk1YWJkYTZlNTI0NTIyN2RhZGY1MGM3Y2IwZWY4ODI3NWIifQ=="></a></td>
+                                <td class="bg game-maintain"><div class="name">VG电子</div></td>
+                                <td class="bg"><div class="name">AV电子</div><a href="/home/gamelistdemogame?pid=25"></a></td>
+                                <td class="bg"><div class="name">DT电子</div><a href="/home/gamelistdemogame?pid=23"></a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg"><div class="name">AG电子</div><a href="/home/gamelistplatform?pid=5"></a></td>
+                                <td class="bg"><div class="name">IMOne<br>电子</div><a href="/home/gamelistplatform?pid=19"></a></td>
+                                <td class="bg"><div class="name">MW电子</div><a href="/home/gamelistplatform?pid=12"></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap servicebar_bg">
+            <div class="service_bar">
+                <div class="content_5 h_mobile"></div>
+                <div class="content_5 h_promote"></div>
+                <div class="content_5 h_news"></div>
+                <div class="content_5 h_sup"></div>
+                <div class="content_5 h_faq"></div>
+            </div>
+            <br>
+        </div>
+
+        <div class="row quickbox">
+            <div class="wrap">
+                <div class="col-md-4 col-sm-4" style="text-align: left;">
+                    <img src="images/news.png">
+                    <div class="news_line">
+                        <div class="content">title</div>
+                        <div class="date">startTime</div>
+                    </div>
+                    <div class="news_line">
+                        <div class="content">title</div>
+                        <div class="date">startTime</div>
+                    </div>
+                    <div class="news_line">
+                        <div class="content">title</div>
+                        <div class="date">startTime</div>
+                    </div>
+                    <div class="news_line">
+                        <div class="content">title</div>
+                        <div class="date">startTime</div>
+                    </div>
+                    <div class="news_line">
+                        <div class="content">title</div>
+                        <div class="date">startTime</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4" style="text-align: left;">
+                    <img src="images/Our-advantage.png">
+                    <div class="info">
+                        <div class="title">多国快乐彩</div>
+                        <div class="content">24小时不间断High翻天</div>
+                    </div>
+                    <div class="info">
+                        <div class="title">返水最高1%</div>
+                        <div class="content">天天返水1%，享业界最优福利</div>
+                    </div>
+                    <div class="info">
+                        <div class="title">主流游戏整合于一站</div>
+                        <div class="content">多款主流游戏，一次满足您的所有需求</div>
+                    </div>
+                    <div class="info">
+                        <div class="title">儲值取款高效率</div>
+                        <div class="content">快速的储值及取款，并提供多种支付方式。</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4" style="text-align: left;">
+                    <img src="images/our_service.png">
+                    <div class="info">
+                        <div class="title">安全保密</div>
+                        <div class="content">我们采用最坚实、稳定与安全的游戏平台，我们一直坚持实行隐私严格保密制度以确保所有会员的资料安全</div>
+                    </div>
+                        <div class="info">
+                        <div class="title">数据统计</div>
+                        <div class="content">我们提供最快捷、最全面的体育资讯</div>
+                    </div>
+                        <div class="info">
+                        <div class="title">投注结果</div>
+                        <div class="content">您可查阅所有运动赛事及时时彩官方开奖结果。</div>
+                    </div>
+                    <div class="info">
+                        <div class="title">优惠活动</div>
+                        <div class="content">会员每日享有各种活动优惠规则，详情可至【优惠活动】中查询。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

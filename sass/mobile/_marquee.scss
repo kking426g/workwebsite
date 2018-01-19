@@ -1,0 +1,37 @@
+/*跑馬燈*/
+
+// 文字顏色
+// 背景顏色
+// 寬度尺寸
+#marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: static;
+    width: 100%;
+    height: 50px;
+    margin: -1px 0 0;
+    background: #787878;
+    background: -moz-linear-gradient(top, #f0f0f0 0% ,#787878 100% );
+    background: -webkit-linear-gradient(top, #f0f0f0 0% ,#787878 100% );
+    background: linear-gradient(to bottom, #f0f0f0 0% ,#787878 100% );
+    .stage {
+        overflow: hidden;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        .showbox {
+            display: inline-block;
+            white-space: nowrap;
+            a {
+                float: left;
+                margin: 0 10px;
+                white-space: nowrap;
+                color: #000000;
+                height: 50px;
+                vertical-align: middle;
+                @include fontX(24px, 50px);
+            }
+        }
+    }
+}

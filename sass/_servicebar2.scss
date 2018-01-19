@@ -1,0 +1,191 @@
+@import "mixin";
+@import "variable";
+
+/*關於我們*/
+.banner_img{
+  width: 1000px;
+}
+#AboutUs,
+#ResponsibleGaming,
+#PrivacyPolicy,
+#TermsConditions,
+#Requirements,
+#MobileCasino {
+    max-width: 1000px;
+    margin: 0 auto;
+    // #static_topic{
+    //     max-width: 1000px;
+    // }
+
+    //margin-top: -30px;
+  //background: $static_bg;
+    .text_title {
+        color: #7e7e7e;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    p {
+        margin: 0;
+        font-size: 14px;
+        color: #7e7e7e;
+        line-height: 26px;
+        padding-left: 1.5em;
+    }
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        margin: 0;
+        padding: 0;
+    }
+    ol>li {
+        display: table;
+        counter-increment: item;
+        margin-bottom: 0.6em;
+        color: #7e7e7e;
+        font-size: 18px;
+        margin-top: 20px;
+        list-style: none;
+    }
+    ol>li:before {
+        /*content: counters(item, ".") ". ";*/
+        display: table-cell;
+        padding-right: 0.6em;
+    }
+    li ol>li {
+        margin: 0;
+        font-size: 14px;
+        color: #7e7e7e;
+        line-height: 26px;
+        padding-left: 1.5em;
+    }
+    li ol>li:before {
+        content: counters(item, ".") " ";
+    }
+    li ol li ol>li {
+        margin: 0;
+        font-size: 14px;
+        color: #7e7e7e;
+        line-height: 26px;
+        padding-left: 0em;
+    }
+}
+
+#PatronProtection {
+    .wrap{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #co_2, #co_3{
+        display: none;
+    }
+
+    #co_1{
+        display: block;
+    }
+
+    .hh{
+        p{
+            padding: 15px;
+        }      
+    }
+
+    table {
+        font-size: 14px;
+        color: $white;
+        td{
+            color: black;
+        }
+    }
+
+    .text_title {
+        color: #7e7e7e;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    p {
+        margin: 0;
+        font-size: 14px;
+        color: #7e7e7e;
+        line-height: 26px;
+        padding-left: 1.5em;
+    }
+    
+    input[type="text"]{
+        width: 100%;
+        height: 100%;
+    }
+    .radio_group{
+        padding: 10px 25px;
+        .radio_box{
+            width: 100px;
+            display: inline-block;
+            .title{
+                width: auto;
+                font-size: 15px;
+                display: inline;
+            }
+        }
+    }
+
+    .email_info{
+        padding: 10px 20px;
+    }
+
+    .contact_submit{
+        width: 82px;
+        height: 36px;
+        border: 0;
+        display: inline-block;
+        background: url('/images/Sent_out.png');
+        &:hover{
+           background: url('/images/Sent_out_on.png'); 
+        }
+    }
+
+
+     .citem {
+        display: block;
+        margin: 0 20px;
+        line-height: 40px;
+        .tleft,
+        .tright {
+            padding: 0 10px;
+            color: $white;
+            display: inline-flex;
+            height: 40px;
+            width: 50%;
+            .s_title {
+                width: 50%;
+                height: 38px;
+                color: #fff;
+                line-height: 40px;
+                background: $sup_info_l;
+                //border: 1px solid $sup_border_l;
+                text-align: center;
+                font-size: 16px;
+                margin: 10px 0 10px 0;
+            }
+            .s_content {
+                width: 70%;
+                height: 38px;
+                color: #000;
+                line-height: 40px;
+                background: $sup_info_r;
+                border: 1px solid $sup_border_r;
+                text-align: center;
+                margin: 10px 0 10px 0;
+            }
+        }
+        .tright {
+            width: 47%;
+            margin-left: 1%;
+        }
+    }
+
+}
+
+#TermsConditions div.word textarea{
+    color: $white;  height: 100%; width: 96%; margin: 40px 2%;   background: #000;
+    font:14px/16px $fontA;
+}

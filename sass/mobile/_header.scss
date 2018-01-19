@@ -1,0 +1,69 @@
+//vw 不支援 所以要先建立 單位元
+//
+header {
+    //要看横向的比例做调整
+    background: #343434;
+    background: -moz-linear-gradient(top, #000000 0%, #343434 31%, #343434 100% );
+    background: -webkit-linear-gradient(top, #000000 0%, #343434 31%, #343434 100% );
+    background: linear-gradient(to bottom, #000000 0%, #343434 31%, #343434 100% );
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 130px;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    z-index: 2; //上面的圈圈button
+    button {
+        margin: 15px 10px 10px;
+        padding: 0;
+        width: 100px;
+        height: 100px;
+        border: none;
+        outline: 0;
+        float: left;
+        font-weight: bold;
+        font-size: 30px;
+        color: #ffffff;
+        &.menu {
+            background: url(/images/m2/top_icon_list.png) center center no-repeat;
+            background-size: 100%;
+        }
+        &.back {
+            background: url(/images/m2/top_icon_back.png) center center no-repeat;
+            background-size: 100%;
+        }
+        &.home {
+            float: right;
+            background: url(/images/m2/top_icon_home.png) center center no-repeat;
+            background-size: 100%;
+        }
+        &.login {
+            float: right;
+            background: url(/images/m2/top_icon_login.png) center center no-repeat;
+            background-size: 100%;
+        }
+        &.member {
+            float: right;
+            background: url(/images/m2/top_icon_user.png) center center no-repeat;
+            background-size: 100%;
+        }
+    }
+    div.logo {
+        padding: 0;
+        width: 290px;
+        height: 90px;
+        background: url(/images/m2/logo.png) center center no-repeat;
+        background-size: 100%;
+        display: inline-block;
+        position: absolute;
+        margin: 20px 0;
+        top: 0;
+        left: 50%;
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}

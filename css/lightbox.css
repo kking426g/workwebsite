@@ -1,0 +1,81 @@
+﻿/*.mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    opacity: .9;
+    background: #000;
+}*/
+
+.jAlert {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 30%;
+    min-height: 15%;
+    width: auto;
+    height: auto;
+    z-index: 999;
+    color: #fff;
+    overflow: hidden;
+    font: 16px/20px Arial,"Microsoft YaHei","Microsoft JhengHei","Hiragino Sans GB","Noto Sans SC",STHeiti,sans-serif;
+    text-align: center;
+}
+
+div.jAlert.lbox {
+    width:100%;
+    max-width:1200px;
+    height:70%;
+    min-height:480px;
+    max-height:100%;
+    border: 0px;
+    border-radius: 0px;
+}
+div.jAlert.lbox iframe {
+    width:100%;
+    height: calc( 100vh - 50px);
+    max-height:94%;
+    margin: 50px 0 0 0;
+    border: none;
+}
+div.jAlert.lbox .title .xx {
+    background: url('/images/icon_cancel.png') no-repeat;
+    display: block;
+    top: 5px;
+    right: 8px;
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+div.jAlert.lbox .title .xx:hover{
+  background: url('/images/icon_cancel_on.png') no-repeat;
+}
+
+div.jAlert.lbox .title{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top:0px;
+    font-size: 20px;
+    padding: 15px 0 0 0;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,383838+30,383838+42,383838+56,383838+65,000000+100,000000+100,000000+100,000000+100 */
+    background: rgb(0,0,0); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 30%, rgba(56,56,56,1) 42%, rgba(56,56,56,1) 56%, rgba(56,56,56,1) 65%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(56,56,56,1) 30%,rgba(56,56,56,1) 42%,rgba(56,56,56,1) 56%,rgba(56,56,56,1) 65%,rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(56,56,56,1) 30%,rgba(56,56,56,1) 42%,rgba(56,56,56,1) 56%,rgba(56,56,56,1) 65%,rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+
+

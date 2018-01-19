@@ -1,0 +1,138 @@
+$fontA: Arial, 'Microsoft YaHei', 'Microsoft JhengHei', 'Hiragino Sans GB','Noto Sans JP', STHeiti, sans-serif, 'Noto Sans SC','Noto Sans TC';
+$fontB: Impact, 'Microsoft YaHei', 'Microsoft JhengHei', 'Hiragino Sans GB','Noto Sans JP', STHeiti, sans-serif, 'Noto Sans SC','Noto Sans TC';
+$common_yellow: #fea346;
+$red: #F00;
+$light_blue: #13ace4;
+$white: #fff;
+
+
+//主題顏色
+$word_color: #fff; //文字顏色
+$info_content: #442a69; //快速轉出 入金額列表(右)
+$info_content2: #B60005; //快速轉出 入金額列表(左)
+$title: #f1d391; //word 文字標題顏色
+$placeholder: #969696; //placeholder顏色
+$darker_color: #e6bd00; //電子遊戲列表框線
+$ps_color: #f1d391;//提示訊息顏色
+$login_background: #ffe7ca;
+$body_bg: #000;
+$hr: #000;
+
+$member_title: #707070;
+//靜態頁面, 彈跳視窗
+$static_bg: #442a69;
+
+
+//電子遊戲
+$gamecard_bg: #241b0c;
+$gamecard_border: #b3883e;
+$gamecard_hr: #b3883e;
+
+
+$gamecard_hover: #003367;
+$gamelist_hover_border: #46f5f8;
+$gamecard_hover_hr:  #46f5f8;
+
+$gamecard_title: #fff;
+$gamelist_bg: #dddddd;
+$gamelist_top_border: #46f5f8;
+$gamelist_border: #ffecbd;
+
+//彈跳視窗  _popoutinfo.scss
+$frame: #f2c800; //彈跳視窗 提示訊息框
+$info_frame: #54595c; //快速轉出金額 提示框
+$frame_bg: #000; //背景
+$frame_title: yellow; //彈跳視窗 提示訊息框標題
+
+//表單
+$form_border: #4D4E52;
+$costom_bg: #0e0516;
+
+// _jackpot.scss
+$jp_winner: #f1d391;
+$jp_money: #f1d391;
+$jp_border: #4D4E52;
+
+// _partials.scss
+//更多遊戲
+$more_game: #000;
+$moregame_border: #000;
+
+//會員首頁上方選單
+$member_info_border: #ea5513;
+$member_info_text: #e6bd00;
+$member_info_bg: #fff;
+$drop_menu: #ffdc00;
+
+//_footer.scss
+$footer_left: #000; //footer左邊文字
+$footer_right_b: #442a69; //合作夥伴 大字
+$footer_right_s: #442a69; //our partner 小字
+$contact_footer: #fff;
+
+//marquee
+$marquee: #fff; //跑馬燈顏色6b6863
+$date_info: #fff; //日期顏色
+$marquee: #fff; //跑馬燈顏色6b6863
+$marquee_border: #4D4E52; //跑馬燈邊框
+
+//nav
+$nav_frame: #46f5f8; //選單顏色 on
+$nav_a: #f1d391; //選單連結 on
+$nav_on_background: #000; //選單背景 on
+$nav_off_background: #fff; //選單背景 off
+$nav_off_border: #fff;
+$nav_off: #fff;
+
+$home_nav_a: #8be5e6;
+$nav_a_hover: #e6bd00;
+$nav_a_bg: #562e0a;
+
+//quickboxjp_money
+$quickbox_text: #929292;
+$quickbox_a: #929292;
+
+//新聞發布
+$time: #fff;
+$time_bg: #6b6863;
+$time_border: #c3c3c3;
+$news_title: #f1d391;
+$news_bg: #dcdcdc;
+$news_border: #c3c3c3;
+
+//transfer
+$trans_bg: #4b2405;
+$trans_r: #ddd8e5;
+
+
+
+//faq
+$faq_r_border: #a046ff;
+$faq_l_border: #226b98;
+$faq_bg_r: #f1d391;
+
+//通用表格顏色
+$table_border: #c3c3c3;
+$table_bg_r: #442a69;
+$table_r_border: #c3c3c3;
+$table_l_border: #c3c3c3;
+
+//member pages
+$mb_bg: #4b2405;
+$mb_border: #fede00;
+
+//support
+$sup_info_r: #fff;//下方資訊列右邊顏色
+$sup_info_l: #2c2d28;;//下方資訊列左邊顏色
+$sup_border_l: #9a5206;//下方資訊列邊框
+$sup_border_r: #2c2d28;//下方資訊列邊框
+
+//promotion
+$promotion_color: #fff;
+
+$nav_link: #f5b419;
+
+
+
+
+

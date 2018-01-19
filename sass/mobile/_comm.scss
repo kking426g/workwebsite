@@ -1,0 +1,36 @@
+/* 文字大小  高度 */
+
+@mixin fontX ( $size1: 14px, $size2: $size1) {
+    font-size: $size1;
+    line-height: $size2;
+}
+
+
+/*超連結*/
+
+@mixin a-link ( $color1: #000, $color2: $color1) {
+    a {
+        color: $color1;
+        &:link,
+        &:active,
+        &:focus {
+            color: $color1;
+            text-decoration: none;
+        }
+        &:hover {
+            color: $color2;
+            text-decoration: none;
+        }
+        &:visited,
+        &.visited {
+            color: $color2;
+        }
+    }
+}
+
+@mixin delay ( $speed:0.8) {
+    -webkit-transition: $speed + s;
+    -moz-transition: $speed + s;
+    -ms-transition: $speed + s;
+    transition: $speed + s;
+}

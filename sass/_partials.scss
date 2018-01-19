@@ -1,0 +1,1663 @@
+@import "mixin";
+@import "variable";
+
+
+// .banner_logo{
+//     background: url('/images/banner01.png') no-repeat;
+//     //background-size: 100% 100%;
+//     height: 170px;
+//     float: right;
+//     width: 220px;
+//     margin: 10px 0 0 0;
+// }
+
+
+//遊戲列表：更多
+.home_more_btn {
+    width: 460px;
+    padding: 15px 0 15px 0;
+    font-size: 20px;
+    line-height: 22px;
+    display: block;
+    float: inherit;
+    margin: 0px auto 15px auto;
+    border-radius: 5px;
+    border: solid 1px #442a69;
+    color: #442a69;
+    background: none;
+}
+
+/*遊戲列表 更多*/
+.sys_gamelistpt_more {
+    font-size: 20px;
+    line-height: 22px;
+    display: block;
+    margin: 0px auto 20px auto;
+    float: right;
+    border-radius: 5px;
+    border: solid 1px $moregame_border;
+    color: $more_game;
+    background: none;
+}
+
+.tothetop{
+    font-size: 20px;
+    line-height: 22px;
+    display: block;
+    margin: 0px auto 20px auto;
+    float: right;
+    border: 0;
+    background: none;
+}
+
+//首頁背景圖
+.background_img {
+        width: 100%;
+        //height: 100vh;
+        position: absolute;
+        top: 150px;
+        background: url("/images/background.jpg") no-repeat;
+        background-size: cover;
+}
+
+
+//驗證碼
+.captcha {
+    width: 75px;
+    height: 40px;
+    position: absolute;
+    right: 185px;
+    background: url('/images/aaa.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.refresh_icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 145px;
+    cursor: pointer;
+    border: none;
+    
+    background: url('/images/LOGIN_icon_refresh.png') no-repeat;
+    background-size: 100% 100%;
+    // &:hover {
+    //     background: url('/images/icon_refresh_on.png') no-repeat;
+    //     background-size: 100% 100%;
+    // }
+}
+
+.quick_icon {
+    right: 15px;
+}
+
+
+
+.bank_select {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #5edfff;
+    color: #5edfff;
+    background: #000;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid yellow;
+        color: yellow;
+    }
+}
+
+//複製資訊 按鈕
+.copy_info {
+    color: #fcd67e;
+    width: 120px;
+    height: 40px;
+    border: 0px;
+    cursor: pointer;
+    //background-size: 100% 100%;
+    background: #0071c8;
+    &:hover {
+        //background-size: 100% 100%;
+        background: #6f8c3d;
+    }
+}
+
+
+//資訊上傳 按鈕
+.upload_file {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background: url("/images/bn_user_file.png") no-repeat;
+    &:hover {
+        background-size: 100% 100%;
+        background: url("/images/bn_user_file_on.png") no-repeat;
+    }
+}
+
+//頁面跳轉 按鈕
+.transfer_page {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background: url("/images/bn_user_toalipay.png") no-repeat;
+    &:hover {
+        background-size: 100% 100%;
+        background: url("/images/bn_user_toalipay_on.png") no-repeat;
+    }
+}
+
+
+/*電子遊戲 top*/
+.top_game_card{
+  overflow: hidden;
+  display: inline-block;
+  width: 70%;
+  float: right;
+}
+
+.gamelist_top {
+    max-width: 1160px;
+    position: relative;
+    margin: 15px auto;
+    height: auto;
+    border: 2px solid #707070;
+    @media(max-width: 991px){
+      height: 440px;
+    }
+
+    select, textarea, input, input[type=text], input[type=number], input[type=password]{
+        color: #fff;
+    }
+    .box_left {
+        height: 200px;
+        padding: 10px;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        img {
+            width: 100%;
+            max-width: 160px;
+        }
+    }
+    .GameBoxTop {
+        width: 98%;
+        position: absolute;
+        height: 200px;
+        display: inline-block;
+        float: right;
+        margin: 6px 0 0 0;
+        //background: #442a69;
+        .gamebox_top {
+            width: 100%;
+            height: 170px;
+            margin: 0 auto;
+            display: inline-block;
+            float: right;
+            padding: 0;
+            text-align: center;
+            .img_box {
+                width: 100%;
+                height: 110px;
+                text-align: center;
+                img {
+                    max-width: 146px;
+                    max-height: 104px;
+                }
+                background-size: 100% 100%;
+            }
+            .jp_list {
+                height: 25px;
+                width: 100%;
+                padding: 4px 0 0 0;
+                color: #b12727;
+                span, input{
+                  width: 100%;
+                }
+            }
+            .enter_game {
+                background: url("/images/bn_slot_play.png") no-repeat;
+                background-size: 100% 100%;
+                width: 140px;
+                height: 25px;
+                margin: 0 auto;
+                cursor: pointer;
+                &:hover {
+                    background: url("/images/bn_slot_play_on.png") no-repeat;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+    }
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/*電子遊戲 選單*/
+.game_optionlist {
+    width: 100%;
+    height: auto;
+    margin: 15px auto;
+    display: inline-block;
+    //border-radius: 10px 10px 0px 0px;
+    margin: 0 auto;
+    background: #707070;
+    .container {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .search_bar {
+      width: 235px;
+      height: 27px;
+      margin: 18px 0px 0px 0px;
+      display: inline-block;
+      background: url('/images/bar_search.png') no-repeat;
+      background-size: 100% 100%;
+      &:hover{
+        background: url('/images/bar_search_on.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .search_btn {
+        display: inline-block;
+        height: 28px;
+        line-height: 38px;
+        width: 80px;
+        cursor: pointer;
+        padding: 0 0 0 8px;
+        margin: 0px 0 0 162px;
+      }
+      input[type=text] {
+        width: 120px;
+        position: absolute;
+        height: 25px;
+        margin: 0px 0 0 3px;
+        border: 0;
+        color: #000;
+      }
+    }
+    .options {
+        width: 100%;
+        height: 50px;
+        float: right;
+        margin: 21px 0 0 0;
+        display: inline-block;
+        .nav-tabs {
+            border: 0;
+        }
+        .opt_box {
+            width: 13%;
+            display: inline-block;
+        }
+        .opt_item {
+          width: auto;
+          text-align: center;
+          padding: 8px;
+          margin: 0px 0 0 10px;
+          height: 35px;
+          line-height: 35px;
+          display: inline-block;
+          color: #707070;
+          cursor: pointer;
+          background: #dddddd;
+          &:hover {
+            color: #442a69;
+            background: #d1d1d1;
+
+          }
+        }
+
+        .opt1{
+          width: 70px;
+        }
+        .opt2{
+          width: 70px;
+        }
+        .opt3{
+          width: 70px;
+        }
+        .opt4{
+          width: 90px;
+        }
+        .opt5{
+          width: 90px;
+        }
+        .opt6{
+          width: 90px;
+        }
+        .opt7{
+          width: 70px;
+        }
+        .opt8 {
+            width: 70px;
+        }
+    }
+}
+
+.gamecard {
+    width: 200px;
+    height: 230px;
+    margin: 15px auto;
+    text-align: center;
+    display: inline-block;
+    color: $gamecard_hr;
+    @include bg_2;
+    &:hover {
+        @include bg_4;
+    }
+
+    .enter_card {
+        width: 186px;
+        height: 142px;
+        position: absolute;
+        margin: 7px 0 0 7px;
+        display: none;
+    }
+    p {
+    display: inline-block;
+    margin: 4px 0 0 0;
+    width: 194px;
+    height: 32px;
+    font-size: 20px;
+    color: #000;
+    overflow: hidden;
+    cursor: pointer;
+    @include bg_3;
+    border: 1px solid #fff;
+    }
+    img {
+        margin: 3px 0 5px 0;
+        width: 196px;
+        height: 153px;
+    }
+    .info {
+        height: 30px;
+        width: 200px;
+        margin: 0;
+        display: inline-block;
+        .box1 {
+            width: 35px;
+            height: 26px;
+            display: inline-block;
+            background: url("/images/icon_slot_1.png") no-repeat;
+        }
+        .box2 {
+            width: 35px;
+            height: 26px;
+            display: inline-block;
+            background: url("/images/icon_slot_2.png") no-repeat;
+        }
+        .box3 {
+            width: 35px;
+            height: 26px;
+            display: inline-block;
+            background: url("/images/icon_slot_3.png") no-repeat;
+        }
+        .add_favorite {
+            width: 78px;
+            height: 22px;
+            margin: 0 auto;
+            display: inline-block;
+            cursor: pointer;
+            background: url("/images/bn_slot_add.png") no-repeat;
+            background-size: 100% 100%;
+            &:hover{
+              background: url("/images/bn_slot_add_on.png") no-repeat;
+              background-size: 100% 100%;
+            }
+        }
+        .remove_favorite {
+            width: 78px;
+            height: 22px;
+            margin: 0 auto;
+            display: inline-block;
+            cursor: pointer;
+            background: url("/images/bn_slot_cancel.png") no-repeat;
+            background-size: 100% 100%;
+            &:hover{
+              background: url("/images/bn_slot_cancel_on.png") no-repeat;
+              background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+.game .pitem:not(.view) h4 {
+    color: beige;
+    background: #7f5810;
+    padding: 3px;
+    border-radius: 3px;
+    border: solid 1px #eee;
+}
+
+.game .pitem h4 input {
+    height: 19px;
+}
+
+table tr th.text-right,
+table tr td.text-right {
+    text-align: right;
+}
+
+.bbin {
+    cursor: pointer;
+}
+
+/*遊戲列表*/
+#gamelist {
+  //@include bg_8;
+  background-size: 100% 100%;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0;
+
+    /* ie6-9 */
+    .game_box {
+        width: 100%;
+        float: right;
+        height: 214px;
+    }
+    .arraw_left {
+        float: left;
+        margin: 75px 0 0 0;
+        cursor: pointer;
+    }
+    .arraw_right {
+        float: right;
+
+        margin: 75px 0 0 0;
+        cursor: pointer;
+    }
+    .gamelist {
+        display: none;
+    }
+    .nav-tabs {
+        li {
+            text-align: center;
+            width: 20%;
+            a {
+                white-space: nowrap;
+                overflow: hidden;
+                padding: 10px;
+                font-family: $fontA;
+            }
+        }
+    }
+    .tab-pane {
+        min-height: 260px;
+        max-width: 1000px;
+        margin: 0px auto;
+    }
+    .tab-content {
+      margin-top: 35px;
+      margin-bottom: 40px;
+    }
+    .row {
+        padding: 0 15px;
+    }
+    .col-md-3 {
+        /*對齊修正*/
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        .pitem {
+            margin-top: 2%;
+            padding: 0;
+            .new:before {
+                content: '';
+                position: absolute;
+                width: 25%;
+                height: 25%;
+                right: -3%;
+                bottom: 0%;
+                background: url(/images/icon_new.png) no-repeat top left;
+                background-size: contain;
+                z-index: 1;
+            }
+            .hot:after {
+                content: '';
+                position: absolute;
+                width: 25%;
+                height: 25%;
+                left: -3%;
+                bottom: 0%;
+                background: url(/images/icon_hot.png) no-repeat top right;
+                background-size: contain;
+            }
+            .pimg {
+                //border: 4px solid #b4883f;
+                //border-radius: 6px;
+                background: url('/images/game_bk_1.png') no-repeat;
+                background-size: 100% 100%;
+                padding: 5px;
+                position: relative;
+                text-align: center;
+                display: inline-block;
+                cursor: pointer;
+                width: 90%;
+                .pbox {
+                    position: relative;
+                    &:before {
+                        content: "";
+                        display: block;
+                        padding-top: 75%;
+                        /*Aspect Ratio 4:3 --> 100 vs 75 */
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 0;
+                    }
+                }
+                h3 {
+                    width: 100%;
+                    top: -32px;
+                    overflow: hidden;
+                    color: $gamecard_title;
+                    margin: 0 auto;
+                    padding: 8px 0;
+                    font-style: initial;
+                    text-align: center;
+                    font: 16px/16px $fontA;
+                    white-space: nowrap;
+
+                }
+            }
+            .xx,
+            .btn_pwin,
+            .btn_pfun,
+            .btn_fav {
+                display: none;
+            }
+        }
+        .view {
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+            background: #333;
+            top: -50px;
+            left: 5%;
+            .pimg {
+                margin-top: 42px;
+            }
+            h3 {
+                top: -48px;
+                position: absolute;
+                display: block;
+                white-space: nowrap;
+                max-width: 100%;
+                overflow: hidden;
+                left: 0;
+                color: #4c310e;
+            }
+            .btn_pwin {
+                display: block;
+                height: 50px;
+                font: 32px/34px $fontA;
+                line-height: 50px;
+                color: $white;
+                margin: 10px 5%;
+                width: 90%;
+                box-shadow: rgba(0, 0, 0, 0.3) 2px 2px;
+                cursor: pointer;
+            }
+            .btn_pfun {
+                background: url("/images/icon_arrow.png") top right no-repeat;
+                display: block;
+                height: 50px;
+                font: 20px/46px $fontA;
+                text-align: left;
+                color: $white;
+                margin: 10px 5%;
+                padding: 0 0 0 5%;
+                width: 90%;
+                border-bottom: solid 1px #ccc;
+                cursor: pointer;
+            }
+            .btn_fav {
+                background: url('../images/icon_fav.png') top right no-repeat;
+                display: block;
+                height: 50px;
+                font: 20px/46px $fontA;
+                text-align: left;
+                color: $white;
+                margin: 10px 5%;
+                padding: 0 0 0 5%;
+                width: 90%;
+                cursor: pointer;
+            }
+            .xx {
+                background: url('../images/icon_cancel.png') top right no-repeat;
+                display: block;
+                top: 5px;
+                right: 5px;
+                position: absolute;
+                height: 32px;
+                width: 32px;
+                cursor: pointer;
+            }
+        }
+    }
+    .col-md-7.inproduc {
+        height: 288px;
+        border-bottom: solid #196EC8 1px;
+        vertical-align: middle;
+        font: 20px/26px $fontA;
+        h3 {
+            color: #196Ec8;
+            font: 24px/30px $fontA;
+        }
+        .btn_strat {
+            background: #196EC8;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 30px;
+            font: 24px/30px $fontA;
+            color: $white;
+            width: 180px;
+            padding: 0px 20px;
+            text-align: right;
+            -webkit-border-top-left-radius: 30px;
+            -moz-border-radius-topleft: 30px;
+            border-top-left-radius: 30px;
+        }
+    }
+    @media (max-width: 992px) {
+        .col-md-5 {
+            img {
+                width: 100%;
+            }
+        }
+        .col-md-7.inproduc {
+            height: 70px;
+            p {
+                display: none;
+            }
+        }
+    }
+    /*非電腦*/
+    @media (min-width: 480px) and (max-width: 992px) {
+        .col-md-3 {
+            .pitem {
+                font-size: 1em;
+                width: 100%;
+                margin: 10px 0% !important;
+            }
+        }
+    }
+    /*平版*/
+    @media (max-width: 479px) {
+        .col-md-3 {
+            .pitem {
+                .pimg {
+                    h3 {
+                        //set the font size in mobile
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-size: 15px !important;
+                    }
+                }
+            }
+            .view {
+                width: 100% !important;
+                height: 100%;
+                overflow-y: scroll;
+                position: fixed;
+                z-index: 999;
+                background: #333;
+                top: 0 !important;
+                left: 0 !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+        }
+    }
+    /*手機*/
+}
+
+#fav_game_list {
+  background: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  .sys_fav_container{
+    max-width: 920px;
+    min-height: 200px;
+  }
+
+.gamecard {
+    width: 200px;
+    height: 230px;
+    margin: 15px auto;
+    text-align: center;
+    display: inline-block;
+    color: $gamecard_hr;
+    @include bg_2;
+    &:hover {
+        @include bg_4;
+    }
+
+    .enter_card {
+        width: 186px;
+        height: 142px;
+        position: absolute;
+        margin: 7px 0 0 7px;
+        display: none;
+    }
+    p {
+    display: inline-block;
+    margin: 4px 0 0 0;
+    width: 194px;
+    height: 32px;
+    font-size: 20px;
+    color: #000;
+    overflow: hidden;
+    cursor: pointer;
+    @include bg_3;
+    border: 1px solid #fff;
+    }
+    img {
+        margin: 3px 0 5px 0;
+        width: 196px;
+        height: 153px;
+    }
+    .info {
+        height: 30px;
+        width: 200px;
+        margin: 0;
+        display: inline-block;
+        .box1 {
+            width: 35px;
+            height: 26px;
+            display: inline-block;
+            background: url("/images/icon_slot_1.png") no-repeat;
+        }
+        .box2 {
+            width: 35px;
+            height: 26px;
+            display: inline-block;
+            background: url("/images/icon_slot_2.png") no-repeat;
+        }
+        .box3 {
+            width: 35px;
+            height: 26px;
+            display: inline-block;
+            background: url("/images/icon_slot_3.png") no-repeat;
+        }
+        .add_favorite {
+            width: 78px;
+            height: 22px;
+            margin: 0 auto;
+            display: inline-block;
+            cursor: pointer;
+            background: url("/images/bn_slot_add.png") no-repeat;
+            background-size: 100% 100%;
+            &:hover{
+              background: url("/images/bn_slot_add_on.png") no-repeat;
+              background-size: 100% 100%;
+            }
+        }
+        .remove_favorite {
+            width: 78px;
+            height: 22px;
+            margin: 0 auto;
+            display: inline-block;
+            cursor: pointer;
+            background: url("/images/bn_slot_cancel.png") no-repeat;
+            background-size: 100% 100%;
+            &:hover{
+              background: url("/images/bn_slot_cancel_on.png") no-repeat;
+              background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+    /* ie6-9 */
+    .game_box {
+        width: 100%;
+        float: right;
+        height: 214px;
+    }
+    .arraw_left {
+        float: left;
+        margin: 75px 0 0 0;
+        cursor: pointer;
+    }
+    .arraw_right {
+        float: right;
+
+        margin: 75px 0 0 0;
+        cursor: pointer;
+    }
+    .gamelist {
+        display: none;
+    }
+    .nav-tabs {
+        li {
+            text-align: center;
+            width: 20%;
+            a {
+                white-space: nowrap;
+                overflow: hidden;
+                padding: 10px;
+                font-family: $fontA;
+            }
+        }
+    }
+    .tab-pane {
+        min-height: 260px;
+        max-width: 1000px;
+        margin: 0px auto;
+    }
+    .tab-content {
+      margin-top: 35px;
+      margin-bottom: 40px;
+    }
+    .row {
+        padding: 0 15px;
+    }
+    .col-md-3 {
+        /*對齊修正*/
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        .pitem {
+            margin-top: 2%;
+            padding: 0;
+            .new:before {
+                content: '';
+                position: absolute;
+                width: 30%;
+                height: 30%;
+                left: -2%;
+                top: -2%;
+                background: url(/images/icon_new.png) no-repeat top left;
+                background-size: contain;
+                z-index: 1;
+            }
+            .hot:after {
+                content: '';
+                position: absolute;
+                width: 30%;
+                height: 30%;
+                right: -2%;
+                top: -2%;
+                background: url(/images/icon_hot.png) no-repeat top right;
+                background-size: contain;
+            }
+            .pimg {
+
+                padding: 5px;
+                position: relative;
+                text-align: center;
+                display: inline-block;
+                cursor: pointer;
+                width: 90%;
+                .pbox {
+                    position: relative;
+                    &:before {
+                        content: "";
+                        display: block;
+                        padding-top: 75%;
+                        /*Aspect Ratio 4:3 --> 100 vs 75 */
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        border: 1px solid #000;
+                        border-radius: 20px;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 0;
+                    }
+                }
+                h3 {
+                    width: 100%;
+                    top: -32px;
+                    overflow: hidden;
+                    color: $gamecard_title;
+                    margin: 0 auto;
+                    padding: 8px 0;
+                    font-style: initial;
+                    text-align: center;
+                    font: 16px/16px $fontA;
+                    white-space: nowrap;
+                    background: url('/images/gamecard_bk.png') no-repeat;
+                    background-size: 100% 100%;
+
+                }
+            }
+            .xx,
+            .btn_pwin,
+            .btn_pfun,
+            .btn_fav {
+                display: none;
+            }
+        }
+        .view {
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+            background: #333;
+            top: -50px;
+            left: 5%;
+            .pimg {
+                margin-top: 42px;
+            }
+            h3 {
+                top: -48px;
+                position: absolute;
+                display: block;
+                white-space: nowrap;
+                max-width: 100%;
+                overflow: hidden;
+                left: 0;
+                color: #4c310e;
+            }
+            .btn_pwin {
+                display: block;
+                height: 50px;
+                font: 32px/34px $fontA;
+                line-height: 50px;
+                color: $white;
+                margin: 10px 5%;
+                width: 90%;
+                box-shadow: rgba(0, 0, 0, 0.3) 2px 2px;
+                cursor: pointer;
+            }
+            .btn_pfun {
+                background: url("/images/icon_arrow.png") top right no-repeat;
+                display: block;
+                height: 50px;
+                font: 20px/46px $fontA;
+                text-align: left;
+                color: $white;
+                margin: 10px 5%;
+                padding: 0 0 0 5%;
+                width: 90%;
+                border-bottom: solid 1px #ccc;
+                cursor: pointer;
+            }
+            .btn_fav {
+                background: url('../images/icon_fav.png') top right no-repeat;
+                display: block;
+                height: 50px;
+                font: 20px/46px $fontA;
+                text-align: left;
+                color: $white;
+                margin: 10px 5%;
+                padding: 0 0 0 5%;
+                width: 90%;
+                cursor: pointer;
+            }
+            .xx {
+                background: url('../images/icon_cancel.png') top right no-repeat;
+                display: block;
+                top: 5px;
+                right: 5px;
+                position: absolute;
+                height: 32px;
+                width: 32px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+#recent_game_list {
+  background: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  #Played_icon{
+      max-width: 1000px;
+  }
+  .sys_played_container{
+    max-width: 920px;
+    min-height: 200px;
+  }
+
+.gamecard {
+    width: 200px;
+    height: 230px;
+    margin: 15px auto;
+    text-align: center;
+    display: inline-block;
+    color: $gamecard_hr;
+    @include bg_2;
+    &:hover {
+        @include bg_4;
+    }
+
+    .enter_card {
+        width: 186px;
+        height: 142px;
+        position: absolute;
+        margin: 7px 0 0 7px;
+        display: none;
+    }
+    p {
+    display: inline-block;
+    margin: 4px 0 0 0;
+    width: 194px;
+    height: 32px;
+    font-size: 20px;
+    color: #000;
+    overflow: hidden;
+    cursor: pointer;
+    @include bg_3;
+    border: 1px solid #fff;
+    }
+    img {
+        margin: 3px 0 5px 0;
+        width: 196px;
+        height: 153px;
+    }
+    .info {
+        height: 30px;
+        width: 200px;
+        margin: 0;
+        display: inline-block;
+        .box1 {
+            width: 35px;
+            height: 26px;
+            display: inline-block;
+            background: url("/images/icon_slot_1.png") no-repeat;
+        }
+        .box2 {
+            width: 35px;
+            height: 26px;
+            display: inline-block;
+            background: url("/images/icon_slot_2.png") no-repeat;
+        }
+        .box3 {
+            width: 35px;
+            height: 26px;
+            display: inline-block;
+            background: url("/images/icon_slot_3.png") no-repeat;
+        }
+        .add_favorite {
+            width: 78px;
+            height: 22px;
+            margin: 0 auto;
+            display: inline-block;
+            cursor: pointer;
+            background: url("/images/bn_slot_add.png") no-repeat;
+            background-size: 100% 100%;
+            &:hover{
+              background: url("/images/bn_slot_add_on.png") no-repeat;
+              background-size: 100% 100%;
+            }
+        }
+        .remove_favorite {
+            width: 78px;
+            height: 22px;
+            margin: 0 auto;
+            display: inline-block;
+            cursor: pointer;
+            background: url("/images/bn_slot_cancel.png") no-repeat;
+            background-size: 100% 100%;
+            &:hover{
+              background: url("/images/bn_slot_cancel_on.png") no-repeat;
+              background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+    /* ie6-9 */
+    .game_box {
+        width: 100%;
+        float: right;
+        height: 214px;
+    }
+    .arraw_left {
+        float: left;
+        margin: 75px 0 0 0;
+        cursor: pointer;
+    }
+    .arraw_right {
+        float: right;
+
+        margin: 75px 0 0 0;
+        cursor: pointer;
+    }
+    .gamelist {
+        display: none;
+    }
+    .nav-tabs {
+        li {
+            text-align: center;
+            width: 20%;
+            a {
+                white-space: nowrap;
+                overflow: hidden;
+                padding: 10px;
+                font-family: $fontA;
+            }
+        }
+    }
+    .tab-pane {
+        min-height: 260px;
+        max-width: 1000px;
+        margin: 0px auto;
+    }
+    .tab-content {
+      margin-top: 35px;
+      margin-bottom: 40px;
+    }
+    .row {
+        padding: 0 15px;
+    }
+    .col-md-3 {
+        /*對齊修正*/
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        .pitem {
+            margin-top: 2%;
+            padding: 0;
+            .new:before {
+                content: '';
+                position: absolute;
+                width: 30%;
+                height: 30%;
+                left: -2%;
+                top: -2%;
+                background: url(/images/icon_new.png) no-repeat top left;
+                background-size: contain;
+                z-index: 1;
+            }
+            .hot:after {
+                content: '';
+                position: absolute;
+                width: 30%;
+                height: 30%;
+                right: -2%;
+                top: -2%;
+                background: url(/images/icon_hot.png) no-repeat top right;
+                background-size: contain;
+            }
+            .pimg {
+
+                padding: 5px;
+                position: relative;
+                text-align: center;
+                display: inline-block;
+                cursor: pointer;
+                width: 90%;
+                .pbox {
+                    position: relative;
+                    &:before {
+                        content: "";
+                        display: block;
+                        padding-top: 75%;
+                        /*Aspect Ratio 4:3 --> 100 vs 75 */
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        border: 1px solid #000;
+                        border-radius: 20px;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 0;
+                    }
+                }
+                h3 {
+                    width: 100%;
+                    top: -32px;
+                    overflow: hidden;
+                    color: $gamecard_title;
+                    margin: 0 auto;
+                    padding: 8px 0;
+                    font-style: initial;
+                    text-align: center;
+                    font: 16px/16px $fontA;
+                    white-space: nowrap;
+                    background: url('/images/gamecard_bk.png') no-repeat;
+                    background-size: 100% 100%;
+
+                }
+            }
+            .xx,
+            .btn_pwin,
+            .btn_pfun,
+            .btn_fav {
+                display: none;
+            }
+        }
+        .view {
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+            background: #333;
+            top: -50px;
+            left: 5%;
+            .pimg {
+                margin-top: 42px;
+            }
+            h3 {
+                top: -48px;
+                position: absolute;
+                display: block;
+                white-space: nowrap;
+                max-width: 100%;
+                overflow: hidden;
+                left: 0;
+                color: #4c310e;
+            }
+            .btn_pwin {
+                display: block;
+                height: 50px;
+                font: 32px/34px $fontA;
+                line-height: 50px;
+                color: $white;
+                margin: 10px 5%;
+                width: 90%;
+                box-shadow: rgba(0, 0, 0, 0.3) 2px 2px;
+                cursor: pointer;
+            }
+            .btn_pfun {
+                background: url("/images/icon_arrow.png") top right no-repeat;
+                display: block;
+                height: 50px;
+                font: 20px/46px $fontA;
+                text-align: left;
+                color: $white;
+                margin: 10px 5%;
+                padding: 0 0 0 5%;
+                width: 90%;
+                border-bottom: solid 1px #ccc;
+                cursor: pointer;
+            }
+            .btn_fav {
+                background: url('../images/icon_fav.png') top right no-repeat;
+                display: block;
+                height: 50px;
+                font: 20px/46px $fontA;
+                text-align: left;
+                color: $white;
+                margin: 10px 5%;
+                padding: 0 0 0 5%;
+                width: 90%;
+                cursor: pointer;
+            }
+            .xx {
+                background: url('../images/icon_cancel.png') top right no-repeat;
+                display: block;
+                top: 5px;
+                right: 5px;
+                position: absolute;
+                height: 32px;
+                width: 32px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+
+/*游戏历程、账戶記錄欄位*/
+
+#example_wrapper {
+    select {
+        width: 50px;
+        min-width: 50px;
+        height: 32px;
+        border-radius: 3px;
+    }
+}
+
+
+/*加入會員 bar*/
+#joinus {
+    max-width: 1200px;
+    width: 100%;
+    height: 90px;
+    padding: 0;
+    z-index: 2;
+    .no {
+        color: $white;
+        font: 80px $fontA;
+        line-height: 80px;
+        margin: 0 0 0 20px;
+        position: absolute;
+    }
+    .til {
+        color: $white;
+        font: 30px $fontA;
+        margin: 5px 0 0 65px;
+        position: absolute;
+    }
+    .cont {
+        color: $white;
+        margin: 45px 0 0 65px;
+        position: absolute;
+    }
+    .signup {
+        /*修正第二個 加入會員 的位置*/
+        margin: 20px 35px;
+        display: inline-block;
+        float: right;
+        height: 50px;
+        width: 119px;
+        color: $white;
+        font: 32px/34px Impact, serif;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .add_pointer {
+        cursor: pointer;
+        height: 90px;
+    }
+}
+
+
+/*首頁下方連結*/
+.servicebar_bg{
+    background: #dddddd;
+}
+
+.service_bar {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  padding-top: 10px 0;
+  margin: 0;
+  //background: url("images/index_below.png") no-repeat;
+  .h_mobile{
+    background: url('../images/top_icon_01.png') no-repeat;
+    background-size: 100% 100%;
+    &:hover{
+        background: url('../images/top_icon_01_on.png') no-repeat;
+        background-size: 100% 100%;
+    }
+  }
+  .h_promote{
+    background: url('../images/top_icon_02.png') no-repeat;
+    background-size: 100% 100%;
+    &:hover{
+        background: url('../images/top_icon_02_on.png') no-repeat;
+        background-size: 100% 100%;
+    }
+  }
+  .h_news{
+    background: url('../images/top_icon_03.png') no-repeat;
+    background-size: 100% 100%;
+    &:hover{
+        background: url('../images/top_icon_03_on.png') no-repeat;
+        background-size: 100% 100%;
+    }
+  }
+  .h_sup{
+    background: url('../images/top_icon_04.png') no-repeat;
+    background-size: 100% 100%;
+    &:hover{
+        background: url('../images/top_icon_04_on.png') no-repeat;
+        background-size: 100% 100%;
+    }
+  }
+  .h_faq{
+    background: url('../images/top_icon_05.png') no-repeat;
+    background-size: 100% 100%;
+    &:hover{
+        background: url('../images/top_icon_05_on.png') no-repeat;
+        background-size: 100% 100%;
+    }
+  }
+    .content_5 {
+    cursor: pointer;
+    width: 215px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+    }
+}
+
+#CasinoGames {
+    display: block;
+    width: 980px;
+    margin: 0 auto;
+    div#gamelist {
+        padding-bottom: 40px;
+        background: $gamelist_bg;
+        margin: 0px;
+        margin: 0px 0 20px 0;
+        border-left: 2px solid #707070;
+        border-right: 2px solid #707070;
+        border-bottom: 2px solid #707070;
+        .bottom_arrow {
+            background: url("../images/icon_slot_up.png") no-repeat;
+            float: right;
+        }
+        .container {
+            width: 100%;
+        }
+    }
+}
+
+#CasinoGames1 {
+    display: none;
+    div#gamelist {
+        border: 2px solid $gamelist_border;
+        background: #000;
+        margin: 0px;
+        .container {
+            width: 100%;
+        }
+    }
+}
+
+#CasinoGames2 {
+    display: none;
+    div#gamelist {
+        border: 2px solid #1390af;
+        background: #000;
+        margin: 0px;
+    }
+}
+
+
+
+
+
+/*分頁：網站介紹*/
+#introduction {
+    font: 20px/22px $fontA;
+    margin: 0;
+    padding: 15px 0;
+    line-height: 28px;
+    border: solid 1px;
+    border-color: #444 #666 #444 #666;
+    h3 {
+        margin: 0;
+        font-family: $fontA;
+        color: #D9A541;
+    }
+    .h3_logo {
+        width: 190px;
+        margin: 0 20px;
+    }
+    img.rbar {
+        width: 384px;
+        max-width: 400px;
+    }
+    @media (max-width: 992px) {
+        .col-md-8 {
+            width: 65%;
+        }
+        .col-md-4 {
+            width: 35%;
+            img {
+                float: right;
+            }
+        }
+    }
+    /*非電腦*/
+    @media (min-width: 481px) and (max-width: 992px) {
+        font-size: 2em;
+        h3 {
+            font-size: 4rem;
+        }
+    }
+    /*平版*/
+    @media (max-width: 480px) {
+        font-size: 1.2em;
+        h3 {
+            font-size: 1.8rem;
+        }
+        .h3_logo {
+            width: 130px;
+            margin: 0 10px;
+        }
+    }
+    /*手機*/
+}
+
+/*微信支付 下方按鈕*/
+
+.setting_btn {
+    width: 100%;
+    text-align: right;
+    button {
+        border: 0px;
+    }
+}
+
+.reset_btn {
+    width: 125px;
+    height: 28px;
+    display: inline-block;
+    cursor: pointer;
+    border: 0px;
+    background: url('/images/bn_user_reset.png') no-repeat;
+    background-size: 100% 100%;
+    &:hover {
+        background: url('/images/bn_user_reset_on.png') no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.submit_btn {
+    width: 125px;
+    height: 28px;
+    display: inline-block;
+    cursor: pointer;
+    border: 0px;
+    background: url('/images/bn_user_ok.png') no-repeat;
+    background-size: 100% 100%;
+    &:hover {
+        background: url('/images/bn_user_ok_on.png') no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+
+
+//datepicker
+td.day {
+    background: $white;
+    color: #999;
+}
+
+.dataTables_wrapper {
+    padding: 10px;
+    label {
+        color: #999;
+    }
+}
+
+.sys_message_badge {
+    background-color: $red;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0 !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*default is not show*/
+    display: none;
+}
+
+@media (max-width: 767px) {
+    body.lock {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.input-group .form-control {
+    z-index: 1;
+}
+
+@media screen and (max-width: 860px) {
+    .flex-direction-nav .flex-prev,
+    .flex-direction-nav .flex-next {
+        z-index: 1;
+    }
+}
+
+.btn.more,
+.sys_btn_loadmoregame {
+    font-size: 20px;
+    line-height: 22px;
+    display: block;
+    border-radius: 5px;
+    // border: solid 1px $moregame_border;
+    // color: $moregame_border;
+    background: none;
+}
+
+.loadmoregame_pos {
+    float: right;
+    margin: 5px 40px;
+}
+
+.personbank_info {
+    border: 1px solid #707070;
+    background: #fff;
+    color: #969696;
+    height: auto;
+    p {
+        color: #969696;
+        padding: 2px 0 0 8px;
+        margin: 0;
+        font-size: 16px;
+    }
+}
+
+.select_color {
+    color: $placeholder !important;
+}

@@ -1,0 +1,177 @@
+#CasinoGames {
+    div.title {
+        img {
+            height: 46px;
+        }
+    }
+}
+
+div.sreach {
+    height: 0;
+    padding-bottom: 14%;
+    margin: 0 3%;
+    input.isreach {
+        display: block;
+        margin: 0 auto;
+        width: 505px;
+        height: 80px;
+        outline: 0;
+        border: solid #2e2e2e 1px;
+        background-size: 100%;
+        @include fontX(32px, 50px);
+    }
+    input.sreachtxt {
+        float: left;
+        width: 360px;
+        height: 72px;
+        padding: 0 60px 0 20px;
+        margin: 0 -3px 0 0;
+        outline: 0;
+        border: solid #6e8296 2px;
+        color:#151a2a;
+        @include fontX(32px, 50px);
+        background: #fff url(/images/m2/icon_slot_search.png) right 5px center no-repeat
+    }
+    button.sreach {
+        float: right;
+        width: 260px;
+        height: 76px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        background: url(/images/m2/bn_slot_search.png) 0 0 no-repeat;
+        background-size: 100%;
+    }
+}
+
+.gamelist {
+    //載入遊戲的畫面
+    margin: 1% 2%;
+    min-height: 500px; // &.loading {}
+}
+
+//遊戲卡
+div.game {
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    overflow: hidden;
+    background: #69738d;
+    div.pbox {
+        margin: 2%;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 75%;
+            /*Aspect Ratio 4:3 --> 100 vs 75 */
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+    }
+    div.pitem {
+        div.ptag {
+            text-align: center;
+            margin: 0 1%;
+            height: 0;
+            padding-bottom: 15%;
+            border-bottom: solid 1px #141510;
+            width: 98%;
+            span {
+                display: inline-block;
+                width: 15%;
+                height: 0;
+                padding: 7.5% 0;
+                margin: 0 7.5% 2%; //iCON 的比例 在縮小到iphone4的尺寸字會超不清楚的啦 zen
+                //熱門
+                &.hot {
+                    background: url(/images/m2/icon_slot_1.png) 0 0 no-repeat;
+                    background-size: 100%;
+                } //精選
+                &.choice {
+                    background: url(/images/m2/icon_slot_2.png) 0 0 no-repeat;
+                    background-size: 100%;
+                } //新遊戲
+                &.newest {
+                    background: url(/images/m2/icon_slot_3.png) 0 0 no-repeat;
+                    background-size: 100%;
+                }
+            }
+        }
+    } //遊戲名稱
+    p {
+        color: #151a2a;
+        text-align: center;
+        white-space: nowrap;
+        padding: 0.5em;
+        margin: 0;
+        @include fontX(20px, 30px);
+    }
+}
+
+//体育
+div.gameSP {
+    display: inline-block;
+    width: 692px;
+    margin: 38px;
+    background: #8c8c8c;
+    position: relative;
+    &:nth-last-child(1) {
+        margin-bottom: 60px;
+    }
+    //等比box
+    div.pbox {
+        margin: 8px; //遊戲圖片
+        img {
+            width: 100%;
+        }
+    }
+    div.pitem {
+        div.ptag {
+            text-align: center;
+            height: 31px;
+            margin: 0 2px;
+            padding-bottom: 1px;
+            border-bottom: solid 1px #141510;
+            width: 642px;
+        }
+    } //遊戲名稱
+    p {
+        color: #000000;
+        background: linear-gradient(55deg, transparent 38px, #8c8c8c 0) top left;
+        position: absolute;
+        height: 23px;
+        width: 169px;
+        bottom: -52px;
+        right: 0;
+        display: block;
+        padding: 15px;
+        margin: 0;
+        font-weight: bold;
+        text-align: right;
+        white-space: nowrap;
+        &.title {
+            background: linear-gradient(-135deg, transparent 38px, #8c8c8c 0) top right;
+            position: absolute;
+            height: 23px;
+            width: 269px;
+            min-width: 169px;
+            top: -52px;
+            left: 0;
+            text-align: left;
+            display: block;
+            padding: 15px;
+            margin: 0;
+        }
+        @include fontX(28px);
+    }
+}

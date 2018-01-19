@@ -1,0 +1,145 @@
+@import "variable";
+
+//首頁 下拉背景
+@mixin bg_1 {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cdcdcd+0,ffffff+34,cbcbcb+72 */
+background: rgb(205,205,205); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(205,205,205,1) 0%, rgba(255,255,255,1) 34%, rgba(203,203,203,1) 72%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(205,205,205,1) 0%,rgba(255,255,255,1) 34%,rgba(203,203,203,1) 72%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(205,205,205,1) 0%,rgba(255,255,255,1) 34%,rgba(203,203,203,1) 72%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdcdcd', endColorstr='#cbcbcb',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+//轉出金額 彈出視窗
+@mixin bg_2 {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,383838+30,383838+42,383838+56,383838+65,000000+100,000000+100,000000+100,000000+100 */
+background: rgb(0,0,0); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 30%, rgba(56,56,56,1) 42%, rgba(56,56,56,1) 56%, rgba(56,56,56,1) 65%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(56,56,56,1) 30%,rgba(56,56,56,1) 42%,rgba(56,56,56,1) 56%,rgba(56,56,56,1) 65%,rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(56,56,56,1) 30%,rgba(56,56,56,1) 42%,rgba(56,56,56,1) 56%,rgba(56,56,56,1) 65%,rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+
+
+
+//電子遊戲 下方名稱
+@mixin bg_3 {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#969696+0,ffffff+52,969696+100 */
+background: rgb(150,150,150); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 52%, rgba(150,150,150,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(150,150,150,1) 0%,rgba(255,255,255,1) 52%,rgba(150,150,150,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(150,150,150,1) 0%,rgba(255,255,255,1) 52%,rgba(150,150,150,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#969696', endColorstr='#969696',GradientType=1 ); /* IE6-9 */
+
+}
+
+//電子遊戲 背景hover
+@mixin bg_4{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#970203+0,d93042+52,970203+100 */
+background: rgb(151,2,3); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(151,2,3,1) 0%, rgba(217,48,66,1) 52%, rgba(151,2,3,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(151,2,3,1) 0%,rgba(217,48,66,1) 52%,rgba(151,2,3,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(151,2,3,1) 0%,rgba(217,48,66,1) 52%,rgba(151,2,3,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#970203', endColorstr='#970203',GradientType=1 ); /* IE6-9 */
+}
+
+//選單
+@mixin bg_5{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0b426b+0,0b426b+32,00051e+100,00051e+100,00051e+100 */
+background: rgb(11,66,107); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(11,66,107,1) 0%, rgba(11,66,107,1) 32%, rgba(0,5,30,1) 100%, rgba(0,5,30,1) 100%, rgba(0,5,30,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(11,66,107,1) 0%,rgba(11,66,107,1) 32%,rgba(0,5,30,1) 100%,rgba(0,5,30,1) 100%,rgba(0,5,30,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(11,66,107,1) 0%,rgba(11,66,107,1) 32%,rgba(0,5,30,1) 100%,rgba(0,5,30,1) 100%,rgba(0,5,30,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b426b', endColorstr='#00051e',GradientType=0 ); /* IE6-9 */
+
+}
+
+//表格
+@mixin bg_6{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#11a1c4+0,11a1c4+0,072b43+71,072b43+100 */
+background: rgb(17,161,196); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(17,161,196,1) 0%, rgba(17,161,196,1) 0%, rgba(7,43,67,1) 71%, rgba(7,43,67,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(17,161,196,1) 0%,rgba(17,161,196,1) 0%,rgba(7,43,67,1) 71%,rgba(7,43,67,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(17,161,196,1) 0%,rgba(17,161,196,1) 0%,rgba(7,43,67,1) 71%,rgba(7,43,67,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11a1c4', endColorstr='#072b43',GradientType=0 ); /* IE6-9 */
+
+}
+
+//進入遊戲 top
+@mixin bg_7{
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff7d8+0,f4b855+50,e1931b+57,b84c07+100 */
+background: rgb(255,247,216); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,247,216,1) 0%, rgba(244,184,85,1) 50%, rgba(225,147,27,1) 57%, rgba(184,76,7,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,247,216,1) 0%,rgba(244,184,85,1) 50%,rgba(225,147,27,1) 57%,rgba(184,76,7,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,247,216,1) 0%,rgba(244,184,85,1) 50%,rgba(225,147,27,1) 57%,rgba(184,76,7,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff7d8', endColorstr='#b84c07',GradientType=0 ); /* IE6-9 */
+
+
+}
+//首頁 精選遊戲
+@mixin bg_8{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,a27534+33,a27534+33,a27534+33,a27534+33,a27534+33,a27534+33,a27534+33,a27534+33,a27534+33,a27534+34,a27534+34,be9545+50,be9545+56,a27534+64,000000+100 */
+background: rgb(0,0,0); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(162,117,52,1) 33%, rgba(162,117,52,1) 33%, rgba(162,117,52,1) 33%, rgba(162,117,52,1) 33%, rgba(162,117,52,1) 33%, rgba(162,117,52,1) 33%, rgba(162,117,52,1) 33%, rgba(162,117,52,1) 33%, rgba(162,117,52,1) 33%, rgba(162,117,52,1) 34%, rgba(162,117,52,1) 34%, rgba(190,149,69,1) 50%, rgba(190,149,69,1) 56%, rgba(162,117,52,1) 64%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 34%,rgba(162,117,52,1) 34%,rgba(190,149,69,1) 50%,rgba(190,149,69,1) 56%,rgba(162,117,52,1) 64%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 33%,rgba(162,117,52,1) 34%,rgba(162,117,52,1) 34%,rgba(190,149,69,1) 50%,rgba(190,149,69,1) 56%,rgba(162,117,52,1) 64%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+
+}
+
+
+
+
+@mixin jp {
+    display: block;
+    border-radius: 3px;
+    font: 32px/36px $fontA;
+    text-align: center;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    color: $white;
+    position: absolute;
+    content: '1';
+    background: #fe283f;
+}
+
+
+
+/*字型*/
+@font-face {
+    font-family: $fontA;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Impact'), url(http://fonts.gstatic.com/l/font?kit=Q8EoN0_Oow67nwSRSWFESQ&skey=5128cd07406988e) format('woff2');
+}
+
+/*ICON button*/
+/*table rule*/
+/*閃動效果*/
+@keyframes AnRight {
+    from {
+        right: 3px;
+    }
+    to {
+        right: 5px;
+    }
+}
+@-moz-keyframes AnRight {
+    from {
+        right: 3px;
+    }
+    to {
+        right: 5px;
+    }
+}
+@-webkit-keyframes AnRight {
+    from {
+        right: 3px;
+    }
+    to {
+        right: 5px;
+    }
+}
