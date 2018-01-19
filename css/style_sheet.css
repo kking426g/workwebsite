@@ -2783,188 +2783,6 @@ form {
   background: #000;
   opacity: .9; }
 
-/*提。示。窗 */
-.jAlert {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  min-width: 30%;
-  min-height: 15%;
-  width: auto;
-  height: auto;
-  z-index: 999;
-  background: #333;
-  color: #fff;
-  border-radius: 5px;
-  overflow: hidden;
-  border: solid #555 2px;
-  font: 16px/20px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC";
-  text-align: center; }
-  .jAlert .highlighter {
-    color: #ffc800; }
-  .jAlert p {
-    margin: 12px 0 5px 0; }
-  .jAlert .tbar {
-    display: block;
-    height: 30px;
-    width: 100%;
-    text-align: center;
-    font: 20px/22px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC"; }
-    .jAlert .tbar.succ {
-      background: #008228;
-      /* Old browsers */
-      background: -moz-linear-gradient(45deg, #008228 0%, #00501e 100%);
-      /* FF3.6-15 */
-      background: -webkit-linear-gradient(45deg, #008228 0%, #00501e 100%);
-      /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(450deg, #008228 0%, #00501e 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008228', endColorstr='#00501e',GradientType=0 );
-      /* IE6-9 */ }
-    .jAlert .tbar.dang {
-      background: #ff0000;
-      /* Old browsers */
-      background: -moz-linear-gradient(45deg, #ff0000 0%, #960000 100%);
-      /* FF3.6-15 */
-      background: -webkit-linear-gradient(45deg, #ff0000 0%, #960000 100%);
-      /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(45deg, #ff0000 0%, #960000 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#960000',GradientType=1 );
-      /* IE6-9 fallback on horizontal gradient */ }
-  .jAlert .tabbox {
-    border: solid #666 2px;
-    margin: 3%;
-    padding: 3%; }
-    .jAlert .tabbox th, .jAlert .tabbox td {
-      width: 50%;
-      text-align: left;
-      padding: 3px; }
-  .jAlert .stip {
-    color: #ff6464;
-    font: 10px/12px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC"; }
-  .jAlert input {
-    width: 86%; }
-  @media (max-width: 480px) {
-    .jAlert {
-      min-width: 98%; }
-      .jAlert button.default {
-        margin: 5px;
-        width: 45%; } }
-
-/*好。按。鈕*/
-/*要能與bootstrap整合內建的樣式*/
-/*a, a:link,a:hover,a:focus*/
-.btn.default,
-button.default {
-  font: 20px/22px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC";
-  display: inline-block;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  color: #fff;
-  margin: 5px;
-  padding: 5px 15px;
-  outline: none;
-  border: 0 none transparent;
-  background: #787878;
-  /* Old browsers */
-  background: -moz-linear-gradient(0deg, #787878 0%, #dcdcdc 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(0deg, #787878 0%, #dcdcdc 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(0deg, #787878 0%, #dcdcdc 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#787878', endColorstr='#dcdcdc',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
-  .btn.default.green,
-  button.default.green {
-    background: #077d29;
-    /* Old browsers */
-    background: -moz-linear-gradient(0deg, #077d29 0%, #19c85f 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(0deg, #077d29 0%, #19c85f 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(0deg, #077d29 0%, #19c85f 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#077d29', endColorstr='#19c85f',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */ }
-  .btn.default.blue,
-  button.default.blue {
-    background: #0a55bb;
-    /* Old browsers */
-    background: -moz-linear-gradient(0deg, #0a55bb 0%, #66b0f5 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(0deg, #0a55bb 0%, #66b0f5 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(0deg, #0a55bb 0%, #66b0f5 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a55bb', endColorstr='#66b0f5',GradientType=0 );
-    /* IE6-9 */ }
-  .btn.default.orange, .btn.default.succ,
-  button.default.orange,
-  button.default.succ {
-    background: #ff601e;
-    background: -moz-linear-gradient(bottom, #ff601e 0%, #f7db01 100%);
-    background: -webkit-linear-gradient(bottom, #ff601e 0%, #f7db01 100%);
-    background: linear-gradient(to top, #ff601e 0%, #f7db01 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff601e',endColorstr='#f7db01',GradientType=0); }
-  .btn.default.signup,
-  button.default.signup {
-    color: #fff;
-    vertical-align: middle;
-    line-height: 30px;
-    background: none; }
-    @media (max-width: 768px) {
-      .btn.default.signup,
-      button.default.signup {
-        display: none; } }
-  .btn.default.login,
-  button.default.login {
-    color: #fff;
-    vertical-align: middle;
-    line-height: 30px;
-    background: #ff601e;
-    background: -moz-linear-gradient(bottom, #ff601e 0%, #f7db01 100%);
-    background: -webkit-linear-gradient(bottom, #ff601e 0%, #f7db01 100%);
-    background: linear-gradient(to top, #ff601e 0%, #f7db01 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff601e',endColorstr='#f7db01',GradientType=0); }
-    @media (max-width: 768px) {
-      .btn.default.login,
-      button.default.login {
-        padding: 5px;
-        margin: 0 5px;
-        font: 16px/18px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC";
-        width: auto;
-        height: auto; }
-        .btn.default.login:before,
-        button.default.login:before {
-          content: none; } }
-  .btn.default.impact,
-  button.default.impact {
-    font: 32px/34px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC"; }
-    @media (max-width: 480px) {
-      .btn.default.impact,
-      button.default.impact {
-        font: 20px/22px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC"; } }
-  .btn.default.smaller,
-  button.default.smaller {
-    margin: 0;
-    padding: 5px; }
-  .btn.default.w100,
-  button.default.w100 {
-    width: 100%; }
-
 div.loginview {
   position: absolute;
   top: 0;
@@ -3113,98 +2931,6 @@ footer {
         padding: 5px; }
       footer ul.nav-footer li:not(:first-child):before {
         content: "/"; }
-
-/*
-    首頁index
-*/
-#title {
-  background: #2FA962;
-  color: #2FA962;
-  margin: 30px 0;
-  padding: 0 20px;
-  position: relative;
-  width: 100%;
-  height: 50px;
-  /*手機*/ }
-  #title:before {
-    content: "My Favorite";
-    position: absolute;
-    width: 330px;
-    height: 78px;
-    font: 50px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC";
-    left: 20px;
-    top: -15px;
-    background: #fff url(/images/icon_fav.png) no-repeat top left;
-    background-size: contain;
-    padding-left: 80px;
-    padding-top: 10px; }
-  @media (max-width: 480px) {
-    #title {
-      background: #fff;
-      height: 60px;
-      margin: 20px 0; }
-      #title:before {
-        width: 210px;
-        height: 60px;
-        font: 32px/34px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC";
-        top: 0px;
-        padding-left: 60px;
-        padding-top: 10px; } }
-
-#m_menu {
-  white-space: nowrap;
-  max-width: 1200px;
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
-  border: 0;
-  display: block;
-  z-index: 3;
-  /*手機*/ }
-  #m_menu .collapse, #m_menu .collapsing {
-    padding: 5px;
-    margin: 0;
-    max-width: 900px;
-    float: right;
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    z-index: 0;
-    overflow: hidden; }
-    #m_menu .collapse:before, #m_menu .collapsing:before {
-      content: '';
-      position: absolute;
-      top: -20px;
-      right: 28px;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 25px 20px 25px;
-      border-color: transparent transparent #fff transparent; }
-    #m_menu .collapse .nav li, #m_menu .collapsing .nav li {
-      text-align: center; }
-      #m_menu .collapse .nav li:not(:last-child):after, #m_menu .collapsing .nav li:not(:last-child):after {
-        content: " | ";
-        position: absolute;
-        right: -7px;
-        top: 8px;
-        font-size: 22px;
-        display: inline-block;
-        color: #fff; }
-      #m_menu .collapse .nav li a, #m_menu .collapsing .nav li a {
-        width: 100%;
-        font: 16px/20px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC"; }
-        #m_menu .collapse .nav li a p, #m_menu .collapsing .nav li a p {
-          /*資訊顯示*/
-          display: none; }
-        #m_menu .collapse .nav li a:link, #m_menu .collapse .nav li a:visited, #m_menu .collapsing .nav li a:link, #m_menu .collapsing .nav li a:visited {
-          color: #f5b419; }
-        #m_menu .collapse .nav li a:hover, #m_menu .collapsing .nav li a:hover {
-          color: #f5b419; }
-        @media (min-width: 799px) {
-          #m_menu .collapse .nav li a, #m_menu .collapsing .nav li a {
-            margin: 5px 0;
-            display: inline-block;
-            padding: 5px 15px; } }
 
 /*主選單*/
 #menu {
@@ -3639,6 +3365,8 @@ div.quickbox {
   padding: 15px 0;
   line-height: 28px;
   color: #929292; }
+  div.quickbox.row {
+    margin: 0; }
   div.quickbox h5 {
     color: #929292;
     font-size: 16px;
@@ -3682,6 +3410,8 @@ div.quickbox {
 .contact_footer {
   background: #f1d391;
   width: 100%; }
+  .contact_footer.row {
+    margin: 0; }
   .contact_footer ul.nav-footer {
     display: block;
     width: 100%;

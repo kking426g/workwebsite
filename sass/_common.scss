@@ -215,7 +215,6 @@ select, textarea, input, input[type=text], input[type=number], input[type=passwo
                 width: 100%;
                 padding: 20px 0px 10px 90px;              
             }
-
         }
     }
 }
@@ -239,72 +238,76 @@ form{
 
 /*文字頁面的排版*/
 .word {
-  color: #707070;
-  margin: 0;
-  //background: $static_bg;
-  padding: 20px 40px;
-  width: 100%;
+    color: #707070;
+    margin: 0;
+    //background: $static_bg;
+    padding: 20px 40px;
+    width: 100%;
 
-  .slider4{
-    max-width: 1200px;
-    margin: 10px auto 10px auto;
-  }
-
-  .container{
-    margin: 0 auto;
-  }
-  h3, h2{
-    color: $title;
-  }
-  .title_1{
-    color: $member_title;
-    font-size: 16px;
-    //text-align: center;
-    margin: 15px;
-  }
-  .step_title1{
-    color: #fff;
-    -webkit-writing-mode: vertical-lr;
-    writing-mode: vertical-lr;
-    width: 46px;
-    line-height: 30px;
-    font-size: 24px;
-    padding: 30px 10px 10px 10px;
-    text-align: center;
-    background: #707070;
-    //@include bg_6;
-    //border: solid 1px #226b98;
-
-    div{
-      height: 100px;
-      font-size: 20px;
-      -webkit-writing-mode: vertical-lr;
-      writing-mode: vertical-lr;
+    .slider4{
+        max-width: 1200px;
+        margin: 10px auto 10px auto;
     }
-    .shuli{ margin:0 auto;width:10px;line-height:24px;}
-  }
 
-  .step_title2{
-    font-size: 24px;
-    min-height: 297px;
-    min-width: 46px;
-    border: solid #4D4E52 2px;
-    padding: 100px 10px 10px 10px;
-    @include bg_2;
-  }
-
-  .title{
-    a{
-      color: #46f5f8;
-      line-height: 50px;
-      font-size: 18px;
+    .container{
+        margin: 0 auto;
     }
-  }
-  input[type=text]{
-    width: auto;
-    height: 33px;
-    border: none;
-  }
+
+    h3, h2{
+        color: $title;
+    }
+
+    .title_1{
+        color: $member_title;
+        font-size: 16px;
+        //text-align: center;
+        margin: 15px;
+    }
+
+    .step_title1{
+        color: #fff;
+        -webkit-writing-mode: vertical-lr;
+        writing-mode: vertical-lr;
+        width: 46px;
+        line-height: 30px;
+        font-size: 24px;
+        padding: 30px 10px 10px 10px;
+        text-align: center;
+        background: #707070;
+        //@include bg_6;
+        //border: solid 1px #226b98;
+
+        div{
+        height: 100px;
+        font-size: 20px;
+        -webkit-writing-mode: vertical-lr;
+        writing-mode: vertical-lr;
+        }
+        .shuli{ margin:0 auto;width:10px;line-height:24px;}
+    }
+
+    .step_title2{
+        font-size: 24px;
+        min-height: 297px;
+        min-width: 46px;
+        border: solid #4D4E52 2px;
+        padding: 100px 10px 10px 10px;
+        @include bg_2;
+    }
+
+    .title{
+        a{
+        color: #46f5f8;
+        line-height: 50px;
+        font-size: 18px;
+        }
+    }
+
+    input[type=text]{
+        width: auto;
+        height: 33px;
+        border: none;
+    }
 
 
     .step_title{
@@ -377,11 +380,11 @@ form{
       border-top: 1px solid #000;
     }
 
-&.no_padding{
-    padding: 0 !important;
-}
+    &.no_padding{
+        padding: 0 !important;
+    }
 
-//線上支付
+    //線上支付
     .bg1{
       height: 50%;
       max-height: 200px;
@@ -398,7 +401,7 @@ form{
         background-size: 100% 100%;
       }
     }
-//微信支付
+    //微信支付
     .bg2{
       height: 50%;
       max-height: 200px;
@@ -415,7 +418,7 @@ form{
         background-size: 100% 100%;
       }
     }
-//支付寶
+    //支付寶
     .bg3{
       height: 50%;
       max-height: 200px;
@@ -432,7 +435,7 @@ form{
         background-size: 100% 100%;
       }
     }
-//銀行入款
+    //銀行入款
     .bg4{
       height: 50%;
       max-height: 200px;
@@ -450,7 +453,7 @@ form{
       }
     }
 
-//銀行入款
+    //銀行入款
     .bg5{
       height: 50%;
       max-height: 200px;
@@ -553,7 +556,7 @@ form{
   }
 
 
-//會員中心-銀行
+    //會員中心-銀行
     .bg_bank{
       height: 170px;
       width: 100%;
@@ -648,174 +651,6 @@ form{
     opacity: .9;
 }
 
-
-/*提。示。窗 */
-.jAlert {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    min-width: 30%;
-    min-height: 15%;
-    width: auto;
-    height: auto;
-    z-index: 999;
-    background: #333;
-    color: $white;
-    border-radius: 5px;
-    overflow: hidden;
-    border: solid #555 2px;
-    font: 16px/20px $fontA;
-    text-align: center;
-    .highlighter {
-        color: #ffc800;
-    }
-    p {
-        margin: 12px 0 5px 0;
-    }
-    .tbar {
-        display: block;
-        height: 30px;
-        width: 100%;
-        text-align: center;
-        font: 20px/22px $fontA; // bold 20px/30px Arial;
-        &.succ {
-            background: #008228; /* Old browsers */
-            background: -moz-linear-gradient(45deg, #008228 0%, #00501e 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(45deg, #008228 0%,#00501e 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(450deg, #008228 0%,#00501e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008228', endColorstr='#00501e',GradientType=0 ); /* IE6-9 */
-        }
-        &.dang {
-            background: #ff0000; /* Old browsers */
-            background: -moz-linear-gradient(45deg, #ff0000 0%, #960000 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(45deg, #ff0000 0%,#960000 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(45deg, #ff0000 0%,#960000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#960000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-        }
-    }
-    .tabbox {
-        border: solid #666 2px;
-        margin: 3%;
-        padding: 3%;
-        th, td {
-            width: 50%;
-            text-align: left;
-            padding: 3px;
-        }
-    }
-    .stip {
-        color: #ff6464;
-        font: 10px/12px $fontA; //10px;
-    }
-    input {
-        width: 86%;
-    }
-    @media (max-width: 480px) {
-        min-width: 98%;
-        button.default{
-          margin:5px;
-          width:45%;
-        }
-    }
-}
-
-
-/*好。按。鈕*/
-/*要能與bootstrap整合內建的樣式*/
-/*a, a:link,a:hover,a:focus*/
-.btn.default,
-button.default {
-    font: 20px/22px $fontA;
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    color:$white;
-    margin: 5px;
-    padding: 5px 15px;
-    outline: none;
-    border: 0 none transparent;
-    background: #787878; /* Old browsers */
-    background: -moz-linear-gradient(0deg, #787878 0%, #dcdcdc 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(0deg, #787878 0%,#dcdcdc 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(0deg, #787878 0%,#dcdcdc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#787878', endColorstr='#dcdcdc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    &.green {
-        background: #077d29; /* Old browsers */
-        background: -moz-linear-gradient(0deg, #077d29 0%, #19c85f 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(0deg, #077d29 0%,#19c85f 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(0deg, #077d29 0%,#19c85f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#077d29', endColorstr='#19c85f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    }
-    &.blue {
-        background: #0a55bb; /* Old browsers */
-        background: -moz-linear-gradient(0deg, #0a55bb 0%, #66b0f5 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(0deg, #0a55bb 0%,#66b0f5 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(0deg, #0a55bb 0%,#66b0f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a55bb', endColorstr='#66b0f5',GradientType=0 ); /* IE6-9 */
-    }
-    &.orange, &.succ {
-        background: #ff601e;
-        background: -moz-linear-gradient(bottom,#ff601e 0%,#f7db01 100%);
-        background: -webkit-linear-gradient(bottom,#ff601e 0%,#f7db01 100%);
-        background: linear-gradient(to top,#ff601e 0%,#f7db01 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff601e',endColorstr='#f7db01',GradientType=0);
-    }
-    &.signup {
-        color:$white;
-        vertical-align: middle;
-        line-height:30px;
-        background: none;
-        @media (max-width: 768px) {
-            display: none;
-        }
-    }
-    &.login {
-        color:$white;
-        vertical-align: middle;
-        line-height:30px;
-        background: #ff601e;
-        background: -moz-linear-gradient(bottom,#ff601e 0%,#f7db01 100%);
-        background: -webkit-linear-gradient(bottom,#ff601e 0%,#f7db01 100%);
-        background: linear-gradient(to top,#ff601e 0%,#f7db01 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff601e',endColorstr='#f7db01',GradientType=0);
-
-        @media (max-width: 768px) {
-            padding:5px;
-            margin: 0 5px;
-            font:16px/18px $fontA;
-            width:auto;
-            height:auto;
-            &:before{
-                content:none;
-            }
-        }
-    }
-
-    &.impact {
-        font: 32px/34px $fontA;
-        @media (max-width: 480px) {
-            font: 20px/22px $fontA;
-        }
-    }
-    &.smaller {
-        margin: 0;
-        padding: 5px;
-    }
-    &.w100{
-        width:100%;
-    }
-}
 div.loginview {
     position: absolute;
     top: 0;
@@ -1000,189 +835,6 @@ footer {
         }
     }
 
-}
-/*
-    首頁index
-*/
-
-
-
-
-#title {
-    background: #2FA962;
-    color: #2FA962;
-    margin: 30px 0;
-    padding: 0 20px;
-    position: relative;
-    width: 100%;
-    height: 50px;
-    &:before {
-        content: "My Favorite";
-        position: absolute;
-        width: 330px;
-        height: 78px;
-        font: 50px $fontA;
-        left: 20px;
-        top: -15px;
-        background: $white url(/images/icon_fav.png) no-repeat top left;
-        background-size: contain;
-        padding-left: 80px;
-        padding-top: 10px;
-    }
-    @media (max-width: 480px) {
-        background: $white;
-        height: 60px;
-        margin: 20px 0;
-        &:before {
-            width: 210px;
-            height: 60px;
-            font: 32px/34px $fontA;
-            top: 0px;
-            padding-left: 60px;
-            padding-top: 10px;
-        }
-    }
-    /*手機*/
-}
-
-
-#m_menu {
-    white-space: nowrap;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-    border:0;
-    display: block;
-    z-index: 3;
-    .collapse, .collapsing {
-        padding:5px;
-        margin:0;
-        max-width:900px;
-        float:right;
-        background: rgba(0,0,0, 0.6);
-        width: 100%;
-        z-index: 0;
-        overflow: hidden;
-        &:before {
-            content: '';
-            position: absolute;
-            top: -20px;
-            right:28px;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0 25px 20px 25px;
-            border-color: transparent transparent $white transparent;
-        }
-    .nav {
-            li {
-                text-align: center;
-                &:not(:last-child):after{
-                    content: " | ";
-                    position: absolute;
-                    right: -7px;
-                    top:8px;
-                    font-size:22px;
-                    display: inline-block;
-                    color: $white;
-                }
-                a {
-                    width: 100%;
-                    font: 16px/20px $fontA;
-                    p { /*資訊顯示*/
-                        display:none;
-                    }
-                    &:link, &:visited{
-                        color:#f5b419;
-                    }
-                    &:hover {
-                        color:#f5b419;
-                    }
-                    @media (min-width: 799px) {
-                        margin: 5px 0;
-                        display: inline-block;
-                        padding: 5px 15px;
-                    }
-                }
-
-            }
-        }
-    }
-
-
-    // @media (max-width: 767px) {
-    //     height: 100%;
-    //     width:auto;
-    //     position: fixed;
-    //     top: 0;
-    //     right: 0;
-    //     z-index: 3;
-    //     background: #06325f;
-    //     overflow: auto;
-    //     border:none;
-    //     border-radius: 0;
-    //     margin: 0;
-    //     .navmem-collapse {
-    //         position:relative;
-    //         border:none;
-    //         max-width:none;
-    //         border-radius:0;
-    //         padding:0;
-    //         margin:0;
-    //         top: 0;
-    //         &:before {
-    //             content: '';
-    //             border: 0 none transparent;
-    //         }
-    //         ul.navbar-nav {
-    //             margin: 0;
-    //             width:240px;
-    //             li {
-    //                 margin: 0;
-    //                 padding:0;
-    //                 border-radius: 0;
-    //                 background: #3295fe;
-    //                 border-bottom: solid 1px #311b00;
-    //                 min-height: 50px;
-    //                 text-align: left;
-    //                 button.back {
-    //                     position: absolute;
-    //                     right: 6px;
-    //                     top: 6px;
-    //                 }
-    //                 p { /*資訊顯示*/
-    //                     color: $white;
-    //                     margin: 2px;
-    //                     padding: 3px 6px;
-    //                     font-size: 16px;
-    //                 }
-    //                 a, a:link, a:visited { /*超連結*/
-    //                     margin: 0 0 0 5%;//與左邊間距
-    //                     padding: 0;
-    //                     display: inline-block;
-    //                     color: $white;
-    //                     font: 24px/26px $fontA;
-    //                     line-height:50px;
-    //                     background: none;
-    //                 }
-    //                 &:hover{
-    //                     background: #ff9600;
-    //                     border-radius: 0;
-    //                     a, a:link {
-    //                         color: $white;
-    //                     }
-    //                 }
-    //                 &:not(:last-child):after {
-    //                     content: none;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-
-
-    /*手機*/
 }
 
 /*主選單*/
@@ -1748,10 +1400,12 @@ div.listitem{
 }
 
 div.quickbox{
+    &.row{
+        margin: 0;
+    }
     background: #eeeeee;
     text-align: center;
-    font: 16px/18px $fontA;
-    //margin: 0 auto;
+    font: 16px/18px $fontA;  
     width: 100%;
     padding: 15px 0;
     line-height: 28px;
@@ -1810,13 +1464,12 @@ div.quickbox{
             line-height: 20px;
         }
     }
-
-
-
-
 }
 
 .contact_footer{
+    &.row{
+        margin: 0;
+    }
     background: #f1d391;
     width: 100%;
       ul.nav-footer
