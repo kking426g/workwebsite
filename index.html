@@ -86,6 +86,83 @@
                             </ul>
                         </div>
                     </div>
+
+                    <div id="ticket_content">
+                        <div class="wrap">
+                            <?php echo helper_view_sub_menu_v2($menu_configs['ticket_content']['games'],
+                                                                $menu_configs['ticket_content']['type']); ?>
+                        </div>
+                    </div>
+                        
+                    <div id="sport_content">
+                        <div class="wrap">
+                            <?php echo helper_view_sub_menu_v2($menu_configs['sport_content']['games'],
+                                                                $menu_configs['sport_content']['type']); ?>
+                        </div>
+                    </div>
+
+                    <div id="electronic_content">
+                        <div class="central_div">
+                            <div class="e_con">
+                                <a href="">
+                                    <img src="/images/gamecard_lottery_PG.png" onmouseover="images/gamecard_lottery_PG_on.png" onmouseout="this.src=images/gamecard_lottery_PG.png">
+                                    <div class="name">PG</div>
+                                </a>
+                            </div>
+                            <div class="e_con">
+                                <a>
+                                    <img src="/images/gamecard_slot_AV.png" onmouseover="this.src=images/gamecard_slot_AV_on.png" onmouseout="images/gamecard_slot_AV.png">
+                                    <div class="name">AV</div>
+                                </a>
+                            </div>
+                            <div class="e_con">
+                                <a>
+                                    <img src="images/gamecard_lottery_DT.png" onmouseover="images/gamecard_lottery_DT_on.png" onmouseout="images/gamecard_lottery_DT.png">
+                                    <div class="name">DT</div>
+                                </a>
+                            </div>
+                            <div class="e_con">
+                                <a>
+                                    <img src="images/gamecard_lottery_AG.png" onmouseover="this.src=images/gamecard_lottery_AG_on.png" onmouseout="images/gamecard_lottery_AG.png">
+                                    <div class="name">AG</div>
+                                </a>
+                            </div>
+                            <div class="e_con">
+                                <a>
+                                    <img src="/images/gamecard_lottery_IM.png" onmouseover="this.src=images/gamecard_lottery_IM_on.png" onmouseout="images/gamecard_lottery_IM.png">
+                                    <div class="name">IMOneSlot</div>
+                                </a>
+                            </div>
+                            <div class="e_con">
+                                <a>
+                                    <img src="/images/gamecard_lottery_MW.png" onmouseover="this.src=images/gamecard_lottery_MW_on.png" onmouseout="this.src=images/gamecard_lottery_MW.png">
+                                    <div class="name">MW</div>
+                                </a>
+                            </div>
+                            <div class="e_con">
+                                <img src="/images/gamecard_slot_VG.png" onmouseover="this.src=images/gamecard_slot_VG_on.png" onmouseout="this.src=images/gamecard_slot_VG.png">
+                                <div class="name">VG</div>
+                            </div>
+                            <div class="e_con  sys_game_item" data-sys-game-id="648">
+                                <img src="/images/gamecard_slot_BBIN.png" onmouseover="this.src=images/gamecard_slot_BBIN_on.png" onmouseout="this.src=images/gamecard_slot_BBIN.png">
+                                <div class="name">BBIN</div>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div id="real_content">
+                        <div class="wrap">
+                            <div class="r_con">
+                                <img src="images/gamecard_live_ag.png" onmouseover="images/gamecard_live_ag_on.png" onmouseout="images/gamecard_live_ag.png">
+                            </div>
+                            <div class="r_con">
+                                <img src="images/gamecard_live_ag.png" onmouseover="images/gamecard_live_ag_on.png" onmouseout="images/gamecard_live_ag.png">
+                            </div>
+                            <div class="r_con">
+                                <img src="images/gamecard_live_ag.png" onmouseover="images/gamecard_live_ag_on.png" onmouseout="images/gamecard_live_ag.png">
+                            </div>
+                        </div>
+                    </div>
                 </nav>
 
                 <div class="contact">
@@ -186,14 +263,14 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="wrap servicebar_bg">
             <div class="service_bar">
-                <div class="content_5 h_mobile"></div>
-                <div class="content_5 h_promote"></div>
-                <div class="content_5 h_news"></div>
-                <div class="content_5 h_sup"></div>
-                <div class="content_5 h_faq"></div>
+                <div class="content_5 h_mobile" onclick="window.open('mobilecasino.html','_self');"></div>
+                <div class="content_5 h_promote" onclick="window.open('/home/promotions','_self');" ></div>
+                <div class="content_5 h_news" onclick="window.open('/home/news','_self');"></div>
+                <div class="content_5 h_sup" onclick="window.open('/home/support','_self');"></div>
+                <div class="content_5 h_faq" onclick="window.open('/home/faq','_self');"></div>
             </div>
             <br>
         </div>
@@ -267,19 +344,19 @@
         <div class="row contact_footer">
             <ul class="nav-footer">
                 <li>
-                    <a href="javascript: void(0)" onclick="window.open('/home/about','_self');">關於我們</a>
+                    <a href="javascript: void(0)" onclick="window.open('about.html','_self');">關於我們</a>
                 </li>
                 <li>
-                    <a href="javascript: void(0)" onclick="window.open('/home/responsiblegaming','_self');">鑿任博彩</a>
+                    <a href="javascript: void(0)" onclick="window.open('responsiblegaming.html','_self');">鑿任博彩</a>
                 </li>
                 <li>
-                    <a href="javascript: void(0)" onclick="window.open('/home/privacypolicy','_self');">隱私政策</a>
+                    <a href="javascript: void(0)" onclick="window.open('privacypolicy.html','_self');">隱私政策</a>
                 </li>
                 <li>
-                    <a href="javascript: void(0)" onclick="window.open('/home/termsconditions','_self');">條款規則</a>
+                    <a href="javascript: void(0)" onclick="window.open('termsconditions.html','_self');">條款規則</a>
                 </li>
                 <li>
-                    <a href="javascript: void(0)" onclick="window.open('/home/partnerships','_self');">成朝分銷</a>
+                    <a href="javascript: void(0)" onclick="window.open('partnerships.html','_self');">成朝分銷</a>
                 </li>
             </ul>
         </div>

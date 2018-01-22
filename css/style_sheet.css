@@ -4829,9 +4829,12 @@ footer {
           color: #fff;
           line-height: 35px;
           font-size: 20px; }
-        .slider4 div .nav li:hover a {
-          color: #f1d391;
-          cursor: pointer; }
+        .slider4 div .nav li:hover {
+          background: none; }
+          .slider4 div .nav li:hover a {
+            color: #f1d391;
+            cursor: pointer;
+            background: none; }
 
 /*hover 事件*/
 #ticket_content {

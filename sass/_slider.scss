@@ -409,10 +409,11 @@
             font-size: 20px;
           }
           &:hover{
-            //background: #442a69;
+            background: none;
             a{
               color: $nav_a;
               cursor: pointer;
+              background: none;
             }
           }
         }
