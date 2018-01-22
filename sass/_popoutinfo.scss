@@ -1,767 +1,624 @@
 @import "mixin";
 @import "variable";
 
-
 /*bbin 快速轉出金額*/
 .pop_out_quick{
-  display: none;
-  position:fixed;
-  top:50%;
-  left:50%;
-  margin-left:-300px;
-  margin-top:-300px;
-  z-index: 10;
+    display: none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-left:-300px;
+    margin-top:-300px;
+    z-index: 10;
 
-  input::-webkit-input-placeholder {
-    color: $placeholder;
-  }
+    input::-webkit-input-placeholder {
+        color: $placeholder;
+    }
 
-  input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: $placeholder;
-  }
+    input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: $placeholder;
+    }
 
-  .box{
+    .box{
         width: 600px;
         height: auto;
         margin: 0px auto;
         z-index: 2;
         position: relative;
         background: $static_bg;
-  }
-
-  .top{
-    width: 100%;
-    height: 42px;
-    background: url('/images/pop_top.png') no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    color: #fff;
-    @include bg_2;
-    text-align: center;
-    font-size: 20px;
-    padding: 8px 0 0 0;
-  }
-  .popout_xx {
-      background: url('../images/icon_cancel.png') top right no-repeat;
-      display: block;
-      top: 5px;
-      right: 5px;
-      position: absolute;
-      height: 32px;
-      width: 32px;
-      cursor: pointer;
-      &:hover{
-        background: url('../images/icon_cancel_on.png') top right no-repeat;
-      }
-  }
-
-  .info_box{
-    width: 100%;
-    height: auto;
-    background: #efefef;
-    color: #656565;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    .con{
-      width: 100%;
-      font-size: 18px;
-      height: 40px;
-      margin: 0px 0 10 0;
-      padding: 10px 0 0 0;
-      .info_title{
-        width: 110px;
-        height: 40px;
-        color: #656565;
-        position: absolute;
-        left: 4%;
-      }
-      .info_content{
-        width: 205px;
-        height: 40px;
-        line-height: 40px;
-        margin: 0 0 0 0;
-        font-size: 18px;
-        background: #656565;
-        color: $white;
-        padding: 0px 0 0 0px;
-        left: 133px;
-        display: inline-block;
-        position: absolute;
-      }
-      input[type=text]{
-        width: 200px;
-        height: 40px;
-        margin: 0px 0 0 0px;
-        border: 2px solid #656565;
-        background: #fff;
-        display: inline-block;
-        position: absolute;
-        left: 338px;
-      }
-      .number{
-        background: #fff;
-        width: 200px;
-        height: 40px;
-        padding-top: 8px;
-        margin: 0px 0 0 0px;
-        border: 2px solid #656565;
-        display: inline-block;
-        position: absolute;
-        left: 338px;
-      }
     }
-    .trans_money{
-        width: 100px;
-        height: 30px;
-        float: right;
-        margin: 20px 10px 10px auto;
-        padding: 6px 0 0 0;
-        background: #656565;
+
+    .top{
+        width: 100%;
+        height: 42px;
+        background: url('/images/pop_top.png') no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
         color: #fff;
+        @include bg_2;
+        text-align: center;
+        font-size: 20px;
+        padding: 8px 0 0 0;
+    }
+
+    .popout_xx {
+        background: url('../images/icon_cancel.png') top right no-repeat;
+        display: block;
+        top: 5px;
+        right: 5px;
+        position: absolute;
+        height: 32px;
+        width: 32px;
         cursor: pointer;
-      // background: url("/images/bn_bbin_01_b.png") no-repeat;
-      // background-size: 100% 100%;
-       &:hover{
-      //   background: url("/images/bn_bbin_01_on_b.png") no-repeat;
-      //   background-size: 100% 100%;
-      background: #f25f5e;
-       }
+        &:hover{
+            background: url('../images/icon_cancel_on.png') top right no-repeat;
+        }
     }
-    .enter_game{
-      width: 100px;
-      height: 30px;
-      float: right;
-      margin: 20px auto 10px auto;
-      cursor: pointer;
-      background: #656565;
-      color: #fff;
-      padding: 6px 0 0 0;
-      // background: url("/images/bn_bbin_02.png") no-repeat;
-      // background-size: 100% 100%;
-       &:hover{
-      //   background: url("/images/bn_bbin_02_on.png") no-repeat;
-      //   background-size: 100% 100%;
-      background: #f25f5e;
-       }
+
+    .info_box{
+        width: 100%;
+        height: auto;
+        background: #efefef;
+        color: #656565;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        .con{
+        width: 100%;
+        font-size: 18px;
+        height: 40px;
+        margin: 0px 0 10 0;
+        padding: 10px 0 0 0;
+        .info_title{
+            width: 110px;
+            height: 40px;
+            color: #656565;
+            position: absolute;
+            left: 4%;
+        }
+        .info_content{
+            width: 205px;
+            height: 40px;
+            line-height: 40px;
+            margin: 0 0 0 0;
+            font-size: 18px;
+            background: #656565;
+            color: $white;
+            padding: 0px 0 0 0px;
+            left: 133px;
+            display: inline-block;
+            position: absolute;
+        }
+        input[type=text]{
+            width: 200px;
+            height: 40px;
+            margin: 0px 0 0 0px;
+            border: 2px solid #656565;
+            background: #fff;
+            display: inline-block;
+            position: absolute;
+            left: 338px;
+        }
+        .number{
+            background: #fff;
+            width: 200px;
+            height: 40px;
+            padding-top: 8px;
+            margin: 0px 0 0 0px;
+            border: 2px solid #656565;
+            display: inline-block;
+            position: absolute;
+            left: 338px;
+        }
+        }
+        .trans_money{
+            width: 100px;
+            height: 30px;
+            float: right;
+            margin: 20px 10px 10px auto;
+            padding: 6px 0 0 0;
+            background: #656565;
+            color: #fff;
+            cursor: pointer;
+            &:hover{
+                background: #f25f5e;
+            }
+        }
+        .enter_game{
+            width: 100px;
+            height: 30px;
+            float: right;
+            margin: 20px auto 10px auto;
+            cursor: pointer;
+            background: #656565;
+            color: #fff;
+            padding: 6px 0 0 0;
+            &:hover{
+                background: #f25f5e;
+            }
+        }
     }
-  }
 }
 
 
 .pop_out{
-  display: none;
-  position:fixed;
-  top:50%;
-  left:50%;
-  margin-left:-300px;
-  margin-top:-300px;
-  z-index: 101;
+    display: none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-left:-300px;
+    margin-top:-300px;
+    z-index: 101;
 
-  input::-webkit-input-placeholder {
+    input::-webkit-input-placeholder {
+        color: $placeholder;
+    }
+
+    input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color: $placeholder;
-  }
+    }
 
-  input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: $placeholder;
-  }
-
-  .box{
-    width: 600px;
-    height: auto;
-    margin: 0px auto;
-    z-index: 2;
-    position: absolute;
-    background: #fff;
-    color: #000;
-  }
-
-  .top{
-    width: 100%;
-    height: 42px;
-    @include bg_2;
-    background-size: 100% 100%;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
-    padding: 8px 0 0 0;
-  }
-  .popout_xx {
-      background: url('../images/icon_cancel.png') top right no-repeat;
-      display: block;
-      top: 5px;
-      right: 5px;
-      position: absolute;
-      height: 32px;
-      width: 32px;
-      cursor: pointer;
-      &:hover{
-        background: url('../images/icon_cancel_on.png') top right no-repeat;
-      }
-  }
-
-  .info_box{
-    width: 100%;
-    height: auto;
-    background: #fff;
-    color: #000;
-    text-align: center;;
-    .con{
-      width: 100%;
-      color: $frame;
-      font-size: 18px;
-      height: 40px;
-      margin: 30px 0 10 0;
-      .info_title{
-        width: 50px;
-        height: 40px;
-        color: $frame;
+    .box{
+        width: 600px;
+        height: auto;
+        margin: 0px auto;
+        z-index: 2;
         position: absolute;
-        left: 4%;
-      }
-      .info_content{
-        width: 83px;
-        height: 40px;
-        line-height: 40px;
-        margin: 0 0 0 0;
-        font-size: 18px;
-        background: #656565;
-        color: #fff;
-        padding: 0px 0 0 0px;
-        left: 88px;
-        display: inline-block;
-        position: absolute;
-      }
-      input[type=text]{
-        width: 186px;
-        height: 40px;
-        margin: 0px 0 0 0px;
-        background: #fff7d8;
-        border: 2px solid #656565;
-        color: $white;
-        display: inline-block;
-        position: absolute;
-        left: 171px;
-      }
-      .number{
-        width: 185px;
-        height: 40px;
-        padding-top: 8px;
-        margin: 0px 0 0 0px;
-        background: #fff7d8;
-        border: 2px solid #656565;
+        background: #fff;
         color: #000;
-        display: inline-block;
+    }
+
+    .top{
+        width: 100%;
+        height: 42px;
+        @include bg_2;
+        background-size: 100% 100%;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        padding: 8px 0 0 0;
+    }
+    .popout_xx {
+        background: url('../images/icon_cancel.png') top right no-repeat;
+        display: block;
+        top: 5px;
+        right: 5px;
         position: absolute;
-        left: 171px;
-      }
-      }
-      .trans_money{
-        width: 270px;
-        height: 40px;
-        margin: 15px 0 0 80;
+        height: 32px;
+        width: 32px;
         cursor: pointer;
-        background: url("/images/bn_bbin_01.png") no-repeat;
-        background-size: 100% 100%;
         &:hover{
-          background: url("/images/bn_bbin_01_on.png") no-repeat;
-          background-size: 100% 100%;
-        }
-      }
-      .enter_game{
-        width: 270px;
-        height: 40px;
-        margin: 15px 0px 15px 80px;
-        cursor: pointer;
-        background: url("/images/bn_bbin_02.png") no-repeat;
-        background-size: 100% 100%;
-        &:hover{
-          background: url("/images/bn_bbin_02_on.png") no-repeat;
-          background-size: 100% 100%;
+            background: url('../images/icon_cancel_on.png') top right no-repeat;
         }
     }
-  }
 
+    .info_box{
+        width: 100%;
+        height: auto;
+        background: #fff;
+        color: #000;
+        text-align: center;;
+        .con{
+            width: 100%;
+            color: $frame;
+            font-size: 18px;
+            height: 40px;
+            margin: 30px 0 10 0;
+            .info_title{
+                width: 50px;
+                height: 40px;
+                color: $frame;
+                position: absolute;
+                left: 4%;
+            }
+            .info_content{
+                width: 83px;
+                height: 40px;
+                line-height: 40px;
+                margin: 0 0 0 0;
+                font-size: 18px;
+                background: #656565;
+                color: #fff;
+                padding: 0px 0 0 0px;
+                left: 88px;
+                display: inline-block;
+                position: absolute;
+            }
+            input[type=text]{
+                width: 186px;
+                height: 40px;
+                margin: 0px 0 0 0px;
+                background: #fff7d8;
+                border: 2px solid #656565;
+                color: $white;
+                display: inline-block;
+                position: absolute;
+                left: 171px;
+            }
+            .number{
+                width: 185px;
+                height: 40px;
+                padding-top: 8px;
+                margin: 0px 0 0 0px;
+                background: #fff7d8;
+                border: 2px solid #656565;
+                color: #000;
+                display: inline-block;
+                position: absolute;
+                left: 171px;
+            }
+        }
+        .trans_money{
+            width: 270px;
+            height: 40px;
+            margin: 15px 0 0 80;
+            cursor: pointer;
+            background: url("/images/bn_bbin_01.png") no-repeat;
+            background-size: 100% 100%;
+            &:hover{
+            background: url("/images/bn_bbin_01_on.png") no-repeat;
+            background-size: 100% 100%;
+            }
+        }
+        .enter_game{
+            width: 270px;
+            height: 40px;
+            margin: 15px 0px 15px 80px;
+            cursor: pointer;
+            background: url("/images/bn_bbin_02.png") no-repeat;
+            background-size: 100% 100%;
+            &:hover{
+                background: url("/images/bn_bbin_02_on.png") no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
 }
 
 
 .popsignup{
-  input::-webkit-input-placeholder {
-    color: $placeholder;
-  }
-
-  input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: $placeholder;
-  }
-  .info_box{
-    .con{
-      font-size: 14px;
-      margin: 15px 0 10 0;
-      padding: 30px 0 0 0;
-      color: #000;
-      .info_content{
-        margin: 0px 0px 20px 0px;
-        width: 130px;
-        left: 24px;
-        line-height: 40px;
-        font-size: 14px;
-      }
-
-      input[type=text], input[type=password]{
-        width: 400px;
-        height: 40px;
-        margin: 0 0 0 0;
-        background: #fff7d8;
-        border: 2px solid #656565;
-        color: #000;
-        display: inline-block;
-        position: absolute;
-        left: 150px;
-        font-size: 14px;
-        border-radius: none;
-      }
-      .Check{
-        width: 18px;
-        height: 17px;
-        margin: 0px 0 0 18px;
-        position: relative;
-        display: inline-block;
-      }
-
-      #Captcha{
-        width: 160px;
-        left: 150px;
-      }
-      a{
-        font-size: 14px;
-        color: #ea5513;
-        text-decoration:underline;
-      }
+    input::-webkit-input-placeholder {
+        color: $placeholder;
     }
-    .sys_signup_submit{
-      width: 82px;
-      height: 36px;
-      border: 0px;
-      float: right;
-      margin: 18px 60px 20px 0px;
-      background: url("/images/Confirm_delivery.png") no-repeat;
-      background-size: 100% 100%;
-      &:hover{
-        background: url("/images/Confirm_delivery_on.png") no-repeat;
-        background-size: 100% 100%;
-      }
+
+    input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: $placeholder;
     }
-  }
+
+    .info_box{
+        .con{
+            font-size: 14px;
+            margin: 15px 0 10 0;
+            padding: 30px 0 0 0;
+            color: #000;
+            .info_content{
+                margin: 0px 0px 20px 0px;
+                width: 130px;
+                left: 24px;
+                line-height: 40px;
+                font-size: 14px;
+            }
+
+            input[type=text], input[type=password]{
+                width: 400px;
+                height: 40px;
+                margin: 0 0 0 0;
+                background: #fff7d8;
+                border: 2px solid #656565;
+                color: #000;
+                display: inline-block;
+                position: absolute;
+                left: 150px;
+                font-size: 14px;
+                border-radius: none;
+            }
+            .Check{
+                width: 18px;
+                height: 17px;
+                margin: 0px 0 0 18px;
+                position: relative;
+                display: inline-block;
+            }
+
+            #Captcha{
+                width: 160px;
+                left: 150px;
+            }
+            a{
+                font-size: 14px;
+                color: #ea5513;
+                text-decoration:underline;
+            }
+        }
+        .sys_signup_submit{
+            width: 82px;
+            height: 36px;
+            border: 0px;
+            float: right;
+            margin: 18px 60px 20px 0px;
+            background: url("/images/Confirm_delivery.png") no-repeat;
+            background-size: 100% 100%;
+            &:hover{
+                background: url("/images/Confirm_delivery_on.png") no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
 }
 
-
-
-
 .signup_ok{
-  display: none;
-
-  .box{
-    height: 220px;
-  }
-  .info_box{
-    height: 180px;
-  }
-  .top{
-    color: #000;
-  }
-  .deposit_now{
-    width: 270px;
-    height: 40px;
-    margin: 15px 0 0 80;
-    background: url("/images/bn_signup_deposit.png") no-repeat;
-    background-size: 100% 100%;
-    &:hover{
-      background: url("/images/bn_signup_deposit_on.png") no-repeat;
-      background-size: 100% 100%;
+    display: none;
+    .box{
+        height: 220px;
     }
-  }
-
-  .look_around{
-    width: 270px;
-    height: 40px;
-    margin: 15px 0 0 80;
-    background: url("/images/bn_signup_see.png") no-repeat;
-    background-size: 100% 100%;
-    &:hover{
-      background: url("/images/bn_signup_see_on.png") no-repeat;
-      background-size: 100% 100%;
+    .info_box{
+        height: 180px;
     }
-  }
+    .top{
+        color: #000;
+    }
+    .deposit_now{
+        width: 270px;
+        height: 40px;
+        margin: 15px 0 0 80;
+        background: url("/images/bn_signup_deposit.png") no-repeat;
+        background-size: 100% 100%;
+        &:hover{
+            background: url("/images/bn_signup_deposit_on.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
 
+    .look_around{
+        width: 270px;
+        height: 40px;
+        margin: 15px 0 0 80;
+        background: url("/images/bn_signup_see.png") no-repeat;
+        background-size: 100% 100%;
+        &:hover{
+            background: url("/images/bn_signup_see_on.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
 }
 
 
 .bank_msg{
-  display: none;
+    display: none;
 
-  .box{
-    height: 230px;
-  }
-  .info_box{
-    height: 180px;
-  }
-  .info{
-    margin-top: 25px;
-    color: $white;
-  }
-  .top{
-    color: #000;
-  }
+    .box{
+        height: 230px;
+    }
+    .info_box{
+        height: 180px;
+    }
+    .info{
+        margin-top: 25px;
+        color: $white;
+    }
+    .top{
+        color: #000;
+    }
 
-  span{
-    font-size: 20px;
-    color: $word_color;
-  }
+    span{
+        font-size: 20px;
+        color: $word_color;
+    }
 }
 
 
 /*提款 提示視窗*/
 .wd_msg{
-  display: none;
+    display: none;
 
-  // .box{
-  //   height: 300px;
-  // }
-  // .info_box{
-  //   height: 270px;
-  // }
-  .info{
-    margin-top: 25px;
-    color: #000;
-  }
-  .top{
-    color: #fff;
-  }
-
-  span{
-    font-size: 20px;
-    color: $word_color;
-  }
-  .reset_btn_s{
-    border: 0;
-    width: 150px;
-    height: 40px;
-    display: inline-block;
-    margin: 0 0 0 20px;
-    cursor: pointer;
-    background: url("/images/bn_user_back.png") no-repeat;
-    background-size: 100% 100%;
-    &:hover{
-      background: url("/images/bn_user_back_on.png") no-repeat;
-      background-size: 100% 100%;
+    .info{
+        margin-top: 25px;
+        color: #000;
     }
-  }
 
-  .confirm_s{
-    border: 0;
-    width: 150px;
-    height: 40px;
-    display: inline-block;
-    margin: 0 0 0 20px;
-    cursor: pointer;
-    background: url("/images/bn_user_ok.png") no-repeat;
-    background-size: 100% 100%;
-    &:hover{
-      background: url("/images/bn_user_ok_on.png") no-repeat;
-      background-size: 100% 100%;
+    .top{
+        color: #fff;
     }
-  }
 
-  .bkinfo{
-    height: auto;
-    border: solid #4D4E52 2px;
-    background: #fff;
-    width: 80%;
-    margin: 5px auto;
-    text-align: left;
-    p{
-      color: $word_color;
-      padding: 2px 0 0 8px;
-      margin: 0;
-      font-size: 14px;
+    span{
+        font-size: 20px;
+        color: $word_color;
     }
-  }
 
+    .reset_btn_s{
+        border: 0;
+        width: 150px;
+        height: 40px;
+        display: inline-block;
+        margin: 0 0 0 20px;
+        cursor: pointer;
+        background: url("/images/bn_user_back.png") no-repeat;
+        background-size: 100% 100%;
+        &:hover{
+            background: url("/images/bn_user_back_on.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+
+    .confirm_s{
+        border: 0;
+        width: 150px;
+        height: 40px;
+        display: inline-block;
+        margin: 0 0 0 20px;
+        cursor: pointer;
+        background: url("/images/bn_user_ok.png") no-repeat;
+        background-size: 100% 100%;
+        &:hover{
+            background: url("/images/bn_user_ok_on.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+
+    .bkinfo{
+        height: auto;
+        border: solid #4D4E52 2px;
+        background: #fff;
+        width: 80%;
+        margin: 5px auto;
+        text-align: left;
+        p{
+            color: $word_color;
+            padding: 2px 0 0 8px;
+            margin: 0;
+            font-size: 14px;
+        }
+    }
 }
 
 /*提款 確定視窗*/
 .wd_alert{
-  .title{
-    color: $frame;
-  }
-  .box{
-    height: 170px;
-  }
-  .info_box{
-    height: 170px;
-  }
-  .info{
-    color: $white;
-  }
+    .title{
+        color: $frame;
+    }
+    .box{
+        height: 170px;
+    }
+    .info_box{
+        height: 170px;
+    }
+    .info{
+        color: $white;
+    }
 }
 
 
 /*返回 按鈕*/
 .return_page{
-      margin: 10px;
-      float: right;
-      width: 100px;
-      height: 30px;
-      cursor: pointer;
-      background: #656565;
-      color: #fff;
-      padding: 0;
-      // background: url("/images/bn_bbin_02.png") no-repeat;
-      // background-size: 100% 100%;
-       &:hover{
-      //   background: url("/images/bn_bbin_02_on.png") no-repeat;
-      //   background-size: 100% 100%;
-      background: #f25f5e;
-       }
-
-    // border: none;
-    // width: 100px;
-    // height: 25px;
-    // display: inline-block;
-    // margin: 15px 0 0 0px;
-    // cursor: pointer;
-    // background: url("/images/bn_user_back.png") no-repeat;
-    // background-size: 100% 100%;
-    // &:hover{
-    //   background: url("/images/bn_user_back_on.png") no-repeat;
-    //   background-size: 100% 100%;
-    // }
+    margin: 10px;
+    float: right;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background: #656565;
+    color: #fff;
+    padding: 0;
+    &:hover{
+        background: #f25f5e;
+    }
 }
+
 /*確認提交 按鈕*/
 .confirm_money{
-      width: 100px;
-      height: 30px;
-      margin: 10px;
-      float: right;
-      cursor: pointer;
-      background: #656565;
-      color: #fff;
-      padding: 0;
-      // background: url("/images/bn_bbin_02.png") no-repeat;
-      // background-size: 100% 100%;
-       &:hover{
-      //   background: url("/images/bn_bbin_02_on.png") no-repeat;
-      //   background-size: 100% 100%;
-      background: #f25f5e;
-       }
-
-
-  // border: none;
-  // width: 100px;
-  // height: 25px;
-  // display: inline-block;
-  // margin: 15px 0 0 0px;
-  // cursor: pointer;
-  // //background: url("/images/bn_user_transfer.png") no-repeat;
-  // background-size: 100% 100%;
-  // &:hover{
-  //   //background: url("/images/bn_user_transfer_on.png") no-repeat;
-  //   background-size: 100% 100%;
-  // }
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    float: right;
+    cursor: pointer;
+    background: #656565;
+    color: #fff;
+    padding: 0;
+    &:hover{
+        background: #f25f5e;
+    }
 }
 
 
 .online_preset{
-  display: none;
-  .setupaccount{
-    width: 100px;
-    height: 30px;
-    display: inline-block;
-    margin: 15px 0 0 20px;
-    cursor: pointer;
-    background: url("/images/bn_user_bank.png") no-repeat;
-    background-size: 100% 100%;
-    &:hover{
-      background: url("/images/bn_user_bank_on.png") no-repeat;
-      background-size: 100% 100%;
+    display: none;
+    .setupaccount{
+        width: 100px;
+        height: 30px;
+        display: inline-block;
+        margin: 15px 0 0 20px;
+        cursor: pointer;
+        background: url("/images/bn_user_bank.png") no-repeat;
+        background-size: 100% 100%;
+        &:hover{
+            background: url("/images/bn_user_bank_on.png") no-repeat;
+            background-size: 100% 100%;
+        }
     }
-  }
 
-  display: none;
+    .box{
+        height: 180px;
+    }
 
-  .box{
-    height: 180px;
-  }
-  .info_box{
-    height: 145px;
+    .info_box{
+        height: 145px;
+    }
 
-  }
-  .info{
-    margin-top: 25px;
-    color: $white;
-  }
-  .top{
-    color: #000;
-  }
+    .info{
+        margin-top: 25px;
+        color: $white;
+    }
+
+    .top{
+        color: #000;
+    }
 }
 
 
 .online_msg{
-  display: none;
-
-  .box{
-    height: 180px;
-  }
-  .info_box{
-    height: 145px;
-
-  }
-  .info{
-    margin-top: 25px;
-    color: $white;
-  }
-  .top{
-    color: #000;
-  }
-
-  span{
-    font-size: 20px;
-    color: $word_color;
-  }
-  .return_page{
-    width: 100px;
-    display: inline-block;
-    height: 30px;
-    margin: 15px 0 0 0px;
-    cursor: pointer;
-    background: url("/images/bn_user_back.png") no-repeat;
-    background-size: 100% 100%;
-    &:hover{
-      background: url("/images/bn_user_back_on.png") no-repeat;
-      background-size: 100% 100%;
+    display: none;
+    .box{
+        height: 180px;
     }
-  }
+    .info_box{
+        height: 145px;
 
-  .confirm_money{
-    width: 100px;
-    height: 30px;
-    display: inline-block;
-    margin: 15px 0 0 20px;
-    cursor: pointer;
-    background: url("/images/bn_user_transfer.png") no-repeat;
-    background-size: 100% 100%;
-    &:hover{
-      background: url("/images/bn_user_transfer_on.png") no-repeat;
-      background-size: 100% 100%;
     }
-  }
+    .info{
+        margin-top: 25px;
+        color: $white;
+    }
+    .top{
+        color: #000;
+    }
+    span{
+        font-size: 20px;
+        color: $word_color;
+    }
+    .return_page{
+        width: 100px;
+        display: inline-block;
+        height: 30px;
+        margin: 15px 0 0 0px;
+        cursor: pointer;
+        background: url("/images/bn_user_back.png") no-repeat;
+        background-size: 100% 100%;
+        &:hover{
+            background: url("/images/bn_user_back_on.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
 
+    .confirm_money{
+        width: 100px;
+        height: 30px;
+        display: inline-block;
+        margin: 15px 0 0 20px;
+        cursor: pointer;
+        background: url("/images/bn_user_transfer.png") no-repeat;
+        background-size: 100% 100%;
+        &:hover{
+            background: url("/images/bn_user_transfer_on.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
 }
 
 .alipay_msg{
-  display: none;
-
-  // .box{
-  //   height: 180px;
-  // }
-  // .info_box{
-  //   height: 150px;
-
-  // }
-  // .info{
-  //   margin-top: 25px;
-  //   color: #000;
-  // }
-  // .top{
-  //   color: $white;
-  // }
-
-  span{
-    font-size: 20px;
-    color: $word_color;
-  }
-  // .return_page{
-  //   width: 100px;
-  //   display: inline-block;
-  //   height: 30px;
-  //   margin: 15px 0 0 0px;
-  //   cursor: pointer;
-  //   background: url("/images/bn_user_back.png") no-repeat;
-  //   background-size: 100% 100%;
-  //   &:hover{
-  //     background: url("/images/bn_user_back_on.png") no-repeat;
-  //     background-size: 100% 100%;
-  //   }
-  // }
-
-  // .confirm_money{
-  //   width: 100px;
-  //   height: 30px;
-  //   display: inline-block;
-  //   margin: 15px 0 0 20px;
-  //   cursor: pointer;
-  //   background: url("/images/bn_user_transfer.png") no-repeat;
-  //   background-size: 100% 100%;
-  //   &:hover{
-  //     background: url("/images/bn_user_transfer_on.png") no-repeat;
-  //     background-size: 100% 100%;
-  //   }
-  // }
-
+    display: none;
+    span{
+        font-size: 20px;
+        color: $word_color;
+    }
 }
 
 
 .wechat_msg{
-  display: none;
-
-  // .box{
-  //   height: 180px;
-  // }
-  // .info_box{
-  //   height: 150px;
-
-  // }
-  // .info{
-  //   margin-top: 25px;
-  //   color: #fff;
-  // }
-  // .top{
-  //   color: $white;
-  // }
-
-  span{
-    font-size: 20px;
-    color: red;
-  }
-  // .return_page{
-  //   width: 100px;
-  //   display: inline-block;
-  //   height: 30px;
-  //   margin: 15px 0 0 0px;
-  //   cursor: pointer;
-  //   background: url("/images/bn_user_back.png") no-repeat;
-  //   background-size: 100% 100%;
-  //   &:hover{
-  //     background: url("/images/bn_user_back_on.png") no-repeat;
-  //     background-size: 100% 100%;
-  //   }
-  // }
-
-  // .confirm_money{
-  //   width: 100px;
-  //   height: 30px;
-  //   display: inline-block;
-  //   margin: 15px 0 0 20px;
-  //   cursor: pointer;
-  //   background: url("/images/bn_user_transfer.png") no-repeat;
-  //   background-size: 100% 100%;
-  //   &:hover{
-  //     background: url("/images/bn_user_transfer_on.png") no-repeat;
-  //     background-size: 100% 100%;
-  //   }
-  // }
-
+    display: none;
+    span{
+        font-size: 20px;
+        color: red;
+    }
 }
 
 
@@ -779,64 +636,56 @@
     top: 50%;
     margin-left: -200px;
     margin-top: -200px;
-
-  .title{
-    @include bg_2;
-    margin: 0 0 10px 0;
-    height: 40px;
-    text-align: center;
-    padding: 7px 0 0 0;
-    height: 32px;
-    color: #fff;
-    font-size: 16px;
-  }
-  .info{
-    width: 100%;
-    text-align: center;
-    color: #000;
-    
-    margin: 30px 0 0 0;
-  }
-
-
-
-  .check_yes{
-    width: 100px;
-    height: 30px;
-    margin: 20px 10px 10px auto;
-    cursor: pointer;
-    background: #656565;
-    color: #fff;
-    padding:6px;
-    border: 0;
-    float: right;
-    &:hover{
-    background: #f25f5e;
+    .title{
+        @include bg_2;
+        margin: 0 0 10px 0;
+        height: 40px;
+        text-align: center;
+        padding: 7px 0 0 0;
+        height: 32px;
+        color: #fff;
+        font-size: 16px;
     }
-  }
 
+    .info{
+        width: 100%;
+        text-align: center;
+        color: #000;
+        margin: 30px 0 0 0;
+    }
 
-  
+    .check_yes{
+        width: 100px;
+        height: 30px;
+        margin: 20px 10px 10px auto;
+        cursor: pointer;
+        background: #656565;
+        color: #fff;
+        padding:6px;
+        border: 0;
+        float: right;
+        &:hover{
+            background: #f25f5e;
+        }
+    }
 }
 
-
-
 #loader{
-  display: none;
-  width: auto;
-  height: auto;
-  position: fixed;
-  z-index: 101;
-  top: 300px;
-  left: 58%;
-  top: 50%;
-  margin-left: -150px;
-  margin-top: -100px;
-  text-align: center;
-  animation: spin 2s linear infinite;
-  img{
-    margin: 0 auto;
-  }
+    display: none;
+    width: auto;
+    height: auto;
+    position: fixed;
+    z-index: 101;
+    top: 300px;
+    left: 58%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -100px;
+    text-align: center;
+    animation: spin 2s linear infinite;
+    img{
+        margin: 0 auto;
+    }
 }
 
 
@@ -867,50 +716,48 @@
     top: 50%;
     margin-left: -200px;
     margin-top: -200px;
-  .title, .top{
-    width: 100%;
-    height: 42px;
-    background: url('/images/pop_top.png') no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    color: #fff;
-    @include bg_2;
-    text-align: center;
-    font-size: 20px;
-    padding: 8px 0 0 0;
-  }
-  .info{
-    width: 100%;
-    text-align: center;
-    color: #000;
-    margin: 20px 0 0 0;
-  }
+    .title, .top{
+        width: 100%;
+        height: 42px;
+        background: url('/images/pop_top.png') no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        color: #fff;
+        @include bg_2;
+        text-align: center;
+        font-size: 20px;
+        padding: 8px 0 0 0;
+    }
+    .info{
+        width: 100%;
+        text-align: center;
+        color: #000;
+        margin: 20px 0 0 0;
+    }
 }
 
 
 
 
 .bank_alert{
-  .title{
-    color: $frame_title;
-  }
-  .box{
-    height: 160px;
-  }
-  .info_box{
-    height: 160px;
-  }
-  .info{
-    color: $white;
-  }
-
+    .title{
+        color: $frame_title;
+    }
+    .box{
+        height: 160px;
+    }
+    .info_box{
+        height: 160px;
+    }
+    .info{
+        color: $white;
+    }
 }
 
 .alert_btn{
-  //border-radius: 3px;
-  margin: 16px auto;
-  padding: 6px 0 0 0;
-  text-align: center;
+    margin: 16px auto;
+    padding: 6px 0 0 0;
+    text-align: center;
 }
 
 .check_yes{
@@ -924,27 +771,9 @@
     border: 0;
     float: right;
     &:hover{
-    background: #f25f5e;
+        background: #f25f5e;
     }
-
-  // border: 0;
-  // background: url("/images/bn_ok.png") no-repeat;
-  // background-size: 100% 100%;
-  // width: 110px;
-  // height: 30px;
-  // float: right;
-  // margin-right: 10;
-  // cursor: pointer;
-  // &:hover{
-  //   background: url("/images/bn_ok_on.png") no-repeat;
-  //   background-size: 100% 100%;
-  // }
 }
-
-// .go_favorite{
-//   float: right;
-//   margin-right: 10;
-// }
 
 
 .stay{
@@ -958,33 +787,33 @@
     border: 0;
     float: right;
     &:hover{
-    background: #f25f5e;
+        background: #f25f5e;
     }
 }
 
 
 .cover_box{
-  display: none;
-  position: fixed;
-  top: 0;
-  background: #000;
-  opacity: 0.5;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
+    display: none;
+    position: fixed;
+    top: 0;
+    background: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
 }
 
 
 
 .popup_set{
-  position:fixed;
-  top:50%;
-  left:50%;
-  margin-left:-200px;
-  margin-top:-200px;
-  z-index: 101;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-left:-200px;
+    margin-top:-200px;
+    z-index: 101;
 
-  .box{
+    .box{
         width: 400px;
         height: auto;
         margin: 0px auto;
@@ -992,157 +821,158 @@
         position: absolute;
         background: #fff;
         button{
-          border: 0px;
+            border: 0px;
         }
-    .confirm_set_btn {
-      width: auto;
-      height: 30px;
-      display: inline-block;
-      padding: 0;
-      margin: 15px 0 20px 0;
-
-      /*確認提交 按鈕*/
-      .return_page,
-      .confirm_money {
-        width: 120px;
-        height: 30px;
-        display: inline-block;
-        position: relative;
-        top: -20px;
-        margin: 20px 10px;
-        border: 3px double #ffffff;
-        background: #b12727;
-        border-radius: 8px;
-        &:hover{
-          background: #00ace5;/* Old browsers */
+        .confirm_set_btn {
+            width: auto;
+            height: 30px;
+            display: inline-block;
+            padding: 0;
+            margin: 15px 0 20px 0;
+            /*確認提交 按鈕*/
+            .return_page,
+            .confirm_money {
+                width: 120px;
+                height: 30px;
+                display: inline-block;
+                position: relative;
+                top: -20px;
+                margin: 20px 10px;
+                border: 3px double #ffffff;
+                background: #b12727;
+                border-radius: 8px;
+                &:hover{
+                    background: #00ace5;/* Old browsers */
+                }
+            }
         }
-      }
     }
-  }
 
-  .top{
-    width: 100%;
-    height: 42px;
-    @include bg_2;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
-    padding: 8px 0 0 0;
-  }
-  .popout_xx {
-      background: url('../images/icon_cancel.png') top right no-repeat;
-      display: block;
-      top: 5px;
-      right: 5px;
-      position: absolute;
-      height: 32px;
-      width: 32px;
-      cursor: pointer;
-      &:hover{
-        background: url('../images/icon_cancel_on.png') top right no-repeat;
-      }
-  }
-
-  .info_box{
-    width: 100%;
-    height: auto;
-    background: #fff;
-    color: #000;
-    text-align: center;
-    .pink_text{
-      font-size: 16px;
-      color: red;
-    }
-    .con{
-      width: 100%;
-      color: $frame;
-      font-size: 18px;
-      height: 40px;
-      margin: 30px 0 10 0;
-      .info_title{
-        width: 50px;
-        height: 40px;
-        color: $frame_title;
-        position: absolute;
-        left: 4%;
-      }
-      .info_content{
-        width: 83px;
-        height: 40px;
-        line-height: 40px;
-        margin: 0 0 0 0;
-        font-size: 18px;
-        background: $info_content;
+    .top{
+        width: 100%;
+        height: 42px;
+        @include bg_2;
+        width: 100%;
         color: #fff;
-        padding: 0px 0 0 0px;
-        left: 88px;
-        display: inline-block;
+        text-align: center;
+        font-size: 20px;
+        padding: 8px 0 0 0;
+    }
+
+    .popout_xx {
+        background: url('../images/icon_cancel.png') top right no-repeat;
+        display: block;
+        top: 5px;
+        right: 5px;
         position: absolute;
-      }
-      input[type=text]{
-        width: 185px;
-        height: 40px;
-        margin: 0px 0 0 0px;
-        background: $frame_bg;
-        border: 2px solid $info_content;
-        color: $white;
-        display: inline-block;
-        position: absolute;
-        left: 171px;
-      }
-      .number{
-        width: 185px;
-        height: 40px;
-        margin: 0px 0 0 0px;
-        background: $frame_bg;
-        border: 2px solid $info_content;
-        color: #000;
-        display: inline-block;
-        position: absolute;
-        left: 171px;
-      }
-      }
-      .trans_money{
-        width: 270px;
-        height: 40px;
-        margin: 15px 0 0 80;
+        height: 32px;
+        width: 32px;
         cursor: pointer;
-        background: url("/images/bn_bbin_01.png") no-repeat;
-        background-size: 100% 100%;
         &:hover{
-          background: url("/images/bn_bbin_01_on.png") no-repeat;
-          background-size: 100% 100%;
-        }
-      }
-      .enter_game{
-        width: 270px;
-        height: 40px;
-        margin: 15px 0 0 80;
-        cursor: pointer;
-        background: url("/images/bn_bbin_02.png") no-repeat;
-        background-size: 100% 100%;
-        &:hover{
-          background: url("/images/bn_bbin_02_on.png") no-repeat;
-          background-size: 100% 100%;
+            background: url('../images/icon_cancel_on.png') top right no-repeat;
         }
     }
-  }
 
+    .info_box{
+        width: 100%;
+        height: auto;
+        background: #fff;
+        color: #000;
+        text-align: center;
+        .pink_text{
+            font-size: 16px;
+            color: red;
+        }
+        .con{
+            width: 100%;
+            color: $frame;
+            font-size: 18px;
+            height: 40px;
+            margin: 30px 0 10 0;
+            .info_title{
+                width: 50px;
+                height: 40px;
+                color: $frame_title;
+                position: absolute;
+                left: 4%;
+            }
+            .info_content{
+                width: 83px;
+                height: 40px;
+                line-height: 40px;
+                margin: 0 0 0 0;
+                font-size: 18px;
+                background: $info_content;
+                color: #fff;
+                padding: 0px 0 0 0px;
+                left: 88px;
+                display: inline-block;
+                position: absolute;
+            }
+            input[type=text]{
+                width: 185px;
+                height: 40px;
+                margin: 0px 0 0 0px;
+                background: $frame_bg;
+                border: 2px solid $info_content;
+                color: $white;
+                display: inline-block;
+                position: absolute;
+                left: 171px;
+            }
+            .number{
+                width: 185px;
+                height: 40px;
+                margin: 0px 0 0 0px;
+                background: $frame_bg;
+                border: 2px solid $info_content;
+                color: #000;
+                display: inline-block;
+                position: absolute;
+                left: 171px;
+            }
+        }
+
+        .trans_money{
+            width: 270px;
+            height: 40px;
+            margin: 15px 0 0 80;
+            cursor: pointer;
+            background: url("/images/bn_bbin_01.png") no-repeat;
+            background-size: 100% 100%;
+            &:hover{
+                background: url("/images/bn_bbin_01_on.png") no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+
+        .enter_game{
+            width: 270px;
+            height: 40px;
+            margin: 15px 0 0 80;
+            cursor: pointer;
+            background: url("/images/bn_bbin_02.png") no-repeat;
+            background-size: 100% 100%;
+            &:hover{
+                background: url("/images/bn_bbin_02_on.png") no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
 }
 
 
 #summit_error, #no_played, #no_favorite{
-  .check_yes{
-    border: 0;
-    background: url("/images/bn_ok.png") no-repeat;
-    background-size: 100% 100%;
-    margin: 0 36% 0 0;
-    float: right;
-    cursor: pointer;
-    &:hover{
-      background: url("/images/bn_ok_on.png") no-repeat;
-      background-size: 100% 100%;
+    .check_yes{
+        border: 0;
+        background: url("/images/bn_ok.png") no-repeat;
+        background-size: 100% 100%;
+        margin: 0 36% 0 0;
+        float: right;
+        cursor: pointer;
+        &:hover{
+            background: url("/images/bn_ok_on.png") no-repeat;
+            background-size: 100% 100%;
+        }
     }
-  }
 }

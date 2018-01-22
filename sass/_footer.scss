@@ -1,10 +1,8 @@
+@charset "UTF-8";
 @import "variable";
 @import "mixin";
-@CHARSET "UTF-8";
 
-
-footer
-{
+footer{
     font-size: 18px;
     min-height: 205px;
     padding: 0;
@@ -12,8 +10,7 @@ footer
     margin: 0 auto;
     background: #2c2d28;
     text-align: center;
-    .footer_box
-    {
+    .footer_box{
         width: 100%;
         max-width: 1300px;
         margin: 0 auto;
@@ -24,8 +21,7 @@ footer
         }
     }
 
-    .footer_text
-    {
+    .footer_text{
         font-size: 13px;
         display: inline-block;
         line-height: 26px;
@@ -35,27 +31,19 @@ footer
         }
     }
 
-    .footer_logo
-    {
+    .footer_logo{
         padding: 0;
         display: inline-block;
         @media(max-width: 1000px){
           padding: 0;
         }
         img{
-        //   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        //   filter: grayscale(100%);
           max-width: 90px;
-         // &:not(:first-child){
-            padding-top: 15px;
-          //}
-          
+            padding-top: 15px;       
         }
-
     }
 
-    .whitetext
-    {
+    .whitetext{
         color: $footer_right_s;
         font-size: 18px;
         display: inline-block;
@@ -71,11 +59,8 @@ footer
         display: inline-block;
         margin: 0 0 10px 0;
     }
-    hr{
-        //border: 1px solid gray;
-    }
-
 }
+
 .contact {
     width: 0;
     height: 335px;
@@ -86,27 +71,22 @@ footer
     vertical-align: middle;
     background: url("../images/service.png") 0 0 no-repeat;
     z-index: 5;
-
     &:before {
         position: absolute;
         content: url(../images/service_0.png);
-    margin-left: -40px;
-    margin-top: -5px;
+        margin-left: -40px;
+        margin-top: -5px;
     }
 
-
-
-
     span {
-      width: 100%;
-      height: 36px;
-      display: inline-block;
-      font-size: 13px;
-      line-height: 33px;
-      margin: 5px 0 3px 17px;
-      padding-left: 123px;
-      padding-right: 10px;
-
+        width: 100%;
+        height: 36px;
+        display: inline-block;
+        font-size: 13px;
+        line-height: 33px;
+        margin: 5px 0 3px 17px;
+        padding-left: 123px;
+        padding-right: 10px;
         a {
             display: block;
             width: 100%;
@@ -152,19 +132,19 @@ footer
 
 /*footer的字縮排對齊*/
 .li_indent {
-  padding-left: 1em;
-  text-indent: -1em;
+    padding-left: 1em;
+    text-indent: -1em;
 }
 
 
 /**/
 #introduction {
-  .row {
-    margin: 0 auto;
+    .row {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
     max-width: 1200px;
-  }
-  max-width: 1200px;
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .contact_div {

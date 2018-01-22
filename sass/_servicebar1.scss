@@ -1,20 +1,17 @@
 @import "mixin";
 @import "variable";
 
-
 #Support, #FAQ, #Requirements, #News, #Promotions{
    .wrap{
         max-width: 1000px;
     }
 }
 
-
 /*分頁：促銷活動*/
 #Promotions {
    .wrap{
         max-width: 1000px;
     }
-  //background: $static_bg;
     color: $promotion_color;
     .promo_content {
         margin-top: 5%;
@@ -65,9 +62,6 @@ div#contact {
     background: url("/images/service.png") 0 0/100% no-repeat;
     height: 220px;
     width: 50px;
-    // @media (max-width: 480px) {
-    //     display: none;
-    // }
 }
 
 /*分頁：新聞中心*/
@@ -84,8 +78,6 @@ div#contact {
     }
 
     .news_logo {
-        //transform: rotate(90deg);
-        //padding: 12px 0px 0px 15px;
         font-size: 13px;
         background: url('/images/background00.jpg') 0 0 repeat;
     }
@@ -219,12 +211,6 @@ div#contact {
             margin-left: 1%;
         }
     }
-    // @media (max-width: 480px) {
-    //     .tleft,
-    //     .tright {
-    //         font-size: 12px;
-    //     }
-    // }
     .item {
         position: relative;
         border: solid 1px #ccc;
@@ -283,12 +269,9 @@ div#contact {
 
 /*分頁：常见问题*/
 #FAQ {
-//   ol, li{
-//     color: #000;
-//   }
-  .word{
-    padding: 0;
-  }
+    .word{
+        padding: 0;
+    }
     .citem {
         display: block;
         margin: 0 20px;
@@ -309,49 +292,48 @@ div#contact {
     }
 
     .item.div{
-      margin:auto;
+        margin:auto;
     }
+
     .item h5:before{
-      content: 'Q';
-      position: absolute;
-      padding: 15px;
-      color: $white;
-      width: 56px;
-      height: 56px;
-      margin-left: -65px;
-      top: -2px;
-      background: #2c2d28;
+        content: 'Q';
+        position: absolute;
+        padding: 15px;
+        color: $white;
+        width: 56px;
+        height: 56px;
+        margin-left: -65px;
+        top: -2px;
+        background: #2c2d28;
     }
+
     .item .subs{
-      position: relative;
+        position: relative;
     }
     .item .subs:before{
-      padding: 20px 0 0 5px;
-      font-size: 20px;
-      content: 'ANS';
-      position: absolute;
-      width: 56px;
-      height: calc(100% + 14px);
-      margin-left: -65px;
-      top: -2px;
-      background: #949494;
-      border: 1px solid #2c2d28;
-      color: #fff;
+        padding: 20px 0 0 5px;
+        font-size: 20px;
+        content: 'ANS';
+        position: absolute;
+        width: 56px;
+        height: calc(100% + 14px);
+        margin-left: -65px;
+        top: -2px;
+        background: #949494;
+        border: 1px solid #2c2d28;
+        color: #fff;
     }
 
     .faq_title {
         height: 56px;
         top: 12px;
-        //border: 2px solid $faq_r_border;
         font-size: 35px;
         line-height: 50px;
-        //border: 2px solid $faq_r_border;
-        //@include bg_6;
     }
 
     hr{
-      width: 100%;
-      margin: 0;
+        width: 100%;
+        margin: 0;
     }
 
     .item {
@@ -373,9 +355,9 @@ div#contact {
             top: 5px;
             cursor: pointer;
         }
+
         p {
             margin: 5px;
-            //color: #FFF;
         }
 
         h5 {
@@ -387,13 +369,14 @@ div#contact {
             color: #442a69;
             font-family: $fontA;
         }
+
         .subs {
             margin: 15px 0 0 0;
             display: none;
             background: #fff;
-            //color: #6f8c3d;
         }
     }
+
     .item.show {
         background: #eee;
         h5 {
@@ -407,6 +390,7 @@ div#contact {
 
 /*分頁：技术条件*/
 #Requirements {
+
     .set_margin {
         max-width: 1000px;
         width: 100%;
@@ -460,12 +444,7 @@ div#contact {
             margin-left: 1%;
         }
     }
-    // @media (max-width: 480px) {
-    //     .tleft,
-    //     .tright {
-    //         font-size: 12px;
-    //     }
-    // }
+
     .item {
         position: relative;
         border: solid 1px #ccc;
@@ -548,7 +527,6 @@ div#contact {
 
 //mobile 手機投注
 #MobileCasino {
-    //background: #000;
     h4 {
         font: 24px/26px $fontA;
     }
@@ -582,7 +560,6 @@ div#contact {
 }
 
 #mobile_casino {
-       
     h1 {
         margin-bottom: 0px;
         margin-top: 36px;

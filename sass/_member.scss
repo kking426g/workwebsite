@@ -1,25 +1,5 @@
 @import "variable";
 @import "mixin";
-
-//設定margin-top
-// #Deposit, 
-// #transfer,
-// #Withdrawal, 
-// #BankSettings, 
-// #PersonalProfile, 
-// #GameLogs, 
-// #AccountRecords, 
-// #MyAccount, 
-// #Favrite, 
-// #MobileCasino, 
-// #News,
-// #Paymentdone,
-// #resetPassword,
-// #withdrawPassword{
-//     //margin-top: -30px;
-
-// }
-
 .member_pic{
     width: 100%; 
     background: url(/images/top_Member_Center.png) no-repeat;
@@ -33,7 +13,6 @@
        height: 166px;
     }
 
-
     .pagename{
         max-width: 800px;
         margin: 0 auto;
@@ -42,7 +21,6 @@
         padding: 60px 0px 0 0;
         text-align: right;
     }
-
 }
 
 .static_pic{
@@ -61,38 +39,33 @@
 
 
 #BankSettings, #PersonalProfile, #GameLogs, #AccountRecords, #MyAccount, #Deposit, #Withdrawal, #PersonalProfile, #transfer, #online_pay{
-  .wrap{
-    .word{
-      .selectview{
-        //background: #442a69;
-        color: #898989;
-        padding: 10px 0 0 0;
-        //border: 1px solid #707070;
-        border-radius: 10px;    
-        // @media(min-width: 900px){
-        //     max-height: 230px;
-        // }
-      }
-      .container{
-        border-radius: 10px;
-        border: 1px solid #707070;
-        padding: 0;
-        table{
-            color: #898989;
-            border-radius: 10px;
-            border: none;
-            .step_title1{
-                border-radius: 10px 0 0 10px;
+    .wrap{
+        .word{
+            .selectview{
+                color: #898989;
+                padding: 10px 0 0 0;
+                border-radius: 10px;    
             }
-        }                       
-      }
-      input, input[type=text], input[type=number], input[type=password]{
-          width: 100%;
-          height: 100%;
-          height: 37px;
-      }
+            .container{
+                border-radius: 10px;
+                border: 1px solid #707070;
+                padding: 0;
+                table{
+                    color: #898989;
+                    border-radius: 10px;
+                    border: none;
+                    .step_title1{
+                        border-radius: 10px 0 0 10px;
+                    }
+                }                       
+            }
+            input, input[type=text], input[type=number], input[type=password]{
+                width: 100%;
+                height: 100%;
+                height: 37px;
+            }
+        }
     }
-  }
 }
 
 
@@ -102,19 +75,18 @@
 
 
 .member_title{
-  width: 100%;
-  height: 50px;
-  //background: #442a69;
-  margin: 0px auto;
-  .title{
-    padding: 15px;
-    margin: 20px;
-    text-align: center;
-    a{
-    color: gray;
-    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    margin: 0px auto;
+    .title{
+        padding: 15px;
+        margin: 20px;
+        text-align: center;
+        a{
+            color: gray;
+            font-size: 20px;
+        }
     }
-  }
 }
 
 
@@ -126,120 +98,118 @@
 }
 
 .member_big_bg{
-  max-width: 1000px;
-  margin: 0px auto 20px auto;
+    max-width: 1000px;
+    margin: 0px auto 20px auto;
 }
 
 
 .cover_page_title_big{
-  font-size: 25px;
-  text-align: center;
-  width: 100%;
-  @include  bg_7;
-  color: #fff;
-  height: 70px;
-  max-width: 1000px;
-  padding: 20px 0 0 0px;
-  margin: 0 auto;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    @include  bg_7;
+    color: #fff;
+    height: 70px;
+    max-width: 1000px;
+    padding: 20px 0 0 0px;
+    margin: 0 auto;
 }
 
 #Paymentdone{
-  .word{
-    min-height:600px;
-    text-align: center;
-  }
-  .yellow{
-    color: yellow;
-  }
-
-  .container{
-    min-height: 230px;
-    .row{
-      padding: 8% 0 6% 0;
-      border: 1px solid;
+    .word{
+        min-height:600px;
+        text-align: center;
     }
-  }
-
-
-  .check_record_btn{
-    width: 191px;
-    height: 42px;
-    border: 0;
-    background: url("/images/bn_account.png") no-repeat;
-    &:hover{
-      background: url("/images/bn_account_on.png") no-repeat;
+    .yellow{
+        color: yellow;
     }
-  }
 
-  .back_btn{
-    width: 191px;
-    height: 42px;
-    border: 0;
-    background: url("/images/bn_back.png") no-repeat;
-    &:hover{
-      background: url("/images/bn_back_on.png") no-repeat;
+    .container{
+        min-height: 230px;
+        .row{
+            padding: 8% 0 6% 0;
+            border: 1px solid;
+        }
     }
-  }
+
+    .check_record_btn{
+        width: 191px;
+        height: 42px;
+        border: 0;
+        background: url("/images/bn_account.png") no-repeat;
+        &:hover{
+            background: url("/images/bn_account_on.png") no-repeat;
+        }
+    }
+
+    .back_btn{
+        width: 191px;
+        height: 42px;
+        border: 0;
+        background: url("/images/bn_back.png") no-repeat;
+        &:hover{
+            background: url("/images/bn_back_on.png") no-repeat;
+        }
+    }
 }
 
 
 //重置登入密碼
 #resetPassword, #withdrawPassword{
-  h5{
-    //color: $title;
-    font-size: 18px;
-  }
-  .citem {
-    display: block;
-    margin: 0 20px;
-    line-height: 40px;
-    padding: 0 10px;
-    color: $white;
-    width: 100%;
-    .s_title {
-      display: inline-block;
-      width: 30%;
-      height: 38px;
-      line-height: 38px;
-      color: #fff;
-      background: #969696;
-      text-align: right;
-      font-size: 16px;
-      padding: 0 8px 0 0;
-      margin: 0px 0 10px 0;
+    h5{
+        //color: $title;
+        font-size: 18px;
     }
-    
-    .s_content {
-      display: inline-block;
-      width: 60%;
-      height: 38px;
-      color: #000;
-      line-height: 40px;
-      background: #fff;
-      text-align: center;
-      margin: 10px 0 10px 0;
-
-      input[type=password]{
+    .citem {
+        display: block;
+        margin: 0 20px;
+        line-height: 40px;
+        padding: 0 10px;
+        color: $white;
         width: 100%;
-        border: 0;
-        height: 38px;
-        text-align: center;
-        //border: solid $info_content 2px;
-      }
+        .s_title {
+            display: inline-block;
+            width: 30%;
+            height: 38px;
+            line-height: 38px;
+            color: #fff;
+            background: #969696;
+            text-align: right;
+            font-size: 16px;
+            padding: 0 8px 0 0;
+            margin: 0px 0 10px 0;
+        }
+        
+        .s_content {
+            display: inline-block;
+            width: 60%;
+            height: 38px;
+            color: #000;
+            line-height: 40px;
+            background: #fff;
+            text-align: center;
+            margin: 10px 0 10px 0;
 
+            input[type=password]{
+                width: 100%;
+                border: 0;
+                height: 38px;
+                text-align: center;
+                //border: solid $info_content 2px;
+            }
+        }
     }
-  }
 }
 
-    .bar{
-        width: 100%;
-        height: 30px;
-        background: #961818;
-    }
+.bar{
+    width: 100%;
+    height: 30px;
+    background: #961818;
+}
 
 //平台轉帳
 #transfer {
-      margin-top: 20px;
+    margin-top: 20px;
     input::-webkit-input-placeholder {
         color: $placeholder;
     }
@@ -280,6 +250,7 @@
         font-size: 18px;
         height: 30px;
         margin: 3px 0 3px 3px;
+
         .info_content {
             width: 34%;
             height: 30px;
@@ -298,7 +269,6 @@
             height: 30px;
             margin: 0px 0 0 0px;
             background: #fff;
-            //border: 1px solid $info_content;
             display: inline-block;
             position: relative;
             left: 33%;
@@ -437,9 +407,7 @@ div#Account {
                 padding-bottom: 0px;
                 text-align: center;
                 .on {
-                    //background: #f1d391;  
                     a {
-                        //color: #fff;
                         cursor: pointer;
                     }
                 }
@@ -447,16 +415,8 @@ div#Account {
                     width: 10%;
                     border-bottom: 1px solid $title;
                 }
-                .off {
-                    //background: #f1d391; 
-                     &:hover, &:focus {
-                        //@include bg_5;
-                        //background: #f1d391;
-                    }
-                }
                 li {
                     width: 15%;
-                    //height: 100%;
                     float: left;
                     color: $nav_off;
                     display: inline-block;
@@ -471,14 +431,11 @@ div#Account {
                         background: #efefef;
                     }
                     &:hover, &:focus {
-                        //@include bg_5;
-                        //background: #624192;
                         a {
                             color: #000;
                             background: #00ace5;
                         }
                     }
-                
                 }
             }
         }
@@ -488,27 +445,22 @@ div#Account {
         border: 0px;
     }
     .nav-tabs{
-      border: 0;
-      li{
-        width: 33.33%;
-        text-align: center;
-        a{
-          border: 0;
-        //   &:hover{
-        //     background: $nav_on_background;
-        //   }
+        border: 0;
+        li{
+            width: 33.33%;
+            text-align: center;
+            a{
+                border: 0;
+            }
         }
-      }
     }
     #History,
     #ReceivedMessage {
-          background: #efefef;
-          color: #000;
-        //   width: 95%;
-        //   margin: 0 auto;
-          .container{
+        background: #efefef;
+        color: #000;
+        .container{
             margin: 0;
-          }
+        }
         .item {
             font-family: 16px/16px $fontA;
             position: relative;
@@ -580,9 +532,6 @@ div#Account {
         }
     }
     #SendingMessage {
-      //background: $static_bg;
-    //   width: 95%;
-    //   margin: 0px auto 0 30px;
         .tit {
             font: 26px/90px $fontA;
             margin: 15px -15px;
@@ -590,7 +539,6 @@ div#Account {
         input,
         textarea {
             width: 100%;
-            //border: 2px solid $info_content;
         }
         input {
             height: 36px;
@@ -606,27 +554,15 @@ div#Account {
         .col-md-2.col-ms-12.text-right {
             font: bold 22px/50px $fontA;
         }
-        @media (max-width: 480px) {
-            .tit {
-                font: bold 14px/16px $fontA;
-            }
-            .col-md-2.col-ms-12.text-right {
-                font: bold 22px/50px $fontA;
-                text-align: left;
-                img {
-                    width: 50px;
-                }
-            }
-        }
     }
 }
 
 //發送訊息
 #SendingMessage {
-  height: 100%;
-  .container{
-    margin: 0px auto;
-  }
+    height: 100%;
+    .container{
+        margin: 0px auto;
+    }
     textarea::-webkit-input-placeholder {
         color: #fff;
     }
@@ -645,7 +581,7 @@ div#Account {
 
 //收件夾
 #ReceivedMessage {
-  height: 100%;
+    height: 100%;
     table {
         font: 14px/14px $fontA;
         .subs {
@@ -672,30 +608,17 @@ div#Account {
     .no_border{
       border: 0;
     }
-    #bankdeposit {
-        // td {
-        //     font: 16px/16px $fontA;
-        //     min-height: 50px;
-        //     padding: 10px;
-        // }
-    }
     #sys_preview {
         max-width: 300px;
         max-height: 300px;
         display: none;
     }
-    // td {
-    //     font: 16px/16px $fontA;
-    //     min-height: 50px;
-    //     padding: 10px;
-    // }
 }
 
 
 
 /*我的账户*/
 #MyAccount {
-
     .refresh_icon {
         width: 26px;
         height: 26px;
@@ -708,13 +631,10 @@ div#Account {
         color: #fff;
         text-align: center;
     }
-    .right {
-        //text-align: right;
-    }
     table {
-      padding: 0;
-      font-weight: normal;
-      font-size: 14px;
+        padding: 0;
+        font-weight: normal;
+        font-size: 14px;
         .bw{
          padding: 10px; 
          text-align: center;  
@@ -729,9 +649,6 @@ div#Account {
     }
     .outer_table {
         width: 100%;
-        //background-color: $table_bg_r;
-        //border: 1px solid #442a69;
-
         input,
         input[type=password]::-webkit-input-placeholder {
             color: $placeholder;
@@ -746,47 +663,46 @@ div#Account {
 
 //deposite
 #wcdeposit, #alipayeposit, #bank_1{
-  table:not(.outer_table) {
-    width: 100%;
-    td{
-      width: 33%;
+    table:not(.outer_table) {
+        width: 100%;
+        td{
+            width: 33%;
+        }
     }
-  }
 }
 
 //會員中心的 表格
 .outer_table {
-  color: #fff;
+    color: #fff;
     width: 100%;
-    //background-color: $table_bg_r;
-     border: 1px solid #707070;
+    border: 1px solid #707070;
 }
 
 //帳戶紀錄
 #AccountRecords{
-  table{
-    font-size: 14px;
-    font-weight: normal;
-    th{
-      font-weight: normal;
-      border: 1px solid #707070;
-      text-align: center;
+    table{
+        font-size: 14px;
+        font-weight: normal;
+        th{
+            font-weight: normal;
+            border: 1px solid #707070;
+            text-align: center;
+        }
+        td{
+            text-align: center;
+        }
     }
-    td{
-        text-align: center;
-    }
-  }
 }
 
 //帳戶紀錄
 #GameLogs{
-  table{
-    font-size: 14px;
-    font-weight: normal;
-    th{
-      font-weight: normal;
+    table{
+        font-size: 14px;
+        font-weight: normal;
+        th{
+            font-weight: normal;
+        }
     }
-  }
 }
 
 #AccountRecords, #GameLogs{
@@ -804,26 +720,25 @@ div#Account {
     lable{
         font:14px/30px $fontA;
     }
-
 }
-
 
 //我的最愛 標頭
 .top_outer{
-  @include bg_7;
-  width: 100%;
-  height: 60px;
-  max-width: 1000px;
-  margin: 0 auto;
+    @include bg_7;
+    width: 100%;
+    height: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
+
 .top_info{
-  background: $static_bg; 
-  width: 100%;
-  height: 60px;
-  max-width: 1000px;
-  margin: 0 auto;
-  color: #f1d391;;
-  font-size: 18px;
-  line-height: 62px;
-  padding: 0 0 0 20px;
+    background: $static_bg; 
+    width: 100%;
+    height: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #f1d391;;
+    font-size: 18px;
+    line-height: 62px;
+    padding: 0 0 0 20px;
 }

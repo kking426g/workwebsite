@@ -2,7 +2,6 @@
 
 //placeholder
 select, textarea, input, input[type=text], input[type=number], input[type=password] {
-    //border: solid #a000aa 1px;
     font: 16px/1em $fontA;
     color: #969696;
     background: #fff;
@@ -115,7 +114,6 @@ select, textarea, input, input[type=text], input[type=number], input[type=passwo
             }           
             .real_hover{
                 display: none;
-                //border: 1px solid white;
                 height: 100%;
                 width: 100%;
                 padding: 16px 0 0 75px;                
@@ -139,7 +137,6 @@ select, textarea, input, input[type=text], input[type=number], input[type=passwo
             }
             .sport_hover{
                 display: none;
-                //border: 1px solid white;
                 height: 100%;
                 width: 100%;
                 padding: 85px 0 0 50px
@@ -163,7 +160,6 @@ select, textarea, input, input[type=text], input[type=number], input[type=passwo
             }
             .lottery_hover{
                 display: none;
-                //border: 1px solid white;
                 height: 100%;
                 width: 100%;
                 padding: 20px 0 0 50px;
@@ -210,7 +206,6 @@ select, textarea, input, input[type=text], input[type=number], input[type=passwo
             }
             .ele_hover{
                 display: none;
-                //border: 1px solid white;
                 height: 100%;
                 width: 100%;
                 padding: 20px 0px 10px 90px;              
@@ -227,9 +222,6 @@ form{
 
 .logo_home{
     position: absolute;
-    // z-index: 1;
-    // width: 281px;
-    // height: 87px;
     top:0;
     left: 0;
     margin: -27px 0 0 0px;
@@ -240,7 +232,6 @@ form{
 .word {
     color: #707070;
     margin: 0;
-    //background: $static_bg;
     padding: 20px 40px;
     width: 100%;
 
@@ -260,7 +251,6 @@ form{
     .title_1{
         color: $member_title;
         font-size: 16px;
-        //text-align: center;
         margin: 15px;
     }
 
@@ -274,8 +264,6 @@ form{
         padding: 30px 10px 10px 10px;
         text-align: center;
         background: #707070;
-        //@include bg_6;
-        //border: solid 1px #226b98;
 
         div{
         height: 100px;
@@ -297,9 +285,9 @@ form{
 
     .title{
         a{
-        color: #46f5f8;
-        line-height: 50px;
-        font-size: 18px;
+            color: #46f5f8;
+            line-height: 50px;
+            font-size: 18px;
         }
     }
 
@@ -311,31 +299,31 @@ form{
 
 
     .step_title{
-      background-color: black;
-      color: white;
-      border: solid #4D4E52 2px;
-      height: 253px;
+        background-color: black;
+        color: white;
+        border: solid #4D4E52 2px;
+        height: 253px;
     }
     .step_content{
-      background-color: black;
-      color: white;
-      border: solid #4D4E52 2px;
-      min-height: 160px;
-      padding: 10px;
-      .left{
-        width: 40%;
-        display: inline-block;
-      }
-      .right{
-        width: 50%;
-        float: right;
-        display: inline-block;
-      }
+        background-color: black;
+        color: white;
+        border: solid #4D4E52 2px;
+        min-height: 160px;
+        padding: 10px;
+        .left{
+            width: 40%;
+            display: inline-block;
+        }
+        .right{
+            width: 50%;
+            float: right;
+            display: inline-block;
+        }
     }
 
     table{
-      float: left;
-      color: #fff;
+        float: left;
+        color: #fff;
     }
    .page_title{
         font-size: 30px;
@@ -677,11 +665,6 @@ div.loginview {
             width: 50px;
         }
     }
-    @media (max-width: 480px) {
-        div.info {
-            display: none;
-        }
-    }
 }
 
 
@@ -748,15 +731,12 @@ div.loginview {
     }
 }
 
-
-/*超連結*/
-$color-red: $red !important;
 a, a:link, a:focus, a:hover, a:active, a:visited {
     text-decoration: none !important;
     font: 16px/18px $fontA; //1em;
     color: #000;
     &.red{
-       color: $color-red;
+       color: red;
     }
 }
 
@@ -806,17 +786,14 @@ footer {
     padding-top: 2em;
     font-size: 18px;
     padding: 36px 15px 0 15px;
-    ul.nav-footer
-    {
+    ul.nav-footer{
         display: block;
         width: 100%;
         margin: 0 auto 20px auto;
         padding: 0;
         text-align: center;
         line-height: 41px;
-
-        li
-        {
+        li{
             display: inline-block;
 
             a,
@@ -834,7 +811,6 @@ footer {
             }
         }
     }
-
 }
 
 /*主選單*/
@@ -871,8 +847,6 @@ footer {
                         }
                     }
                 }
-
-
             }
         }
     }
@@ -974,37 +948,14 @@ footer {
             background-size: 100% 100%;
         }
     }
-
-
-
 }
-
 
 
 .word {
-  p{
-    font-family: $fontA;
-  }
-}
-
-
-//手機版的BACK鍵
-button.back {
-    background: url('../images/icon_back01.png') 0 0 no-repeat;
-    border: 0 none transparent;
-    width: 36px;
-    height: 36px;
-    cursor: pointer;
-    background-size: contain;
-    outline: none;
-    &.align-right {
-        //or use css3 turn 180deg
-        background: url('../images/icon_back02.png') 0 0 no-repeat;
-        background-size: contain;
+    p{
+        font-family: $fontA;
     }
 }
-
-
 
 table {
     font: 20px/22px $fontA;
@@ -1030,12 +981,12 @@ table {
             }
 
             .td_div_left{
-              background: #969696;
-              color: $white;
-              font-size: 17px;
-              line-height: 37px;
-              height: 37px;
-              padding: 0 15px 0 15px;
+                background: #969696;
+                color: $white;
+                font-size: 17px;
+                line-height: 37px;
+                height: 37px;
+                padding: 0 15px 0 15px;
             }
             .td_div_right{
                 text-align: center;
@@ -1051,15 +1002,8 @@ table {
         .dd {
             position: relative;
         }
-        // .dd:before {
-        //     position: absolute;
-        //     content: ":";
-        //     left: -3px;
-        //     top: 50%;
-        //     -webkit-transform: translateX(-50%) translateY(-50%);
-        //     transform: translateX(-50%) translateY(-50%);
-        // }
     }
+
     &.bg_gray {
         background: rgba(188,188,188,0.3);
         border: solid 1px #888;
@@ -1077,7 +1021,6 @@ table {
     }
     .ps {
         font-size: 12px;
-        //color: $ps_color;
     }
 
     .dd {
@@ -1087,21 +1030,8 @@ table {
         float: right;
         max-width: 100px;
     }
-    // .dd:before {
-    //     position: absolute;
-    //     content: ":";
-    //     left: -15px;
-    //     top: 50%;
-    //     -webkit-transform: translateX(-50%) translateY(-50%);
-    //     transform: translateX(-50%) translateY(-50%);
-    // }
-    @media (max-width: 480px) {
-        font: 10px/12px $fontA;
-        tr > th {
-            line-height: 16px;
-        }
-    }
 }
+
 table.bw {
     tr {
         th, td {
@@ -1131,7 +1061,6 @@ table.bw {
 //the  tables  scroll
 div.tbscroll {
     margin: 0;
-
     table {
         width: 100%;
         margin: 0;
@@ -1154,6 +1083,7 @@ div.tbscroll {
 #banner div.flexslider{
     overflow:hidden;;
 }
+
 //手機全修正
 @media (max-width: 800px) {
     .row { /*bootstrap 修正*/
@@ -1163,6 +1093,7 @@ div.tbscroll {
         padding: 0;
     }
 }
+
 /*gray*/
 .gray {
   -webkit-filter: grayscale(100%);
@@ -1198,7 +1129,6 @@ div.tbscroll {
 
 label.my-error-class {
     position: absolute;
-    //top: -10px;
     right: 17px;
     z-index: 2;
     background: $white;
@@ -1235,50 +1165,10 @@ label.my-error-class {
     }
 }
 
-
-
-/*修掉時間選項破版*/
-  @media (max-width: 480px) {
-    .table-condensed > thead > tr > th,
-    .table-condensed > tbody > tr > th,
-    .table-condensed > tfoot > tr > th,
-    .table-condensed > thead > tr > td,
-    .table-condensed > tbody > tr > td,
-    .table-condensed > tfoot > tr > td {
-        padding: 5px 0;
-    }
-
-    input:not([type="file"]):not([type="radio"]):not([type="checkbox"]), textarea, select {
-        width: 100%;
-        min-width: 140px;
-        height: 32px;
-        border-radius: 3px;
-    }
-
-    table{
-      tr{
-        th, td{
-          padding: 3px;
-          min-height: 40px;
-        }
-      }
-    }
-    #Captcha {
-          min-width: 74px;
-    }
-
-    #phoneCode {
-      min-width: 74px;
-    }
-}
-
-
-
-
 select option{
-  border: solid #ddd 1px;
-  background: #222;
-  color: #eee;
+    border: solid #ddd 1px;
+    background: #222;
+    color: #eee;
 }
 
 //bootstrap page 加強
@@ -1299,12 +1189,14 @@ select option{
     color: $white;  height: 100%; width: 96%; margin: 40px 2%;   background: #000;
     font:14px/16px $fontA;
 }
+
 #AccountRecords,
 #GameLogs{
     div, div lable{
         font:14px/30px $fontA;
     }
 }
+
 //dataTables
 .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate, .dataTables_wrapper .paginate_button {
     color:#000 !important;
@@ -1316,93 +1208,9 @@ select option{
         &.previous{ color:#000 !important;}
         &.next { color:#000 !important;}
     }
-
-}
-
-
-///
-
-
-//2016-08-10
-div.listitem{
-    text-align: center;
-    font: 16px/18px $fontA;
-    color:#9ec0ca;
-    div.icon{
-
-        text-align: left;
-        padding:10px 0 0 90px;
-        min-height: 80px;
-        color:#9ec0ca;
-        h4{
-            color: #46f4ea;
-            margin-bottom: 2px;
-        }
-        &:before{
-            height:56px;
-            width:52px;
-            position:absolute;
-            top:10px;
-            left:40px;
-        }
-        &.service:before {
-            content: url('/images/icon_05.png');
-        }
-        &.product:before{
-            content: url('/images/icon_06.png');
-        }
-        &.help:before{
-            content: url('/images/icon_07.png');
-        }
-
-    }
-    p.icon{
-        &.tleft:before{
-            content: url('/images/icon_08.png');
-        }
-        &.rleft:before{
-            content: url('/images/icon_09.png');
-        }
-
-    }
-    div.box{
-        border: solid 1px;
-        border-color: #444 #666 #444 #666;
-        color:#9ec0ca;
-        h5{
-            color:$white;
-            margin:20px 15px;
-            text-align: left;
-        }
-        p{
-            color: #01fdcc;
-            margin: 20px 15px;
-            text-align: left;
-            a,a:link{
-               margin: 0 15px;
-            }
-            img{
-                margin: 5px 0;
-            }
-        }
-
-        span.bignum{
-            margin:0 0.3em;
-            letter-spacing:2px;
-            color:$red;
-            font: 1.5em/1.5em $fontA;
-        }
-        span.red{
-            color:$red;
-            font: 1.6em/1.6sem $fontA;
-        }
-    }
 }
 
 div.quickbox{
-    &.row{
-        margin: 0;
-    }
     background: #eeeeee;
     text-align: center;
     font: 16px/18px $fontA;  
@@ -1410,6 +1218,10 @@ div.quickbox{
     padding: 15px 0;
     line-height: 28px;
     color: $quickbox_text;
+    &.row{
+        margin: 0;
+    }
+
     h5{
         color: $quickbox_text;
         font-size: 16px;
@@ -1418,6 +1230,7 @@ div.quickbox{
         padding: 0;
         margin: 0px 0 5px 0;
     }
+
     a{
       color:$quickbox_a;
       font-size: 18px/18px $fontA;
@@ -1439,10 +1252,7 @@ div.quickbox{
                 padding: 0 5px 0 0;
                 position:left;
                 color: $quickbox_text;
-                // top:5px;
-                // left:20px;
                 content: url('../images/0.png');
-                //background: url('/images/0.png') no-repeat;
             }
         }
 
@@ -1472,38 +1282,34 @@ div.quickbox{
     }
     background: #f1d391;
     width: 100%;
-      ul.nav-footer
-      {
-          display: block;
-          width: 100%;
-          background: #961818;
-          padding: 0;
-          text-align: center;
-          line-height: 35px;
-          background-size: 100% 100%;
-          height: 30px;
-          margin: 0 auto;
-          li{
-              display: inline-block;
+    ul.nav-footer{
+        display: block;
+        width: 100%;
+        background: #961818;
+        padding: 0;
+        text-align: center;
+        line-height: 35px;
+        background-size: 100% 100%;
+        height: 30px;
+        margin: 0 auto;
+        li{
+            display: inline-block;
+            a,
+            a:link,
+            a:active,
+            a:visited{
+                display: inline-block;
+                font-size: 15px;
+                padding: 0 20px;
+                color: $contact_footer;
+            }
 
-              a,
-              a:link,
-              a:active,
-              a:visited
-              {
-                  display: inline-block;
-                  font-size: 15px;
-                  padding: 0 20px;
-                  color: $contact_footer;
-              }
-
-              &:not(:first-child):before
-              {
-                  content: "|";
-                  color: $contact_footer;
-              }
-          }
-      }
+            &:not(:first-child):before{
+                content: "|";
+                color: $contact_footer;
+            }
+        }
+    }
 }
 
 
@@ -1513,19 +1319,11 @@ article{
 
 
 .row{
-  margin-right: 0px;
-  margin-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .yellow {
-  color: yellow;
-  display: inline-block;
-}
-
-
-.black_bg{
-  // background: url("/images/background00.jpg") 0 0 repeat;
-  // box-shadow: 12px 0 24px -4px rgba(4, 0, 0, 0.8), -12px 0 24px -4px rgba(4, 0, 0, 0.8);
-
-
+    color: yellow;
+    display: inline-block;
 }

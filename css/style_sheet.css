@@ -279,7 +279,6 @@ html[xmlns] .flexslider .slides {
     right: 3px; }
   to {
     right: 5px; } }
-@CHARSET "UTF-8";
 .wrap {
   max-width: 1200px;
   margin: 0 auto; }
@@ -289,7 +288,6 @@ html[xmlns] .flexslider .slides {
   margin: 15px auto; }
   #static_topic .page_title {
     padding: 10px 0 0 0;
-    /* margin: 20px; */
     text-align: left;
     color: gray;
     font-size: 20px; }
@@ -335,7 +333,7 @@ html[xmlns] .flexslider .slides {
     right: 10px;
     z-index: 3; }
     #topic .hd-1r .bt2 {
-      float: left;
+      float: right;
       display: inline;
       width: 56px;
       height: 20px;
@@ -531,12 +529,6 @@ html[xmlns] .flexslider .slides {
         position: absolute;
         top: 4px;
         right: 4px; }
-    @media (max-width: 480px) {
-      #topic .language {
-        width: 115px;
-        top: 0;
-        right: 0;
-        font-size: 0.6rem; } }
     @media (min-width: 480px) and (max-width: 992px) {
       #topic .language {
         top: 5px;
@@ -2191,98 +2183,6 @@ td.day {
     right: 3px; }
   to {
     right: 5px; } }
-.right_box {
-  position: absolute;
-  left: 100%; }
-
-div.listitem {
-  text-align: center;
-  font: 16px/18px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC";
-  color: #9ec0ca; }
-  div.listitem div.icon {
-    text-align: left;
-    padding: 10px 0 0 90px;
-    min-height: 80px;
-    color: #9ec0ca; }
-    div.listitem div.icon h4 {
-      color: #46f4ea;
-      margin-bottom: 2px; }
-    div.listitem div.icon:before {
-      height: 56px;
-      width: 52px;
-      position: absolute;
-      top: 10px;
-      left: 40px; }
-    div.listitem div.icon.service:before {
-      content: url("/images/icon_05.png"); }
-    div.listitem div.icon.product:before {
-      content: url("/images/icon_06.png"); }
-    div.listitem div.icon.help:before {
-      content: url("/images/icon_07.png"); }
-  div.listitem p.icon.tleft:before {
-    content: url("/images/icon_08.png"); }
-  div.listitem p.icon.rleft:before {
-    content: url("/images/icon_09.png"); }
-  div.listitem div.box {
-    border: solid 1px;
-    border-color: #444 #666 #444 #666;
-    color: #9ec0ca; }
-    div.listitem div.box h5 {
-      color: #fff;
-      margin: 20px 15px;
-      text-align: left; }
-    div.listitem div.box p {
-      color: #01fdcc;
-      margin: 20px 15px;
-      text-align: left; }
-      div.listitem div.box p a, div.listitem div.box p a:link {
-        margin: 0 15px; }
-      div.listitem div.box p img {
-        margin: 5px 0; }
-    div.listitem div.box span.bignum {
-      margin: 0 0.3em;
-      letter-spacing: 2px;
-      color: #F00;
-      font: 1.5em/1.5em Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC"; }
-    div.listitem div.box span.red {
-      color: #F00;
-      font: 1.6em/1.6sem Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC"; }
-
-article {
-  display: none; }
-
-.row {
-  margin-right: 0px;
-  margin-left: 0px; }
-
-.yellow {
-  color: yellow;
-  display: inline-block; }
-
-/*字型*/
-@font-face {
-  font-family: Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Impact"), url(http://fonts.gstatic.com/l/font?kit=Q8EoN0_Oow67nwSRSWFESQ&skey=5128cd07406988e) format("woff2"); }
-/*ICON button*/
-/*table rule*/
-/*閃動效果*/
-@keyframes AnRight {
-  from {
-    right: 3px; }
-  to {
-    right: 5px; } }
-@-moz-keyframes AnRight {
-  from {
-    right: 3px; }
-  to {
-    right: 5px; } }
-@-webkit-keyframes AnRight {
-  from {
-    right: 3px; }
-  to {
-    right: 5px; } }
 select, textarea, input, input[type=text], input[type=number], input[type=password] {
   font: 16px/1em Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC";
   color: #969696;
@@ -2806,9 +2706,6 @@ div.loginview {
         margin: 0;
         height: 60px;
         width: 50px; } }
-  @media (max-width: 480px) {
-    div.loginview div.info {
-      display: none; } }
 
 /* 打勾方塊 */
 .Check {
@@ -2867,13 +2764,12 @@ div.loginview {
       filter: alpha(opacity=30);
       opacity: 0.5; }
 
-/*超連結*/
 a, a:link, a:focus, a:hover, a:active, a:visited {
   text-decoration: none !important;
   font: 16px/18px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC";
   color: #000; }
   a.red, a:link.red, a:focus.red, a:hover.red, a:active.red, a:visited.red {
-    color: #F00 !important; }
+    color: red; }
 
 /*主架構*/
 * {
@@ -3039,18 +2935,6 @@ footer {
 .word p {
   font-family: Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC"; }
 
-button.back {
-  background: url("../images/icon_back01.png") 0 0 no-repeat;
-  border: 0 none transparent;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-  background-size: contain;
-  outline: none; }
-  button.back.align-right {
-    background: url("../images/icon_back02.png") 0 0 no-repeat;
-    background-size: contain; }
-
 table {
   font: 20px/22px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC";
   width: 96%; }
@@ -3101,11 +2985,6 @@ table {
   table .input_max {
     float: right;
     max-width: 100px; }
-  @media (max-width: 480px) {
-    table {
-      font: 10px/12px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC"; }
-      table tr > th {
-        line-height: 16px; } }
 
 table.bw tr th, table.bw tr td {
   line-height: 30px; }
@@ -3206,31 +3085,6 @@ label.my-error-class {
       label.my-error-class:after {
         content: ''; } }
 
-/*修掉時間選項破版*/
-@media (max-width: 480px) {
-  .table-condensed > thead > tr > th,
-  .table-condensed > tbody > tr > th,
-  .table-condensed > tfoot > tr > th,
-  .table-condensed > thead > tr > td,
-  .table-condensed > tbody > tr > td,
-  .table-condensed > tfoot > tr > td {
-    padding: 5px 0; }
-
-  input:not([type="file"]):not([type="radio"]):not([type="checkbox"]), textarea, select {
-    width: 100%;
-    min-width: 140px;
-    height: 32px;
-    border-radius: 3px; }
-
-  table tr th, table tr td {
-    padding: 3px;
-    min-height: 40px; }
-
-  #Captcha {
-    min-width: 74px; }
-
-  #phoneCode {
-    min-width: 74px; } }
 select option {
   border: solid #ddd 1px;
   background: #222;
@@ -3303,59 +3157,6 @@ select option {
     .dataTables_wrapper .paginate_button a.paginate_button.disabled:hover.next,
     .dataTables_wrapper .paginate_button a.paginate_button.disabled:active.next {
       color: #000 !important; }
-
-div.listitem {
-  text-align: center;
-  font: 16px/18px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC";
-  color: #9ec0ca; }
-  div.listitem div.icon {
-    text-align: left;
-    padding: 10px 0 0 90px;
-    min-height: 80px;
-    color: #9ec0ca; }
-    div.listitem div.icon h4 {
-      color: #46f4ea;
-      margin-bottom: 2px; }
-    div.listitem div.icon:before {
-      height: 56px;
-      width: 52px;
-      position: absolute;
-      top: 10px;
-      left: 40px; }
-    div.listitem div.icon.service:before {
-      content: url("/images/icon_05.png"); }
-    div.listitem div.icon.product:before {
-      content: url("/images/icon_06.png"); }
-    div.listitem div.icon.help:before {
-      content: url("/images/icon_07.png"); }
-  div.listitem p.icon.tleft:before {
-    content: url("/images/icon_08.png"); }
-  div.listitem p.icon.rleft:before {
-    content: url("/images/icon_09.png"); }
-  div.listitem div.box {
-    border: solid 1px;
-    border-color: #444 #666 #444 #666;
-    color: #9ec0ca; }
-    div.listitem div.box h5 {
-      color: #fff;
-      margin: 20px 15px;
-      text-align: left; }
-    div.listitem div.box p {
-      color: #01fdcc;
-      margin: 20px 15px;
-      text-align: left; }
-      div.listitem div.box p a, div.listitem div.box p a:link {
-        margin: 0 15px; }
-      div.listitem div.box p img {
-        margin: 5px 0; }
-    div.listitem div.box span.bignum {
-      margin: 0 0.3em;
-      letter-spacing: 2px;
-      color: #F00;
-      font: 1.5em/1.5em Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC"; }
-    div.listitem div.box span.red {
-      color: #F00;
-      font: 1.6em/1.6sem Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC"; }
 
 div.quickbox {
   background: #eeeeee;
@@ -3471,7 +3272,6 @@ article {
     right: 3px; }
   to {
     right: 5px; } }
-@CHARSET "UTF-8";
 footer {
   font-size: 18px;
   min-height: 205px;
@@ -4143,7 +3943,6 @@ footer {
     background: #f25f5e; }
 
 .online_preset {
-  display: none;
   display: none; }
   .online_preset .setupaccount {
     width: 100px;
@@ -4693,7 +4492,6 @@ footer {
         .slider2 div .nav li:hover a {
           color: #f1d391; }
 
-/*服务中心...開新分頁*/
 .slider3 {
   background: #961818;
   width: 100%;
@@ -4732,7 +4530,8 @@ footer {
           line-height: 35px;
           font-size: 20px; }
         .slider3 div .nav li:hover a {
-          color: #f1d391; }
+          color: #f1d391;
+          background: none; }
 
 /*Tab分頁 滑動選單*/
 .slider {
@@ -6154,14 +5953,6 @@ div#Account #SendingMessage textarea {
   color: #fff; }
 div#Account #SendingMessage .col-md-2.col-ms-12.text-right {
   font: bold 22px/50px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC"; }
-@media (max-width: 480px) {
-  div#Account #SendingMessage .tit {
-    font: bold 14px/16px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC"; }
-  div#Account #SendingMessage .col-md-2.col-ms-12.text-right {
-    font: bold 22px/50px Arial, "Microsoft YaHei", "Microsoft JhengHei", "Hiragino Sans GB", "Noto Sans JP", STHeiti, sans-serif, "Noto Sans SC", "Noto Sans TC";
-    text-align: left; }
-    div#Account #SendingMessage .col-md-2.col-ms-12.text-right img {
-      width: 50px; } }
 
 #SendingMessage {
   height: 100%; }
