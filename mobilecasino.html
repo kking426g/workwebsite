@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="description" content="">
+        <link rel="icon" type="image/x-icon"  href="favicon.ico">
+        <title>workwebsite</title>
+        <link rel="stylesheet" href="css/style_sheet.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scriptT.js"></script>
+        <script src="js/favorite.js"></script>
+        <script src="js/gamelog.js"></script>
+        <script src="js/mymessage.js"></script>
+        <script src="js/new_function.js"></script>
+        <script src="js/sys_function.js"></script>
+        <script src="js/lightbox.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/select_date.js"></script>
+        <script language="javascript">
+        var Today=new Date();
+        $('.dateinfo').append('GMT+8 '+ Today.getFullYear() + '/' + (Today.getMonth()+1) + '/' + Today.getDate());
+
+        $(function (){
+            $('.sys_loginform_submit').click(function() {
+                ocmsite.etc.initLoginform($(".sys_loginform"));
+            });
+        });
+        </script>
+
+        <script>
+            $(function () {
+                ocmsite.etc.initSignupform($(".signupform"));
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="static_pic">
+            <img src="images/top_Mobile_Betting.png">
+        </div>
+
+        <div class="bar"></div>
+
+        <div id="MobileCasino" class="pages">
+            <div class="wrap">
+                <div id="static_topic">
+                    <div class="page_title">
+                        手机投注
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="word">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-5">
+                            <img src="images/icon_phone.png" style="margin-top: 10%;" class="GetApp" />
+                        </div>
+                        <div class="col-sm-7 col-md-7">
+                            <h4>手机软件安装</h4>
+                            <h4 >多元化移动娱乐平台、精彩随时随地、一切尽在掌中!美女荷官相伴，刺激不打烊!</h4>
+                            <br><br>
+                            <p>
+                                本公司为您提供最快捷、最方便的手机投注服务，无论您身在何处，都能提供您最佳的投注环境，给各地玩家随时随地体验移动式最便利的体育下注及娱乐场真人游戏，让您一机在手，娱乐无穷。
+                                <br>
+                                <br>
+                            </p>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6" style="padding:0;">
+                                <ul>
+                                    <li><p>全面的体育项目</p></li>
+                                    <li><p>随时随地进行投注</p></li>
+                                    <li><p>现场滚球投注</p></li>
+                                </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-6" style="padding:0;">
+                                <ul class="point">
+                                    <li><p>快速‧便利‧安全</p></li>
+                                    <li><p>娱乐场(现场游戏...)</p></li>
+                                    <li><p>免费下载使用</p></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row" style="padding: 0;">
+                            <table class="outer_table">
+                                <tr>
+                                <td class="step_title1"><div>安卓版系統</div></td>
+                                <td>
+                                    <div class="row">
+                                    <div class="col-md-3 col-sm-3" style="padding: 0;">
+                                        <a href="/"><img src="images/android.png" onclick="window.open('<?=$url_apk?>');" ></a>
+
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <h4>安装步骤:</h4>
+                                        <ol>
+                                        <li><p>下载安装 apk 前，请先至『 手机设定=>安全性 』中，将『未知的来源』项目打勾， 如果已有设定过可直接下载后选择安装。</p></li>
+                                        <li><p>请在您的手机先安装「QR Code(二维码扫描)」将软件打开后，用手机对右侧二维码扫描进行安装软件。</p></li>
+                                        </ol>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3">
+                                        <img src="<?=helper_view_getApkQrImgSrc()?>" alt="">
+                                    </div>
+                                    </div>
+                                </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12" style="text-align: center;">
+                            如有安装问题，请立即联系24小时在线客服或者QQ客服为您服务。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_box">
+                <div class="footer_logo">
+                    <br>
+                    <span><img src="images/com_16.png"></span>
+                    <span><img src="images/com_17.png"></span>
+                    <span><img src="images/com_08.png"></span>
+                    <span><img src="images/com_02.png"></span>
+                    <span><img src="images/com_06.png"></span>
+                    <span><img src="images/com_05.png"></span>   
+                    <span><img src="images/com_07.png"></span>
+                    <span><img src="images/com_09.png"></span>
+                    <span><img src="images/com_03.png"></span>
+                    <span><img src="images/com_01.png"></span>
+                    <span><img src="images/com_04.png"></span>
+                    <span><img src="images/com_10.png"></span>
+                    <span><img src="images/com_12.png"></span>
+                    <span><img src="images/com_11.png"></span>
+                    <span><img src="images/com_13.png"></span>
+                    <span><img src="images/com_14.png"></span>
+                    <span><img src="images/com_15.png"></span>
+                </div>
+                <hr>
+                <div class="footer_text">
+                    <img src="images/small_Gti_logo.png">
+                    <p>
+                        采用由亚洲市场最具权威及最先进的 GTigaming 线上娱乐系统。<br>
+                        再进行网站注册或游戏前，请确保您已年满18岁且遵循当地法律法规。 <br>
+                        Copyright 2017 博宇国际 All Rights Reserved
+                    </p>    
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
